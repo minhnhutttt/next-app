@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-      <div className="px-5 py-10 md:py-[100px] bg-black/20">
+      <div className="px-5 pt-10 md:pt-[100px] bg-black/20">
         <div className="w-full flex max-md:flex-col md:justify-between md:max-w-[1530px] max-w-[440px] mx-auto md:space-x-5 pb-3">
             <div className="md:w-1/2 max-w-[755px] flex justify-end">
                 <div className="w-full max-w-[680px] bg-white pt-5 pb-5 md:pb-10 px-5">
