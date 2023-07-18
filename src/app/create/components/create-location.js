@@ -27,7 +27,7 @@ export default function CreateLocation({ onClick }) {
       <FormBlock>
         <div className="py-5">
           <FormLabel label="Range(NFTを受信できる半径距離/m)" />
-          <p className="text-xs md:text-base font-medium px-3">
+          <p className="px-3 text-xs font-medium md:text-base">
             範囲を制限しない場合は0を入力してください。
           </p>
           <div className="mt-6">

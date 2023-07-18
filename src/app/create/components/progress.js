@@ -3,7 +3,7 @@ import classNames from "classnames";
 export default function Process({ step = 2 }) {
   return (
     <div className="mx-auto w-full md:w-[700px] xl:max-w-[1140px] ">
-      <div className="relative mx-auto flex w-full md:w-[570px] xl:max-w-[1000px] justify-between overflow-hidden">
+      <div className="relative mx-auto flex w-full justify-between overflow-hidden md:w-[570px] xl:max-w-[1000px]">
         <div className="absolute top-3 w-full border-t border-[#aeaeae]"></div>
         <div
           className={classNames(
@@ -42,7 +42,7 @@ export default function Process({ step = 2 }) {
           <p className="text-center text-xs md:text-sm">QRにNFTをセットする</p>
         </div>
         <div className="w-[80px] md:w-[160px]">
-          <p className="text-right md:text-center text-xs md:text-sm">確認</p>
+          <p className="text-right text-xs md:text-center md:text-sm">確認</p>
         </div>
       </div>
     </div>

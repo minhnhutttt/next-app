@@ -14,7 +14,7 @@ export default function Create() {
   return (
     <main className="px-5 py-10 md:pt-[100px]">
       <Process step={step} />
-      <div className="mx-auto w-full max-w-[480px] md:py-[100px] py-[60px] md:max-w-[1000px]">
+      <div className="mx-auto w-full max-w-[480px] py-[60px] md:max-w-[1000px] md:py-[100px]">
         {step === 1 && <CreateLocation onClick={nextStep} />}
         {step === 2 && <CreateQR />}
       </div>

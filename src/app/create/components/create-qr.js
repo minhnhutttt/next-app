@@ -64,7 +64,7 @@ export default function CreateQR() {
       <FormBlock>
         <div className="py-5">
           <FormLabel label="0TT or NFTを選択してください。" isRequired />
-          <p className="text-xs md:text-base font-medium px-3">
+          <p className="px-3 text-xs font-medium md:text-base">
             0TTは、0(Zero) Transfer
             Tokenの略称です。他人に譲渡することはできません。(MINTのみ可能な所有者が固定されたままのNFT規格です。)
             通常のNFTでは対応できない状況に適しています。
@@ -88,7 +88,7 @@ export default function CreateQR() {
           <div className="w-full md:w-[312px]">
             <FormDate name="start" />
           </div>
-          <span className="px-6 max-md:p-2 text-lg font-medium md:px-11 md:text-2xl">
+          <span className="px-6 text-lg font-medium max-md:p-2 md:px-11 md:text-2xl">
             〜
           </span>
           <div className="w-full md:w-[312px]">
