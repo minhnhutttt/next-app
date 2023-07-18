@@ -7,3 +7,20 @@ body {
   color: #000;
   font-family: "Noto Sans JP", sans-serif;
 }
+
+input[type="date"] {
+  position: relative;
+  padding: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}

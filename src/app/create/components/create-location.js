@@ -4,9 +4,17 @@ import FormButton from "@/app/components/form/form-button";
 import FormInput from "@/app/components/form/form-input";
 import FormLabel from "@/app/components/form/form-label";
 
-export default function CreateAddress({onClick}) {
+export default function CreateLocation({ onClick }) {
   return (
     <>
+      <div className="border-b border-[#333333] pb-10">
+        <h2 className="text-[28px] font-medium md:text-[70px]">
+          QRに位置情報を登録する
+        </h2>
+        <p className="text-[16px] font-medium text-[#ee3f3f] md:text-[24px]">
+          *印は入力必須項目です。
+        </p>
+      </div>
       <FormBlock>
         <FormLabel label="Address(位置情報)" isRequired />
         <div className="mt-6">
@@ -19,7 +27,7 @@ export default function CreateAddress({onClick}) {
       <FormBlock>
         <div className="py-5">
           <FormLabel label="Range(NFTを受信できる半径距離/m)" />
-          <p className="text-base font-medium">
+          <p className="text-xs md:text-base font-medium px-3">
             範囲を制限しない場合は0を入力してください。
           </p>
           <div className="mt-6">
@@ -33,7 +41,6 @@ export default function CreateAddress({onClick}) {
     </>
   );
 }
-CreateAddress.propTypes = {
-    onClick: PropTypes.func
-  };
-  
+CreateLocation.propTypes = {
+  onClick: PropTypes.func,
+};

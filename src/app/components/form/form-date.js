@@ -1,10 +1,13 @@
 import PropTypes from "prop-types";
 
-export default function FormInput({ name, placeholder, value }) {
+export default function FormDate({ name, placeholder, value }) {
   return (
-    <div className="px-3">
+    <div className="relative">
+      <span className="pointer-events-none absolute right-4 top-1/2 z-10 block -translate-y-1/2">
+        <img src="/input-date.png" alt="" />
+      </span>
       <input
-        type="text"
+        type="date"
         name={name}
         placeholder={placeholder}
         value={value}
@@ -13,7 +16,7 @@ export default function FormInput({ name, placeholder, value }) {
     </div>
   );
 }
-FormInput.propTypes = {
+FormDate.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   value: PropTypes.string,

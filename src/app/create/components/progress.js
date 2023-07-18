@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 export default function Process({ step = 2 }) {
   return (
-    <div className="mx-auto w-full max-w-[1140px] ">
-      <div className="relative mx-auto flex w-full max-w-[1000px] justify-between overflow-hidden">
+    <div className="mx-auto w-full md:w-[700px] xl:max-w-[1140px] ">
+      <div className="relative mx-auto flex w-full md:w-[570px] xl:max-w-[1000px] justify-between overflow-hidden">
         <div className="absolute top-3 w-full border-t border-[#aeaeae]"></div>
         <div
           className={classNames(
@@ -35,14 +35,14 @@ export default function Process({ step = 2 }) {
         ></span>
       </div>
       <div className="mt-4 flex justify-between">
-        <div className="w-[160px]">
-          <p className="text-left text-sm">QRに位置情報を登録する</p>
+        <div className="w-[80px] md:w-[160px]">
+          <p className="text-left text-xs md:text-sm">QRに位置情報を登録する</p>
         </div>
-        <div className="w-[160px]">
-          <p className="text-center text-sm">QRにNFTをセットする</p>
+        <div className="w-[80px] md:w-[160px]">
+          <p className="text-center text-xs md:text-sm">QRにNFTをセットする</p>
         </div>
-        <div className="w-[160px]">
-          <p className="text-center text-sm">確認</p>
+        <div className="w-[80px] md:w-[160px]">
+          <p className="text-right md:text-center text-xs md:text-sm">確認</p>
         </div>
       </div>
     </div>

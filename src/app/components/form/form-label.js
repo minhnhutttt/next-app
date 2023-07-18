@@ -1,9 +1,14 @@
 import PropTypes from "prop-types";
-
+import classNames from "classnames";
 export default function FormLabel({ label, text, isRequired }) {
   return (
     <div className="mb-1 md:mb-2">
-      <p className="text-[18px] font-medium text-[#333] md:text-[32px]">
+      <p
+        className={classNames(
+          "text-[18px] font-medium text-[#333] md:text-[32px]",
+          { "pl-3": !isRequired }
+        )}
+      >
         {isRequired && <span className="text-[#ee3f3f]">*</span>}
         {label}
       </p>

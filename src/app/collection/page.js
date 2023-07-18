@@ -10,7 +10,7 @@ export default function Collection() {
     <main className="px-5 py-10 md:py-[74px]">
       <div className="mx-auto w-full max-w-[480px] md:max-w-[1000px]">
         <div className="border-b border-[#333333] pb-10">
-          <h2 className="text-[32px] font-medium md:text-[70px]">
+          <h2 className="text-[28px] font-medium md:text-[70px]">
             コレクションを作る
           </h2>
           <p className="text-[16px] font-medium text-[#ee3f3f] md:text-[24px]">
