@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 export default function FormImage({ size = "sm" }) {
   return (
-    <div class="flex w-full items-center px-3 pt-4">
+    <div className="flex w-full items-center px-3 pt-4">
       <label
         className={classNames(
           "flex w-full cursor-pointer flex-col items-center justify-center rounded-[3px] border border-[#999999] bg-[#f5f8fa] hover:bg-gray-100",
@@ -19,10 +19,10 @@ export default function FormImage({ size = "sm" }) {
           }
         )}
       >
-        <div class="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <img className="max-md:max-w-[40px]" src="/file-image.png" alt="" />
         </div>
-        <input type="file" class="hidden" />
+        <input type="file" className="hidden" />
       </label>
     </div>
   );

@@ -7,7 +7,6 @@ import classNames from "classnames";
 
 export default function HeaderMenuItem({ children, link }) {
   const currentRoute = usePathname();
-  console.log(link);
   return (
     <li className="px-[1.2vw] max-md:py-1">
       <Link

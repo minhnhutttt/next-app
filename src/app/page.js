@@ -17,7 +17,7 @@ export default function Home() {
           </div>
           <div className="mt-6 flex flex-col gap-4 md:mt-10 md:gap-8">
             <Link
-              href="/"
+              href="/account"
               className="relative flex h-[60px] w-[300px] items-center justify-center rounded-[46px] border border-[#313333] bg-white text-lg font-medium md:h-[92px] md:w-[478px] md:text-2xl"
             >
               使い方を見る
@@ -26,7 +26,7 @@ export default function Home() {
               </span>
             </Link>
             <Link
-              href="/"
+              href="/account"
               className="relative flex h-[60px] w-[300px] items-center justify-center rounded-[46px] bg-[#366bb3] text-lg font-medium text-white md:h-[92px] md:w-[478px] md:text-2xl"
             >
               DIVER Walletをダウンロード

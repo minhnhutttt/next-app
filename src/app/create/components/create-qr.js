@@ -22,8 +22,8 @@ export default function CreateQR() {
 
   const optionsCollection = [
     { label: "コレクションを選択", value: "コレクションを選択" },
-    { label: "コレクションを選択", value: "コレクションを選択" },
-    { label: "コレクションを選択", value: "コレクションを選択" },
+    { label: "コレクションを選択2", value: "コレクションを選択2" },
+    { label: "コレクションを選択3", value: "コレクションを選択3" },
   ];
   const [selectedOptionCollection, setSelectedOptionCollection] = useState("");
 

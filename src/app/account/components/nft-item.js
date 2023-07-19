@@ -1,9 +1,12 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-export default function NFTItem({ imgSrc, head, title, content }) {
+export default function NFTItem({ link, imgSrc, head, title, content }) {
   return (
-    <div className="rounded-[10px] bg-white p-2 shadow-[4px_0px_15px_rgba(0,0,0,0.15)] md:p-3">
+    <Link
+      href={"account/" + link}
+      className="rounded-[10px] bg-white p-2 shadow-[4px_0px_15px_rgba(0,0,0,0.15)] md:p-3"
+    >
       <div className="">
         <img src={imgSrc} alt="" />
       </div>
@@ -16,11 +19,12 @@ export default function NFTItem({ imgSrc, head, title, content }) {
           {content}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 
 NFTItem.propTypes = {
+  link: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
   head: PropTypes.string.isRequired,
   title: PropTypes.node.isRequired,
