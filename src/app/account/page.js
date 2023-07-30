@@ -8,85 +8,83 @@ export default function Account() {
   return (
     <main className="px-5 pb-[80px] pt-10 md:pb-[190px] md:pt-[92px]">
       <div className="mx-auto w-full max-w-[1800px]">
-        <div className="flex border-b border-[#a1a099]">
-          <div className="relative -bottom-[1.5px] flex px-5">
+        <div className="flex justify-between border-b border-[#a1a099]">
+          <div className="relative -bottom-[1.5px] flex px-3 md:px-5">
             <button
               className={classNames(
-                "border-[#366bb3] px-3 py-2 text-base font-medium uppercase tracking-widest md:px-9 md:text-2xl",
-                { "border-b-[3px] font-bold": tab === 1 }
+                "border-[#366bb3] px-2 py-2 text-sm uppercase tracking-widest md:px-9 md:text-2xl",
+                tab === 1 ? "border-b-[3px] font-bold": 'font-medium'
               )}
               onClick={() => setTab(1)}
             >
-              NFT
+              MINTED NFT
             </button>
             <button
               className={classNames(
-                "border-[#366bb3] px-3 py-2 text-base font-medium uppercase tracking-widest md:px-9 md:text-2xl",
-                { "border-b-[3px] font-bold": tab === 2 }
+                "border-[#366bb3] px-2 py-2 text-sm uppercase tracking-widest md:px-9 md:text-2xl",
+                tab === 2 ? "border-b-[3px] font-bold": 'font-medium'
               )}
               onClick={() => setTab(2)}
             >
               MY Collection
             </button>
           </div>
+          <div className="md:text-2xl text-sm font-medium uppercase">8 items</div>
         </div>
-        <div className="mt-[55px] grid grid-cols-2 gap-x-3 gap-y-4 md:grid-cols-4 md:gap-x-5 md:gap-y-6">
+        <div className="mt-[40px] grid grid-cols-2 gap-x-3 gap-y-4 md:grid-cols-4 md:gap-x-[27px] md:gap-y-6">
           <NFTItem
             link="/01"
-            imgSrc="/nft-01.jpg"
+            imgSrc="/img-01.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
           <NFTItem
             link="/02"
-            imgSrc="/nft-02.jpg"
+            imgSrc="/img-02.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
           <NFTItem
             link="/03"
-            imgSrc="/nft-03.jpg"
+            imgSrc="/img-03.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
           <NFTItem
             link="/04"
-            imgSrc="/nft-03.jpg"
+            imgSrc="/img-04.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
           <NFTItem
             link="/05"
-            imgSrc="/nft-03.jpg"
+            imgSrc="/img-01.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
           <NFTItem
             link="/06"
-            imgSrc="/nft-03.jpg"
+            imgSrc="/img-02.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
           <NFTItem
             link="/07"
-            imgSrc="/nft-03.jpg"
+            imgSrc="/img-03.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
           <NFTItem
             link="08"
-            imgSrc="/nft-03.jpg"
+            imgSrc="/img-04.jpg"
             head="コレクション名"
             title="NFT名NFT名NFT名NFT名"
-            content="説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説..."
           />
+        </div>
+        <div className="flex justify-center items-center mt-16">
+          <button className="flex h-12 w-[280px] md:w-[300px] items-center justify-center gap-3 rounded-[5px] bg-[#366bb3] text-base font-medium text-white md:h-[62px] md:text-lg">
+              <span>NftTを作る</span>
+            </button>
         </div>
       </div>
     </main>

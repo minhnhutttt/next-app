@@ -3,11 +3,12 @@ import Link from "next/link";
 import { useState } from "react";
 import HeaderMenu from "./header-menu/header-menu";
 import SearchBar from "../search-bar/search-bar";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="pl-4 pr-2 shadow-[3px_3px_5px_rgba(79,79,79,0.2)] md:pl-7">
+    <header className="pl-4 bg-[#deeef6]/[0.5] shadow-[3px_3px_5px_rgba(79,79,79,0.2)] md:pl-6">
       <div className="mx-auto flex h-[60px] w-full items-center justify-between py-2 md:h-[94px]">
         <Link href="/">
           <img className="max-md:w-[180px]" src="/logo.png" alt="" />
@@ -22,11 +23,11 @@ export default function Header() {
           >
             <div className="flex items-center max-[1599px]:flex-col max-[1599px]:gap-8 min-[1600px]:flex-1">
               <HeaderMenu />
-              <div className="w-[300px] min-[1600px]:ml-6 min-[1600px]:w-[18.125vw]">
+              <div className="w-[300px] min-[1600px]:ml-[62px] min-[1600px]:w-[18.125vw]">
                 <SearchBar />
               </div>
             </div>
-            <div className="flex max-md:w-[300px] max-md:flex-col max-md:items-center max-md:justify-center max-md:gap-6 min-[1600px]:h-full min-[1600px]:w-[28.333vw]">
+            <div className="flex max-md:w-[300px] max-md:flex-col max-md:items-center max-md:justify-center md:justify-end max-md:gap-6 min-[1600px]:h-full min-[1600px]:w-[28.333vw]">
               <div className="flex gap-5 md:px-[30px]">
                 <Link href="/">
                   <img src="/btn-install.png" alt="" />
@@ -35,9 +36,9 @@ export default function Header() {
                   <img src="/btn-connect.png" alt="" />
                 </Link>
               </div>
-              <div className="flex items-center border-[#333] px-[1.458vw] md:border-l">
+              <div className="flex items-center border-[#333] px-[1.3vw] md:border-l">
                 <Link href="/">
-                  <img src="/btn-language.png" alt="" />
+                  <FontAwesomeIcon icon={faGlobe} size="2xl" />
                 </Link>
               </div>
             </div>

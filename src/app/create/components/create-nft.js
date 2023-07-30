@@ -9,9 +9,9 @@ import FormSelect from "@/app/components/form/form-select";
 import FormTextarea from "@/app/components/form/form-textarea";
 import { useState } from "react";
 
-export default function CreateQR() {
+export default function CreateNFT() {
   const options = [
-    { label: "0TT", value: "0TT" },
+    { label: "1TT", value: "1TT" },
     { label: "NFT", value: "NFT" },
   ];
   const [selectedOption, setSelectedOption] = useState(options[0].value);
@@ -34,8 +34,8 @@ export default function CreateQR() {
   return (
     <>
       <div className="border-b border-[#333333] pb-10">
-        <h2 className="text-[28px] font-medium md:text-[70px]">
-          QRにNFTをセットする
+        <h2 className="text-[28px] font-medium md:text-[70px] tracking-[0.06em]">
+        NFTをMINTする
         </h2>
         <p className="text-[16px] font-medium text-[#ee3f3f] md:text-[24px]">
           *印は入力必須項目です。
@@ -63,11 +63,10 @@ export default function CreateQR() {
       </FormBlock>
       <FormBlock>
         <div className="py-5">
-          <FormLabel label="0TT or NFTを選択してください。" isRequired />
+          <FormLabel label="1TT or NFTを選択してください。" isRequired />
           <p className="px-3 text-xs font-medium md:text-base">
-            0TTは、0(Zero) Transfer
-            Tokenの略称です。他人に譲渡することはできません。(MINTのみ可能な所有者が固定されたままのNFT規格です。)
-            通常のNFTでは対応できない状況に適しています。
+          1TTは、One Transfer Tokenの略称です。ミント（NFT発行）後、一度だけ転送できるNFTの規格です。<br />
+          通常のNFTでは対応できない状況に適しています。
           </p>
           <div className="mt-6">
             <FormRadio
@@ -81,20 +80,6 @@ export default function CreateQR() {
       <FormBlock>
         <FormLabel label="NFTの数(生成上限数)" isRequired />
         <FormInput name="NFTの数(生成上限数)" placeholder="100" />
-      </FormBlock>
-      <FormBlock>
-        <FormLabel label="開始日から終了日" isRequired />
-        <div className="flex items-center px-3 max-md:flex-col">
-          <div className="w-full md:w-[312px]">
-            <FormDate name="start" />
-          </div>
-          <span className="px-6 text-lg font-medium max-md:p-2 md:px-11 md:text-2xl">
-            〜
-          </span>
-          <div className="w-full md:w-[312px]">
-            <FormDate name="end" />
-          </div>
-        </div>
       </FormBlock>
       <FormBlock>
         <FormLabel label="TEL" />
@@ -111,11 +96,6 @@ export default function CreateQR() {
       <FormBlock>
         <FormLabel label="SNS" />
         <FormInput name="sns" placeholder="example.com" />
-        <div className="flex justify-end pr-7 pt-6 md:pt-12">
-          <button>
-            <img className="max-md:w-6" src="/ic-plus.png" alt="" />
-          </button>
-        </div>
       </FormBlock>
       <FormBlock>
         <FormLabel label="コレクション" isRequired />
@@ -124,6 +104,10 @@ export default function CreateQR() {
           selectedOption={selectedOptionCollection}
           onChange={handleChangeCollection}
         />
+      </FormBlock>
+      <FormBlock>
+        <FormLabel label="割引率(クーポンとしての割引率を設定できます。)" />
+        <FormInput name="discount" placeholder="20%" />
       </FormBlock>
       <div className="pt-14 md:pb-16 md:pt-24">
         <FormButton>確認する</FormButton>
