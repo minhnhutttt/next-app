@@ -1,22 +1,31 @@
 export default function Product() {
   return (
-    <div className="relative py-[10.5%] bg-[url('/product-bg.png')]">
-        <div className="h-full px-5">
-          <div className="w-full max-w-[1640px] mx-auto h-full flex max-md:flex-col-reverse justify-end items-center">
-            <div className="md:w-[54%] max-md:mt-5 md:pl-[7.5%]">
-              <h3 className="text-[28px] md:text-[42px] text-[#0047ab] font-bold tracking-[0.04em]">
+    <div className="relative bg-[url('/product-bg.png')] py-[10.5%]">
+      <div className="h-full px-5">
+        <div className="mx-auto flex h-full w-full max-w-[1640px] items-center justify-end max-md:flex-col-reverse">
+          <div className="max-md:mt-5 md:w-[54%] md:pl-[7.5%]">
+            <h3 className="text-[28px] font-bold tracking-[0.04em] text-[#0047ab] md:text-[42px]">
               Product
-              </h3>
-              <p className="text-[16px] md:text-[18px] mt-3 md:mb-10 leading-relaxed">
-                DIVER Connect is a protocol for secure communication and data sharing between blockchain wallets and DApps. We focus on security and privacy, protecting users' private keys and information. <br />
-                It supports DIVER Network and provides seamless connectivity for sharing data between wallets and DApps. It provides a convenient and secure blockchain experience, including sending and receiving digital assets and real-time mutual authentication between wallets and DApps.
-              </p>
-            </div>
-            <div className="md:w-[46%] px-[2.5%]">
-              <div className=""><img src="/product-logo.png" alt="" /></div>
+            </h3>
+            <p className="mt-3 text-[16px] leading-relaxed md:mb-10 md:text-[18px]">
+              DIVER Connect is a protocol for secure communication and data
+              sharing between blockchain wallets and DApps. We focus on security
+              and privacy, protecting users' private keys and information.{" "}
+              <br />
+              It supports DIVER Network and provides seamless connectivity for
+              sharing data between wallets and DApps. It provides a convenient
+              and secure blockchain experience, including sending and receiving
+              digital assets and real-time mutual authentication between wallets
+              and DApps.
+            </p>
+          </div>
+          <div className="px-[2.5%] md:w-[46%]">
+            <div className="">
+              <img src="/product-logo.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-  )
+    </div>
+  );
 }
