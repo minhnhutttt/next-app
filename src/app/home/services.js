@@ -25,7 +25,7 @@ ServicesItem.propTypes = {
 
 export default function Services() {
   return (
-    <div className="bg-[#e8f6ff] px-5 pb-20 pt-16 md:pb-[170px] md:pt-[140px]">
+    <div className="bg-[#e8f6ff] px-5 pb-20 pt-16 md:pb-[170px] md:pt-[140px]" id="service">
       <div className="mx-auto w-full max-w-[1640px]">
         <h4 className="text-center text-[42px] font-bold">Our Services</h4>
         <div className="mt-6 grid grid-cols-2 gap-3 md:mt-12 md:grid-cols-3 md:gap-6 lg:gap-12">

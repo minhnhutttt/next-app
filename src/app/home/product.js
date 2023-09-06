@@ -1,6 +1,6 @@
 export default function Product() {
   return (
-    <div className="relative bg-[url('/product-bg.png')] py-[10.5%]">
+    <div className="relative bg-[url('/product-bg.png')] py-[10.5%]" id="product">
       <div className="h-full px-5">
         <div className="mx-auto flex h-full w-full max-w-[1640px] items-center justify-end max-md:flex-col-reverse">
           <div className="max-md:mt-5 md:w-[54%] md:pl-[7.5%]">

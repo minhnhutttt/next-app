@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="bg-[url('/about-bg.jpg')] pb-[3%] pt-10 md:pt-[7%]">
+    <div className="bg-[url('/about-bg.jpg')] pb-[3%] pt-10 md:pt-[7%]" id="about">
       <div className="mx-auto w-full max-w-[768px] px-5">
         <h4 className="text-center text-[24px] font-bold md:text-[42px]">
           About Us

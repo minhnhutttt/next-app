@@ -25,7 +25,8 @@ export default function Header() {
                 <li className="">
                   <Link
                     className="relative font-['Roboto_Slab'] text-[22px] font-bold text-[#0047ab]"
-                    href="/"
+                    href="#product"
+                    scroll={false}
                   >
                     PRODUCT
                   </Link>
@@ -33,7 +34,8 @@ export default function Header() {
                 <li className="">
                   <Link
                     className="relative font-['Roboto_Slab'] text-[22px] font-bold text-[#0047ab]"
-                    href="/"
+                    href="#service"
+                    scroll={false}
                   >
                     SERVICE
                   </Link>
@@ -41,7 +43,8 @@ export default function Header() {
                 <li className="">
                   <Link
                     className="relative font-['Roboto_Slab'] text-[22px] font-bold text-[#0047ab]"
-                    href="/"
+                    href="#about"
+                    scroll={false}
                   >
                     ABOUT
                   </Link>
