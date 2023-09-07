@@ -14,7 +14,7 @@ export default function Header() {
             alt="CONNECT TO WORLD"
           />
         </Link>
-        <div className="flex-1 max-lg:flex max-lg:justify-end min-[1600px]:ml-6">
+        <div className="flex-1 max-lg:flex max-lg:justify-end lg:ml-6">
           <div
             className={`z-[99] flex items-center justify-end max-lg:pointer-events-none max-lg:fixed max-lg:inset-0 max-lg:flex-col max-lg:justify-center max-lg:gap-8 max-lg:bg-white/90 max-lg:opacity-0 max-md:gap-4 ${
               open ? "max-lg:pointer-events-auto max-lg:opacity-100" : ""
@@ -52,7 +52,7 @@ export default function Header() {
               </ul>
             </div>
           </div>
-          <div className="flex h-[70px] w-[70px] items-center justify-center min-[1600px]:hidden">
+          <div className="flex h-[70px] w-[70px] items-center justify-center lg:hidden">
             <button
               className={`group relative block h-[22px] w-10 cursor-pointer border-[none] p-0 max-lg:z-[99] max-lg:[&.active]:fixed ${
                 open ? "active" : ""
