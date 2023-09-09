@@ -23,7 +23,7 @@ export default function Header() {
             }`}
           >
             <div className="flex items-center">
-              <ul className="flex items-center gap-5 xl:gap-8 max-md:flex-col">
+              <ul className="flex items-center gap-5 xl:gap-8 max-lg:flex-col">
                 <MenuItem link="#">Token Economics</MenuItem>
                 <MenuItem link="#">Product</MenuItem>
                 <MenuItem link="#">Governance</MenuItem>
