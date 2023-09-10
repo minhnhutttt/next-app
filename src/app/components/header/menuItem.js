@@ -1,19 +1,20 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-export default function MenuItem({link, children}) {
+export default function MenuItem({ link, children }) {
   return (
     <li>
-        <Link
-        className="text-[20px] max-lg:font-bold lg:text-[14px] xl:text-[16px] text-[#010101] uppercase" href={link}>
+      <Link
+        className="text-[20px] uppercase text-[#010101] max-lg:font-bold lg:text-[14px] xl:text-[16px]"
+        href={link}
+      >
         {children}
-        </Link>
+      </Link>
     </li>
   );
 }
 
 MenuItem.propTypes = {
-    children: PropTypes.node.isRequired,
-    link: PropTypes.node.isRequired,
-  };
-  
+  children: PropTypes.node.isRequired,
+  link: PropTypes.node.isRequired,
+};
