@@ -1,6 +1,6 @@
 export default function HomeMisson() {
     return (
-        <div className="bg-[url('/misson-bg.jpg')] bg-cover py-10 md:py-[120px]">
+        <div className="bg-[url('/misson-bg.jpg')] bg-[length:100%_100%] py-10 md:py-[120px]">
         <div className="w-full max-w-[1440px] mx-auto px-4 md:px-6">
           <div className="flex max-lg:flex-col-reverse max-lg:items-center max-md:gap-8 max-lg:gap-16 pb-3">
             <div className="md:flex-1 max-md:w-full max-lg:flex justify-center items-center flex-col">

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import HomeMainVisual from './components/pages/home/homeMainVisual'
 import HomeMisson from './components/pages/home/homeMisson'
 import HomeEcosystem from './components/pages/home/homeEcosystem'

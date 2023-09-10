@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#333333] px-5">
         <div className="w-full lg:max-w-[1440px] max-w-[660px] mx-auto md:px-6 pt-12 md:pt-[115px] pb-[30px]">
-            <div className="flex max-lg:flex-col max-lg:items-center max-lg:gap-10 justify-center gap-5 mb-[30px]">
+            <div className="flex max-lg:flex-col max-lg:items-center max-lg:gap-10 justify-center gap-5 mb-[50px]">
                 <div className="px-[3%] xl:px-[7.4%]">
                     <Link href="/">
                         <img className="max-md:w-[140px]" src="/footer-logo.png" alt="META MAGIC" />
