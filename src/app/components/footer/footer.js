@@ -21,10 +21,10 @@ export default function Footer() {
                 <Link href="/">HOME</Link>
               </li>
               <li>
-                <Link href="/">Token Economics</Link>
+                <Link href="/economics">Token Economics</Link>
               </li>
               <li>
-                <Link href="/">Product</Link>
+                <Link href="/product">Product</Link>
               </li>
               <li>
                 <Link href="/">Governance</Link>
@@ -35,10 +35,10 @@ export default function Footer() {
                 <Link href="/">FAQ</Link>
               </li>
               <li>
-                <Link href="/">Disclaimer</Link>
+                <Link href="/disclaimer">Disclaimer</Link>
               </li>
               <li>
-                <Link href="/">About</Link>
+                <Link href="/about">About</Link>
               </li>
             </ul>
             <ul className="space-y-6 border-white p-4 text-[14px] text-white lg:w-[220px] lg:border-l">
