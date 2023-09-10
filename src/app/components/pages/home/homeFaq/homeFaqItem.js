@@ -35,7 +35,7 @@ export default function HomeFaqItem({ question, awnser }) {
           <p className="text-[18px] font-bold uppercase tracking-widest text-[#ca0000] md:text-[32px]">
             A.
           </p>
-          <p className="text-[14px] leading-[1.7] tracking-widest md:text-[18px]">
+          <p className="text-[14px] leading-[1.7] tracking-widest md:text-[18px] md:mt-2.5">
             {awnser}
           </p>
         </div>
