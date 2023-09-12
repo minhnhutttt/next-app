@@ -6,10 +6,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="px-4 md:px-8">
-      <div className="mx-auto max-w-[1600px] px-20 flex h-[110px] w-full items-center justify-between py-2 md:h-[110px]">
+      <div className="mx-auto max-w-[1600px] px-5 xl:px-20 flex h-[80px] w-full items-center justify-between py-2 md:h-[110px]">
         <Link href="/">
           <img
-            className="max-md:w-[180px]"
+            className="max-md:w-[120px]"
             src="/logo.png"
             alt="Knock"
           />
@@ -20,40 +20,36 @@ export default function Header() {
               open ? "max-lg:pointer-events-auto max-lg:opacity-100" : ""
             }`}
           >
-            <div className="flex items-center">
-              <ul className="flex items-center max-md:flex-col mr-9">
-                <li className="px-6 py-3">
+            <div className="flex items-center max-lg:flex-col">
+              <ul className="flex items-center max-lg:flex-col lg:mr-9 max-lg:mb-5">
+                <li className="px-3 xl:px-6 py-3">
                   <Link
-                    className="text-base font-medium leading-normal text-[#333]"
+                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
                     href="/"
-                    scroll={false}
                   >
                     Home
                   </Link>
                 </li>
-                <li className="px-6 py-3">
+                <li className="px-3 xl:px-6 py-3">
                   <Link
-                    className="text-base font-medium leading-normal text-[#333]"
-                    href="/"
-                    scroll={false}
+                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
+                    href="/terms-of-service"
                   >
                     Terms of Service
                   </Link>
                 </li>
-                <li className="px-6 py-3">
+                <li className="px-3 xl:px-6 py-3">
                   <Link
-                    className="text-base font-medium leading-normal text-[#333]"
-                    href="/"
-                    scroll={false}
+                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
+                    href="/privacy-policy"
                   >
                     Privacy policy
                   </Link>
                 </li>
-                <li className="px-6 py-3">
+                <li className="px-3 xl:px-6 py-3">
                   <Link
-                    className="text-base font-medium leading-normal text-[#333]"
-                    href="/"
-                    scroll={false}
+                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
+                    href="/about"
                   >
                     About
                   </Link>
