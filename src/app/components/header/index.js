@@ -6,13 +6,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="px-4 md:px-8">
-      <div className="mx-auto max-w-[1600px] px-5 xl:px-20 flex h-[80px] w-full items-center justify-between py-2 md:h-[110px]">
+      <div className="mx-auto flex h-[80px] w-full max-w-[1600px] items-center justify-between px-5 py-2 md:h-[110px] xl:px-20">
         <Link href="/">
-          <img
-            className="max-md:w-[120px]"
-            src="/logo.png"
-            alt="Knock"
-          />
+          <img className="max-md:w-[120px]" src="/logo.png" alt="Knock" />
         </Link>
         <div className="flex-1 max-lg:flex max-lg:justify-end lg:ml-6">
           <div
@@ -21,34 +17,34 @@ export default function Header() {
             }`}
           >
             <div className="flex items-center max-lg:flex-col">
-              <ul className="flex items-center max-lg:flex-col lg:mr-9 max-lg:mb-5">
-                <li className="px-3 xl:px-6 py-3">
+              <ul className="flex items-center max-lg:mb-5 max-lg:flex-col lg:mr-9">
+                <li className="px-3 py-3 xl:px-6">
                   <Link
-                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
+                    className="text-[24px] font-medium leading-normal text-[#333] lg:text-base"
                     href="/"
                   >
                     Home
                   </Link>
                 </li>
-                <li className="px-3 xl:px-6 py-3">
+                <li className="px-3 py-3 xl:px-6">
                   <Link
-                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
+                    className="text-[24px] font-medium leading-normal text-[#333] lg:text-base"
                     href="/terms-of-service"
                   >
                     Terms of Service
                   </Link>
                 </li>
-                <li className="px-3 xl:px-6 py-3">
+                <li className="px-3 py-3 xl:px-6">
                   <Link
-                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
+                    className="text-[24px] font-medium leading-normal text-[#333] lg:text-base"
                     href="/privacy-policy"
                   >
                     Privacy policy
                   </Link>
                 </li>
-                <li className="px-3 xl:px-6 py-3">
+                <li className="px-3 py-3 xl:px-6">
                   <Link
-                    className="text-[24px] lg:text-base font-medium leading-normal text-[#333]"
+                    className="text-[24px] font-medium leading-normal text-[#333] lg:text-base"
                     href="/about"
                   >
                     About
@@ -57,10 +53,14 @@ export default function Header() {
               </ul>
               <div className="flex gap-3">
                 <Link href="/" className="">
-                    <img className="max-w-[155px]" src="/appstore.png" alt="" />
+                  <img className="max-w-[155px]" src="/appstore.png" alt="" />
                 </Link>
                 <Link href="/" className="">
-                    <img className="max-w-[155px]" src="/google-play.png" alt="" />
+                  <img
+                    className="max-w-[155px]"
+                    src="/google-play.png"
+                    alt=""
+                  />
                 </Link>
               </div>
             </div>

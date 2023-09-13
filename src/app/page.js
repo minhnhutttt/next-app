@@ -1,118 +1,173 @@
-import Link from 'next/link'
-import Faq from './components/faq'
+import Link from "next/link";
+import Faq from "./components/faq";
 
 export default function Home() {
   return (
-    <main className='mt-6'>
+    <main className="mt-6">
+      {/* MV */}
       <div className="px-5">
-        <div className="w-full mx-auto max-w-[1600px] relative px-5 md:px-14 lg:px-20 pt-8 md:pt-[90px]">
-          <span className="absolute bg-[#F2F2F2] w-full top-0 left-0 right-0 h-[90%] xl:h-[65%] z-[-1] rounded-[30px] "></span>
-          <div className="text-black text-[5vw] md:text-[32px] lg:text-[70px] xl:text-8xl font-bold">The next generation of <br />distributed secure messengers.</div>
-          <div className="flex max-md:justify-center mt-[3.5%]">
+        <div className="relative mx-auto w-full max-w-[1600px] px-5 pt-8 md:px-14 md:pt-[90px] lg:px-20">
+          <span className="absolute left-0 right-0 top-0 z-[-1] h-[90%] w-full rounded-[30px] bg-[#F2F2F2] xl:h-[65%] "></span>
+          <div className="text-[5vw] font-bold text-black md:text-[32px] lg:text-[70px] xl:text-8xl">
+            The next generation of <br />
+            distributed secure messengers.
+          </div>
+          <div className="mt-[3.5%] flex max-md:justify-center">
             <div className="max-xl:w-[50%]">
               <img src="/fv-phone.png" alt="" />
             </div>
-            <div className="relative w-[45%] ml-3">
-              <div className="bg-[url('/web3.png')] md:absolute md:h-[35vw] bg-no-repeat bg-center bg-[length:auto_100%] flex items-end pb-2 md:pb-[60px] w-full md:top-[-5vw] lg:top-[-14vw]">
+            <div className="relative ml-3 w-[45%]">
+              <div className="flex w-full items-end bg-[url('/web3.png')] bg-[length:auto_100%] bg-center bg-no-repeat pb-2 md:absolute md:top-[-5vw] md:h-[35vw] md:pb-[60px] lg:top-[-14vw]">
                 <div className="relative">
-                  <div className="text-[10vw] md:text-[60px] lg:text-[100px] xl:text-9xl font-bold text-center">WEB3.0</div>
-                  <div className="text-black text-[3vw] md:text-[20px] lg:text-[28px] font-medium text-center mt-3">Protect the privacy of everyone's communications.</div>
+                  <div className="text-center text-[10vw] font-bold md:text-[60px] lg:text-[100px] xl:text-9xl">
+                    WEB3.0
+                  </div>
+                  <div className="mt-3 text-center text-[3vw] font-medium text-black md:text-[20px] lg:text-[28px]">
+                    Protect the privacy of everyone's communications.
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="max-w-[1093px] w-full mx-auto relative flex items-center md:gap-[37px] gap-6 md:mt-[110px] mt-[60px] mb-11 max-md:flex-col-reverse">
-          <div className="flex-1 max-w-[640px] flex-col justify-start items-start md:gap-[30px] gap-5 inline-flex">
-            <div className="text-[32px] md:text-[36px] lg:text-[64px] font-bold">What’s DIVER Kncok?</div>
-            <div className="md:text-[18px] text-[16px]">Knock is a completely secure and private messaging application built on state-of-the-art technology and combines wallet functionality. End-to-end secure communication allows you the freedom to communicate anytime, anywhere, with anyone.</div>
+        <div className="relative mx-auto mb-11 mt-[60px] flex w-full max-w-[1093px] items-center gap-6 max-md:flex-col-reverse md:mt-[110px] md:gap-[37px]">
+          <div className="inline-flex max-w-[640px] flex-1 flex-col items-start justify-start gap-5 md:gap-[30px]">
+            <div className="text-[32px] font-bold md:text-[36px] lg:text-[64px]">
+              What’s DIVER Kncok?
+            </div>
+            <div className="text-[16px] md:text-[18px]">
+              Knock is a completely secure and private messaging application
+              built on state-of-the-art technology and combines wallet
+              functionality. End-to-end secure communication allows you the
+              freedom to communicate anytime, anywhere, with anyone.
+            </div>
           </div>
-          <div className="max-md:w-[280px] max-xl:w-1/3">
+          <div className="max-xl:w-1/3 max-md:w-[280px]">
             <img src="/img-diver.png" alt="What’s DIVER Kncok?" />
           </div>
         </div>
       </div>
-      <div className="bg-[#F5FAFF] px-5 pt-10 md:pt-[68px] md:pb-[104px] pb-[50px]">
-        <div className="w-full max-w-[1440px] mx-auto">
+
+      {/* Privacy × Various Functions */}
+      <div className="bg-[#F5FAFF] px-5 pb-[50px] pt-10 md:pb-[104px] md:pt-[68px]">
+        <div className="mx-auto w-full max-w-[1440px]">
           <div className="flex justify-center">
-            <div className="relative h-[80px] md:h-[214px] flex items-center max-md:px-4 md:pl-11">
-              <div className="w-1 md:w-2.5 h-full left-0 top-0 absolute bg-[#0055A3] rounded-[50px]" />
-              <div className="text-[32px] md:text-[100px] font-bold leading-none max-md:text-center">Privacy × Various Functions</div>
+            <div className="relative flex h-[80px] items-center max-md:px-4 md:h-[214px] md:pl-11">
+              <div className="absolute left-0 top-0 h-full w-1 rounded-[50px] bg-[#0055A3] md:w-2.5" />
+              <div className="text-[32px] font-bold leading-none max-md:text-center md:text-[100px]">
+                Privacy × Various Functions
+              </div>
             </div>
           </div>
-          <div className="w-full mx-auto md:max-w-[694px] max-w-[440px] max-md:text-center text-[14px] md:text-[24px] font-medium pt-6 md:pt-[54px]">You can communicate using a variety of calling and messaging features.Your privacy is completely protected.</div>
-          <div className="flex items-center max-md:flex-col max-md:max-w-[440px] mx-auto mt-8 md:mt-14">
+          <div className="mx-auto w-full max-w-[440px] pt-6 text-[14px] font-medium max-md:text-center md:max-w-[694px] md:pt-[54px] md:text-[24px]">
+            You can communicate using a variety of calling and messaging
+            features.Your privacy is completely protected.
+          </div>
+          <div className="mx-auto mt-8 flex items-center max-md:max-w-[440px] max-md:flex-col md:mt-14">
             <div className="flex-1 space-y-10 md:space-y-[103px]">
-              <div className="flex items-center gap-3 md:gap-[14px] w-full">
-                <p className="text-[14px] md:text-[16px] font-medium flex-1">You can send text, photos, or files. You can record a Quick Send voice or instant video message</p>
-                <div className="max-md:w-14 max-xl:w-20">
+              <div className="flex w-full items-center gap-3 md:gap-[14px]">
+                <p className="flex-1 text-[14px] font-medium md:text-[16px]">
+                  You can send text, photos, or files. You can record a Quick
+                  Send voice or instant video message
+                </p>
+                <div className="max-xl:w-20 max-md:w-14">
                   <img src="/ic-01.png" alt="" />
                 </div>
               </div>
-              <div className="flex items-center gap-3 md:gap-[14px] w-full">
-                <p className="text-[14px] md:text-[16px] font-medium flex-1">Everything from private use to business use can be done via group chat, video, or voice calls.</p>
-                <div className="max-md:w-14 max-xl:w-20">
+              <div className="flex w-full items-center gap-3 md:gap-[14px]">
+                <p className="flex-1 text-[14px] font-medium md:text-[16px]">
+                  Everything from private use to business use can be done via
+                  group chat, video, or voice calls.
+                </p>
+                <div className="max-xl:w-20 max-md:w-14">
                   <img src="/ic-02.png" alt="" />
                 </div>
               </div>
-              <div className="flex items-center gap-3 md:gap-[14px] w-full">
-                <p className="text-[14px] md:text-[16px] font-medium flex-1">You can organize your message history with Disappearing Messages.</p>
-                <div className="max-md:w-14 max-xl:w-20">
+              <div className="flex w-full items-center gap-3 md:gap-[14px]">
+                <p className="flex-1 text-[14px] font-medium md:text-[16px]">
+                  You can organize your message history with Disappearing
+                  Messages.
+                </p>
+                <div className="max-xl:w-20 max-md:w-14">
                   <img src="/ic-03.png" alt="" />
                 </div>
               </div>
             </div>
-            <div className="max-md:py-8 px-5 md:px-8 max-md:w-[240px] max-xl:w-1/3 xl:px-20">
+            <div className="px-5 max-xl:w-1/3 max-md:w-[240px] max-md:py-8 md:px-8 xl:px-20">
               <img src="/phone.png" alt="" />
             </div>
             <div className="flex-1 space-y-10 md:space-y-[103px]">
-              <div className="flex items-center gap-3 md:gap-[14px] w-full">
-                <div className="max-md:w-14 max-xl:w-20">
+              <div className="flex w-full items-center gap-3 md:gap-[14px]">
+                <div className="max-xl:w-20 max-md:w-14">
                   <img src="/ic-04.png" alt="" />
                 </div>
-                <p className="text-[14px] md:text-[16px] font-medium flex-1">Unlimited one-to-one and group voice and video calls.</p>
+                <p className="flex-1 text-[14px] font-medium md:text-[16px]">
+                  Unlimited one-to-one and group voice and video calls.
+                </p>
               </div>
-              <div className="flex items-center gap-3 md:gap-[14px] w-full">
-                <div className="max-md:w-14 max-xl:w-20">
+              <div className="flex w-full items-center gap-3 md:gap-[14px]">
+                <div className="max-xl:w-20 max-md:w-14">
                   <img src="/ic-05.png" alt="" />
                 </div>
-                <p className="text-[14px] md:text-[16px] font-medium flex-1">You can create your own expressive stickers without intermediaries.</p>
+                <p className="flex-1 text-[14px] font-medium md:text-[16px]">
+                  You can create your own expressive stickers without
+                  intermediaries.
+                </p>
               </div>
-              <div className="flex items-center gap-3 md:gap-[14px] w-full">
-                <div className="max-md:w-14 max-xl:w-20">
+              <div className="flex w-full items-center gap-3 md:gap-[14px]">
+                <div className="max-xl:w-20 max-md:w-14">
                   <img src="/ic-06.png" alt="" />
                 </div>
-                <p className="text-[14px] md:text-[16px] font-medium flex-1">Seamlessly integrated with crypto wallets, Knock can handle global payments directly to anyone, anywhere, via chat.</p>
+                <p className="flex-1 text-[14px] font-medium md:text-[16px]">
+                  Seamlessly integrated with crypto wallets, Knock can handle
+                  global payments directly to anyone, anywhere, via chat.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Features */}
       <div className="px-5">
         <div className="mt-12 md:mt-[95px]">
-          <div className="w-full max-w-[1440px] mx-auto flex max-md:flex-col gap-8 md:gap-[58px]">
-            <div className="max-md:w-full max-xl:w-1/2">
+          <div className="mx-auto flex w-full max-w-[1440px] gap-8 max-md:flex-col md:gap-[58px]">
+            <div className="max-xl:w-1/2 max-md:w-full">
               <img src="/img-features.png" alt="" />
             </div>
             <div className="flex-1">
-              <h3 className="font-bold text-[32px] md:text-[48px] lg:text-[64px] flex items-center gap-4"><img className="max-md:w-10" src="/ic-features.png" alt="" /> Features</h3>
-              <div className="md:space-y-9 space-y-6 mt-5 max-w-[400px] w-full md:ml-4">
+              <h3 className="flex items-center gap-4 text-[32px] font-bold md:text-[48px] lg:text-[64px]">
+                <img className="max-md:w-10" src="/ic-features.png" alt="" />{" "}
+                Features
+              </h3>
+              <div className="mt-5 w-full max-w-[400px] space-y-6 md:ml-4 md:space-y-9">
                 <div>
-                  <p className="text-[18px] md:text-[24px] font-bold">Decentralized</p>
-                  <p className="text-[14px] md:text-[18px] mt-2 leading-[1.4]">
-                  All messages, videos, photos, data, etc. are decentralized across thousands of nodes and cannot be controlled, blocked, disabled, restricted or censored by anyone but the user.
+                  <p className="text-[18px] font-bold md:text-[24px]">
+                    Decentralized
+                  </p>
+                  <p className="mt-2 text-[14px] leading-[1.4] md:text-[18px]">
+                    All messages, videos, photos, data, etc. are decentralized
+                    across thousands of nodes and cannot be controlled, blocked,
+                    disabled, restricted or censored by anyone but the user.
                   </p>
                 </div>
                 <div>
-                  <p className="text-[18px] md:text-[24px] font-bold">Full Anonymity</p>
-                  <p className="text-[14px] md:text-[18px] mt-2 leading-[1.4]">
-                  No registration or information entry required. No email or phone number required.No access to user device data.
+                  <p className="text-[18px] font-bold md:text-[24px]">
+                    Full Anonymity
+                  </p>
+                  <p className="mt-2 text-[14px] leading-[1.4] md:text-[18px]">
+                    No registration or information entry required. No email or
+                    phone number required.No access to user device data.
                   </p>
                 </div>
                 <div>
-                  <p className="text-[18px] md:text-[24px] font-bold">Encrypted Message</p>
-                  <p className="text-[14px] md:text-[18px] mt-2 leading-[1.4]">
-                  All messages, videos, photos, data, etc. are encrypted and decrypted completely on the user device and delivered end-to-end.
+                  <p className="text-[18px] font-bold md:text-[24px]">
+                    Encrypted Message
+                  </p>
+                  <p className="mt-2 text-[14px] leading-[1.4] md:text-[18px]">
+                    All messages, videos, photos, data, etc. are encrypted and
+                    decrypted completely on the user device and delivered
+                    end-to-end.
                   </p>
                 </div>
               </div>
@@ -120,10 +175,16 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-10 md:mt-[85px]">
-          <h3 className="text-black text-[24px] md:text-[36px] font-black underline text-center italic mb-3 md:mb-5">Download the App now !</h3>
-          <div className="max-w-[440px] md:max-w-[1008px] mx-auto w-full bg-[#0055A3] rounded-[30px] py-6 md:py-4 px-4 md:pl-14 md:pr-[92px] flex items-center max-md:flex-col justify-between gap-4 md:gap-5">
+          <h3 className="mb-3 text-center text-[24px] font-black italic text-black underline md:mb-5 md:text-[36px]">
+            Download the App now !
+          </h3>
+          <div className="mx-auto flex w-full max-w-[440px] items-center justify-between gap-4 rounded-[30px] bg-[#0055A3] px-4 py-6 max-md:flex-col md:max-w-[1008px] md:gap-5 md:py-4 md:pl-14 md:pr-[92px]">
             <figure>
-              <img className="max-md:w-[200px]" src="/logo-download.png" alt="Knock" />
+              <img
+                className="max-md:w-[200px]"
+                src="/logo-download.png"
+                alt="Knock"
+              />
             </figure>
             <div className="flex items-center gap-3 md:gap-7">
               <Link href="/">
@@ -133,57 +194,84 @@ export default function Home() {
                 <img src="/google-play.png" alt="" />
               </Link>
             </div>
-            </div>
+          </div>
         </div>
-        <div className="mt-20 md:mt-[165px] mb-8 md:mb-[67px]">
-          <h5 className="text-center text-[32px] md:text-[64px] font-bold">How it works</h5>
-          <p className="text-center text-[14px] md:text-[16px] mt-2 md:mt-3">
-          Knock is currently available for iPhones and Android phones. <br />To Use the app, simply follow these steps. <br />*Download the DIVER Wallet in advance and create a Wallet. (For NFT reception)
+        <div className="mb-8 mt-20 md:mb-[67px] md:mt-[165px]">
+          <h5 className="text-center text-[32px] font-bold md:text-[64px]">
+            How it works
+          </h5>
+          <p className="mt-2 text-center text-[14px] md:mt-3 md:text-[16px]">
+            Knock is currently available for iPhones and Android phones. <br />
+            To Use the app, simply follow these steps. <br />
+            *Download the DIVER Wallet in advance and create a Wallet. (For NFT
+            reception)
           </p>
-          <div className="flex w-full max-w-[440px] md:max-w-[1064px] mx-auto mt-10 md:mt-[90px] max-md:flex-col gap-6 lg:gap-[67px]">
-            <div className="w-full md:w-[310px] bg-white rounded-[20px] shadow-[0px_4px_34px_0px_rgba(18,47,74,0.10)] border border-[#0055A3] flex flex-col items-center pt-8 md:pt-[72px] pb-6 md:pb-12 px-2 justify-between">
+          <div className="mx-auto mt-10 flex w-full max-w-[440px] gap-6 max-md:flex-col md:mt-[90px] md:max-w-[1064px] lg:gap-[67px]">
+            <div className="flex w-full flex-col items-center justify-between rounded-[20px] border border-[#0055A3] bg-white px-2 pb-6 pt-8 shadow-[0px_4px_34px_0px_rgba(18,47,74,0.10)] md:w-[310px] md:pb-12 md:pt-[72px]">
               <div>
                 <div>
                   <img src="/logo-02.png" alt="" />
                 </div>
-                <div className="flex flex-col gap-5 mt-7">
+                <div className="mt-7 flex flex-col gap-5">
                   <Link href="/">
-                    <img className='max-w-[135px]' src="/appstore.png" alt="" />
+                    <img className="max-w-[135px]" src="/appstore.png" alt="" />
                   </Link>
                   <Link href="/">
-                    <img className='max-w-[135px]' src="/google-play.png" alt="" />
+                    <img
+                      className="max-w-[135px]"
+                      src="/google-play.png"
+                      alt=""
+                    />
                   </Link>
                 </div>
               </div>
               <div className="mt-8 md:mt-14">
-                <p className="text-center text-[36px] max-md:mb-1 md:text-[48px] font-bold leading-none">01</p>
-                <p className="text-center text-[16px] font-medium">Download Knock (iOS, Android).</p>
+                <p className="text-center text-[36px] font-bold leading-none max-md:mb-1 md:text-[48px]">
+                  01
+                </p>
+                <p className="text-center text-[16px] font-medium">
+                  Download Knock (iOS, Android).
+                </p>
               </div>
             </div>
-            <div className="w-full md:w-[310px] bg-white rounded-[20px] shadow-[0px_4px_34px_0px_rgba(18,47,74,0.10)] border border-[#0055A3] flex flex-col items-center pt-8 md:pt-[72px] pb-6 md:pb-12 px-2 justify-between">
+            <div className="flex w-full flex-col items-center justify-between rounded-[20px] border border-[#0055A3] bg-white px-2 pb-6 pt-8 shadow-[0px_4px_34px_0px_rgba(18,47,74,0.10)] md:w-[310px] md:pb-12 md:pt-[72px]">
               <div>
                 <img src="/use-02.png" alt="" />
               </div>
               <div className="mt-8 md:mt-12">
-                <p className="text-center text-[36px] max-md:mb-1 md:text-[48px] font-bold leading-none">02</p>
-                <p className="text-center text-[16px] font-medium">Connect to Knock to DIVER Wallet.</p>
+                <p className="text-center text-[36px] font-bold leading-none max-md:mb-1 md:text-[48px]">
+                  02
+                </p>
+                <p className="text-center text-[16px] font-medium">
+                  Connect to Knock to DIVER Wallet.
+                </p>
               </div>
             </div>
-            <div className="w-full md:w-[310px] bg-white rounded-[20px] shadow-[0px_4px_34px_0px_rgba(18,47,74,0.10)] border border-[#0055A3] flex flex-col items-center pt-8 md:pt-[72px] pb-6 md:pb-12 px-2 justify-between">
+            <div className="flex w-full flex-col items-center justify-between rounded-[20px] border border-[#0055A3] bg-white px-2 pb-6 pt-8 shadow-[0px_4px_34px_0px_rgba(18,47,74,0.10)] md:w-[310px] md:pb-12 md:pt-[72px]">
               <div className="mb-7">
                 <img src="/use-03.png" alt="" />
               </div>
               <div>
-                <p className="text-center text-[36px] max-md:mb-1 md:text-[48px] font-bold leading-none">03</p>
-                <p className="text-center text-[16px] font-medium">Start DIVER Tag and read the NFC tag.</p>
+                <p className="text-center text-[36px] font-bold leading-none max-md:mb-1 md:text-[48px]">
+                  03
+                </p>
+                <p className="text-center text-[16px] font-medium">
+                  Start DIVER Tag and read the NFC tag.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-[#F5F5F5] px-5 flex items-center justify-center max-md:flex-col gap-8 md:gap-[62px] py-8 md:pt-[73px] md:pb-[68px]">
+
+      {/* Download */}
+      <div className="flex items-center justify-center gap-8 bg-[#F5F5F5] px-5 py-8 max-md:flex-col md:gap-[62px] md:pb-[68px] md:pt-[73px]">
         <div className="">
-          <img className="max-md:w-[240px]" src="/diver-wallet-logo.png" alt="" />
+          <img
+            className="max-md:w-[240px]"
+            src="/diver-wallet-logo.png"
+            alt=""
+          />
         </div>
         <div className="flex items-center gap-5 md:gap-7">
           <Link href="/">
@@ -194,7 +282,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      {/* FAQ */}
       <Faq />
     </main>
-  )
+  );
 }
