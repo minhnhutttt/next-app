@@ -40,7 +40,7 @@ const data = [
 
 export default function HomeFaq() {
     return (
-      <div className="md:pb-[145px] md:pt-[72px]">
+      <div className="md:pb-[115px] md:pt-[72px]">
         <div className="mx-auto w-full max-w-[940px] px-5">
           <h4 className="text-center text-[24px] font-bold md:text-[28px] lg:text-[48px] tracking-tighter">
             FAQ
