@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
             user data. Knock doesn’t hold the decryption keys, and our software
             contains no backdoor. Your conversations are yours — Knock‘s server
             has no decrypted access to them. Your end-to-end encrypted
-            conversation content is temporarily stored in our server. You may
+            conversation content is temporarily stored in our server. <br />You may
             delete the content of the conversations on your device specifically
             and generally at any time.
           </TextBlock>
