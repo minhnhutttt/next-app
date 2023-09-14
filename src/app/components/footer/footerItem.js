@@ -5,7 +5,7 @@ export default function FooterItem({ link, children }) {
   return (
     <li>
       <Link
-        className="block py-[5px] px-5 md:px-6 text-[14px] md:text-[16px] text-[#333] font-medium"
+        className="block px-5 py-[5px] text-[14px] font-medium text-[#333] md:px-6 md:text-[16px]"
         href={link}
       >
         {children}
