@@ -40,12 +40,12 @@ const data = [
 
 export default function HomeFaq() {
     return (
-      <div className="md:pb-[115px] md:pt-[72px]">
+      <div className="md:pb-[115px] md:pt-[72px] pt-8 pb-10">
         <div className="mx-auto w-full max-w-[940px] px-5">
-          <h4 className="text-center text-[24px] font-bold md:text-[28px] lg:text-[48px] tracking-tighter">
+          <h4 className="text-center text-[24px] font-bold md:text-[48px] tracking-tighter">
             FAQ
           </h4>
-          <div className="mx-auto mt-5 w-full border-t border-[#313333] md:mt-14">
+          <div className="mx-auto mt-8 w-full border-t border-[#313333] md:mt-14">
             {data.map((data) => {
               return (
                 <HomeFaqItem

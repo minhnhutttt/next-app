@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[url('/bg-deco.png')] bg-right-top bg-no-repeat">
+      <body className="bg-[url('/bg-deco.png')] bg-[length:46.78%_auto] bg-right-top bg-no-repeat">
         <Header />
         {children}
         <Footer />

@@ -11,7 +11,7 @@ export default function Header() {
         <div className="flex w-full justify-between">
           <Link href="/">
             <img
-              className="max-md:w-[180px]"
+              className="max-md:w-[140px]"
               src="/logo.png"
               alt="DIVER Tag"
             />
@@ -32,17 +32,17 @@ export default function Header() {
                 </ul>
                 <div className="flex gap-[18px]">
                     <Link href="/">
-                        <img src="/btn-app-store.png" alt="" />
+                        <img className="max-xl:max-w-[120px]" src="/btn-app-store.png" alt="" />
                     </Link>
                     <Link href="/">
-                        <img src="/btn-google-play.png" alt="" />
+                        <img className="max-xl:max-w-[120px]" src="/btn-google-play.png" alt="" />
                     </Link>
                 </div>
               </div>
             </div>
-            <div className="flex h-[70px] w-[70px] items-center justify-center lg:hidden">
+            <div className="flex h-[28px] w-[50px] md:w-[70px] items-center justify-center lg:hidden">
               <button
-                className={`group relative block h-[22px] w-10 cursor-pointer border-[none] p-0 max-lg:z-[99] max-lg:[&.active]:fixed ${
+                className={`group relative block h-[22px] w-8 md:w-10 cursor-pointer border-[none] p-0 max-lg:z-[99] max-lg:[&.active]:fixed ${
                   open ? "active" : ""
                 }`}
                 onClick={() => setOpen(!open)}

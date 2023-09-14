@@ -5,7 +5,7 @@ export default function MenuItem({ link, children }) {
   return (
     <li>
       <Link
-        className="text-[20px] block py-3 px-6 text-[#333] font-medium lg:text-[14px] xl:text-[16px]"
+        className="text-[20px] block py-3 px-3 xl:px-6 text-[#333] font-medium lg:text-[14px] xl:text-[16px]"
         href={link}
       >
         {children}

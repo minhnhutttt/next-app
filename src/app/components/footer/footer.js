@@ -3,10 +3,10 @@ import FooterItem from "./footerItem";
 
 export default function Footer() {
     return (
-        <div className="bg-[#E0F3FF] px-5 pt-10 md:pt-12 pb-5">
-            <div className="w-full max-w-[727px] mx-auto flex items-start gap-12 max-md:flex-col md:gap-[70px] mb-16 md:mb-[60px]">
+        <div className="bg-[#E0F3FF] px-5 pt-8 md:pt-12 pb-5">
+            <div className="w-full max-w-[727px] mx-auto flex md:items-start items-center gap-8 max-md:flex-col md:gap-[70px] mb-16 md:mb-[60px]">
                 <Link href="/">
-                    <img className="max-md:w-[80px]" src="/logo-footer.png" alt="DIVER Tag" />
+                    <img className="max-md:w-[120px]" src="/logo-footer.png" alt="DIVER Tag" />
                 </Link>
                 <div className="flex gap-4 md:gap-[50px] max-md:items-center pt-4">
                     <ul className="flex flex-col">
@@ -23,10 +23,10 @@ export default function Footer() {
                         <Link href="/">
                             <img className="w-full max-w-[166px]" src="/btn-google-play.png" alt="" />
                         </Link>
-                        </div>
+                    </div>
                 </div>
             </div>
-            <p className="text-center text-[#333] text-[12px] md:text-[16px]">Copyright © 2023 DIVER Tag.</p>
+            <p className="text-center text-[12px] md:text-[16px]">Copyright © 2023 DIVER Tag.</p>
         </div>
     );
   }
