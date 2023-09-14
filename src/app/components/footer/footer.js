@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <p className="text-center text-[12px] md:text-[16px]">Copyright © 2023 DIVER Tag.</p>
+            <p className="text-center text-[12px] md:text-[16px] font-['Work_Sans']">Copyright © 2023 DIVER Tag.</p>
         </div>
     );
   }

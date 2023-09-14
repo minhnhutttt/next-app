@@ -22,20 +22,20 @@ export default function Header() {
                 open ? "max-lg:pointer-events-auto max-lg:opacity-100" : ""
               }`}
             >
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 max-md:flex-col">
                 <ul className="flex items-center max-lg:flex-col">
-                  <MenuItem link="/economics">Home</MenuItem>
-                  <MenuItem link="/product">Buy Tag</MenuItem>
-                  <MenuItem link="#">Terms of Service</MenuItem>
-                  <MenuItem link="#">Privacy policy</MenuItem>
-                  <MenuItem link="/a">About</MenuItem>
+                  <li onClick={() => setOpen(false)}><MenuItem link="/">Home</MenuItem></li>
+                  <li onClick={() => setOpen(false)}><MenuItem onClick={() => setOpen(false)} link="/">Buy Tag</MenuItem></li>
+                  <li onClick={() => setOpen(false)}><MenuItem onClick={() => setOpen(false)} link="/terms-of-service">Terms of Service</MenuItem></li>
+                  <li onClick={() => setOpen(false)}><MenuItem onClick={() => setOpen(false)} link="/privacy-policy">Privacy policy</MenuItem></li>
+                  <li onClick={() => setOpen(false)}><MenuItem onClick={() => setOpen(false)} link="/about">About</MenuItem></li>
                 </ul>
-                <div className="flex gap-[18px]">
+                <div className="flex gap-3 md:gap-[18px]">
                     <Link href="/">
-                        <img className="max-xl:max-w-[120px]" src="/btn-app-store.png" alt="" />
+                        <img className="max-md:max-w-[140px] max-xl:max-w-[120px]" src="/btn-app-store.png" alt="" />
                     </Link>
                     <Link href="/">
-                        <img className="max-xl:max-w-[120px]" src="/btn-google-play.png" alt="" />
+                        <img className="max-md:max-w-[140px] max-xl:max-w-[120px]" src="/btn-google-play.png" alt="" />
                     </Link>
                 </div>
               </div>
