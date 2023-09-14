@@ -16,7 +16,7 @@ export default function Footer() {
           <ul className="flex flex-col">
             <FooterItem link="/">Buy Tag</FooterItem>
             <FooterItem link="/terms-of-service">Terms of Service</FooterItem>
-            <FooterItem link="/privacy-policy">Buy Tag</FooterItem>
+            <FooterItem link="/privacy-policy">Privacy policy</FooterItem>
             <FooterItem link="/about">About</FooterItem>
             <FooterItem link="/">Contact</FooterItem>
           </ul>
