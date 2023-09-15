@@ -4,7 +4,7 @@ import HomeWorksTitle from "./homeWorksTitle";
 export default function HomeWorks() {
   return (
     <div className="mb-10 px-5 md:mb-20 md:mt-[30px]">
-      <div className="mx-auto w-full max-w-[600px] xl:max-w-[1440px]">
+      <div className="mx-auto w-full max-w-[600px] md:max-w-[1440px]">
         <h3 className="text-center text-[24px] font-bold md:text-[48px]">
           How it works
         </h3>
