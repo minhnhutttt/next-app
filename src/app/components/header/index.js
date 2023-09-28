@@ -6,7 +6,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="px-6 relative">
-      <div className="mx-auto flex h-[80px] border-b border-black w-full items-center justify-between py-2 md:h-[95px]">
+      <div className="mx-auto flex h-[80px] w-full items-center justify-between py-2 md:h-[95px]">
         <Link href="/">
           <img className="max-md:w-[120px]" src="/logo.png" alt="" />
         </Link>
