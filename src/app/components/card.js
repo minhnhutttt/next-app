@@ -1,26 +1,33 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-export default function Card({link, imgSrc, tags, title, content, answer  }) {
+export default function Card({ link, imgSrc, tags, title, content, answer }) {
   return (
-    <Link href={link} className="bg-white border border-black max-w-[285px] w-full">
-     <div className="border-b border-black">
+    <Link
+      href={link}
+      className="w-full max-w-[285px] border border-black bg-white"
+    >
+      <div className="border-b border-black">
         <img src={imgSrc} alt={title} />
-     </div>
-     <div className="pt-[11px] px-[11px]">
-        <div className="flex flex-wrap gap-2 mb-1.5">
-            {
-                tags.map((tag) => {
-                    return <div className="h-[20px] min-w-[65px] px-1 bg-[#D9D9D9] text-[11px] flex items-center justify-center pt-1">{tag}</div>
-                })
-            }
+      </div>
+      <div className="px-[11px] pt-[11px]">
+        <div className="mb-1.5 flex flex-wrap gap-2">
+          {tags.map((tag) => {
+            return (
+              <div className="flex h-[20px] min-w-[65px] items-center justify-center bg-[#D9D9D9] px-1 pt-1 text-[11px]">
+                {tag}
+              </div>
+            );
+          })}
         </div>
-        <p className="font-light text-[23px]">{title}</p>
-        <div className="pt-1 pb-3">
-            <p className="font-light line-clamp-2 text-[17px]">{content}</p>
+        <p className="text-[23px] font-light">{title}</p>
+        <div className="pb-3 pt-1">
+          <p className="line-clamp-2 text-[17px] font-light">{content}</p>
         </div>
-        <p className="text-left font-light text-[17px] py-3 border-t border-black">{answer} Answers</p>
-     </div>
+        <p className="border-t border-black py-3 text-left text-[17px] font-light">
+          {answer} Answers
+        </p>
+      </div>
     </Link>
   );
 }
