@@ -121,7 +121,7 @@ DetailFaq.propTypes = {
 export default function Detail() {
   return (
     <main>
-      <div className="mx-auto w-full max-w-[1300px] px-8">
+      <div className="mx-auto mb-[100px] md:mb-[226px] w-full max-w-[1300px] px-8">
         <div className="flex justify-between items-center border-b border-black py-6">
           <p className="text-[20px] md:text-[34px] font-semibold">ウオレットの作り方</p>
           <p className="text-[16px] md:text-[28px] font-semibold">8 Answers</p>

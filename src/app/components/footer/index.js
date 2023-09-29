@@ -9,7 +9,7 @@ export default function Footer() {
             <Link href="/">
               <img src="/logo-footer.png" alt="" />
             </Link>
-            <div className="md:w-[440px] md:border-l border-t border-white pb-20 md:pb-[150px] pt-5 md:pt-9">
+            <div className="md:w-[440px] md:border-l max-md:border-t border-white pb-20 md:pb-[150px] pt-5 md:pt-9">
               <div className="flex justify-center">
                 <Link href="/">
                   <img src="/img-footer.png" alt="" />
