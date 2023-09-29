@@ -15,7 +15,7 @@ export default function Footer() {
                   <img src="/img-footer.png" alt="" />
                 </Link>
               </div>
-              <div className="mt-[38px] flex items-center justify-center gap-[62px]">
+              <div className="mt-[38px] flex items-center justify-center gap-10 md:gap-[62px]">
                 <p className="text-[16px] font-semibold text-white">
                   株式会社〇〇〇 <br />
                   東京都〇〇
