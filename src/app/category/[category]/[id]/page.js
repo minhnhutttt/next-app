@@ -47,7 +47,7 @@ function DetailFaq({ question, awnsers }) {
     <div className="">
       <button
         type="button"
-        className="flex w-full items-center gap-5 border-b border-black bg-[#EEEEEE] px-5"
+        className="flex w-full items-center gap-3 md:gap-5 border-b border-black bg-[#EEEEEE] px-3 md:px-5"
         onClick={() => setOpen(!open)}
       >
         <div
@@ -77,14 +77,14 @@ function DetailFaq({ question, awnsers }) {
           </svg>
         </div>
         <div className="flex py-4 ">
-          <p className="text-[20px] font-semibold">{question}</p>
+          <p className="text-[16px] md:text-[20px] font-semibold">{question}</p>
         </div>
       </button>
       {open && (
         <div className="">
           {awnsers.map((awnser) => (
             <>
-              <div className="flex items-center gap-3 border-b border-black px-12 py-4 text-[16px] font-semibold">
+              <div className="flex items-center gap-3 border-b border-black md:px-12 px-6 py-4 md:text-[16px] text-[14px] font-semibold">
                 <svg
                   width="26"
                   height="18"
@@ -122,17 +122,17 @@ export default function Detail() {
   return (
     <main>
       <div className="mx-auto w-full max-w-[1300px] px-8">
-        <div className="flex justify-between border-b border-black py-6">
-          <p className="text-[34px] font-semibold">ウオレットの作り方</p>
-          <p className="text-[28px] font-semibold">8 Answers</p>
+        <div className="flex justify-between items-center border-b border-black py-6">
+          <p className="text-[20px] md:text-[34px] font-semibold">ウオレットの作り方</p>
+          <p className="text-[16px] md:text-[28px] font-semibold">8 Answers</p>
         </div>
         <div className="py-[50px]">
-          <div className="flex h-[378px] border border-black">
-            <div className="">
-              <img src="/dummy-3.png" alt="" />
+          <div className="flex max-md:flex-col md:h-[378px] border border-black">
+            <div className="w-full md:w-[48.6%] max-md:border-b border-black">
+              <img className="w-full h-full object-cover" src="/dummy-3.png" alt="" />
             </div>
-            <div className="flex-1 divide-y divide-black overflow-auto border-l border-black">
-              <div className="py-2 pl-[180px] text-[20px] font-semibold">
+            <div className="md:flex-1 divide-y divide-black overflow-auto md:border-l  border-black max-md:h-[270px]">
+              <div className="py-2 px-5 text-center text-[18px] md:text-[20px] font-semibold">
                 総時間 : 56分
               </div>
               <div className="">
@@ -148,20 +148,20 @@ export default function Detail() {
               </div>
             </div>
           </div>
-          <p className="text-[16px] font-semibold py-4">※こちらの動画で説明しているバージョンは最新のものでない可能性があります</p>
+          <p className="md:text-[16px] text-[14px] font-semibold py-4">※こちらの動画で説明しているバージョンは最新のものでない可能性があります</p>
           <div className="flex justify-end">
-            <Link href="/" className="flex items-center gap-7 px-3 border border-black bg-[#DCFAFC] h-[50px] w-[280px]">
+            <Link href="/" className="flex items-center gap-4 md:gap-7 px-3 border border-black bg-[#DCFAFC] h-[40px] md:h-[50px] w-[240px] md:w-[280px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="none">
               <path d="M17 10L0.5 19.5263V0.473721L17 10Z" fill="#7C7C7C"/>
             </svg>
-              <span className="text-[20px] font-semibold">お問い合わせメール</span>
+              <span className="md:text-[20px] text-[18px] font-semibold">お問い合わせメール</span>
             </Link>
           </div>
-          <div className="py-4 mb-[84px]">
-            <p className="text-[24px] font-semibold mb-3">動画に関する公式サイト</p>
-            <div className="bg-[#F2F2F2] flex items-center gap-12 py-5 px-8">
-              <p className="text-[24px] font-light text-[#135DEC]">〇〇〇〇〇〇〇〇</p>
-              <p className="text-[24px] font-light text-[#135DEC]">〇〇〇〇〇〇〇〇</p>
+          <div className="py-4 mb-10 md:mb-[84px] max-md:mt-5">
+            <p className="md:text-[24px] text-[18px] font-semibold mb-3">動画に関する公式サイト</p>
+            <div className="bg-[#F2F2F2] flex items-center gap-5 md:gap-12 py-5 md:px-8 px-4">
+              <p className="md:text-[24px] text-[18px] font-light text-[#135DEC]">〇〇〇〇〇〇〇〇</p>
+              <p className="md:text-[24px] text-[18px] font-light text-[#135DEC]">〇〇〇〇〇〇〇〇</p>
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-8">

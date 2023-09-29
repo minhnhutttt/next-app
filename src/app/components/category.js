@@ -10,11 +10,11 @@ export default function Category({
   sm = false,
 }) {
   return (
-    <div className="px-3">
+    <div className="px-2 md:px-3">
     <Link
       href={link}
       className={`block border border-black w-full bg-white ${
-        sm ? "max-w-[290px] px-3 pt-3" : "max-w-[606px] p-4"
+        sm ? "max-w-[290px] px-2 md:px-3 pt-2 md:pt-3" : "max-w-[606px] p-3 md:p-4"
       }`}
     >
       <div className="">
@@ -23,15 +23,15 @@ export default function Category({
       <div className="">
         <p
           className={`border-b border-black font-semibold ${
-            sm ? "py-1.5 text-[19px]" : "py-4 text-[30px] "
+            sm ? "py-1 md:py-1.5 text-[16] md:text-[19px]" : "py-3 md:py-4 text-[24px] md:text-[30px] "
           }`}
         >
           {title}
         </p>
-        <div className={`${sm ? "py-1" : "py-5"}`}>
+        <div className={`${sm ? "py-1" : "py-3 md:py-5"}`}>
           <p
             className={`line-clamp-3 font-light ${
-              sm ? "text-[17px] leading-[1.1]" : "text-[21px]"
+              sm ? "text-[15px] md:text-[17px] leading-[1.1]" : "text-[18px] md:text-[21px]"
             }`}
           >
             {content}
@@ -39,7 +39,7 @@ export default function Category({
         </div>
         <p
           className={`text-right font-semibold ${
-            sm ? "text-[15px]" : "text-[25px]"
+            sm ? "text-[13px] md:text-[15px]" : "text-[20px] md:text-[25px]"
           }`}
         >
           {answer} Answers

@@ -5,9 +5,9 @@ export default function Videos() {
   return (
     <main>
       <div className="mx-auto mb-[226px] w-full max-w-[1300px] px-8">
-        <div className="flex justify-between border-b border-black py-2">
-          <p className="text-[34px] font-semibold">ウオレットの作り方</p>
-          <p className="text-[28px] font-semibold">8 Answers</p>
+        <div className="flex justify-between items-center border-b border-black py-2">
+          <p className="text-[20px] md:text-[34px] font-semibold">ウオレットの作り方</p>
+          <p className="text-[16px] md:text-[28px] font-semibold">8 Answers</p>
         </div>
         <div className="pt-[105px] pb-[90px] px-5 flex justify-center">
             <div className="w-[482px]">

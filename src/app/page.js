@@ -53,8 +53,8 @@ export default function Home() {
               />
               </div>
           </div>
-          <div className="flex items-start justify-end">
-            <div className="flex flex-col gap-6">
+          <div className="flex max-md:flex-col items-start justify-end max-md:gap-4">
+            <div className="flex md:flex-col md:gap-6">
               <Category
                 link="/category/test"
                 imgSrc="/dummy.png"
@@ -79,7 +79,7 @@ export default function Home() {
               content="テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"
               answer="29"
             />
-            <div className="flex flex-col gap-6">
+            <div className="flex md:flex-col md:gap-6">
               <Category
                 link="/category/test"
                 imgSrc="/dummy.png"
@@ -98,8 +98,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex items-start justify-end">
-            <div className="flex flex-col gap-6">
+          <div className="flex items-start justify-end max-md:gap-4 max-md:flex-col">
+            <div className="flex md:flex-col max-md:justify-center md:gap-6 max-w-[50%]">
               <Category
                 link="/category/test"
                 imgSrc="/dummy.png"

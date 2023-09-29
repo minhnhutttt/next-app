@@ -4,12 +4,12 @@ export default function category() {
   return (
     <main>
       <div className="mx-auto mb-[226px] w-full max-w-[1300px] px-8">
-        <div className="flex justify-between border-b border-black py-2">
-          <p className="text-[34px] font-semibold">ウオレット</p>
-          <p className="text-[28px] font-semibold">8 Answers</p>
+        <div className="flex items-center justify-between border-b border-black py-2">
+          <p className="text-[20px] md:text-[34px] font-semibold">ウオレット</p>
+          <p className="text-[16px] md:text-[28px] font-semibold">8 Answers</p>
         </div>
-        <div className="p-9">
-          <div className="bg-[#F0F0F0] p-4 text-[20px] font-light">
+        <div className="p-4 md:p-9">
+          <div className="bg-[#F0F0F0] p-4 text-[14px] md:text-[20px] font-light">
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストストテキストテキストストテキストテキストストテキストテキスト
           </div>
         </div>
