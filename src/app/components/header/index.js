@@ -2,36 +2,43 @@
 import Link from "next/link";
 import { useState } from "react";
 import PropTypes from "prop-types";
+import { usePathname } from "next/navigation";
 
-function MenuItem({link, children}) {
-    return (
-        <li className="px-3 py-3 xl:px-6">
-            <Link
-            className="text-[24px] font-medium leading-normal text-white lg:text-[18px] tracking-wide"
-            href="/"
-            >
-            {children}
-            </Link>
-        </li>
-    )
+function MenuItem({ link, children }) {
+  return (
+    <li className="px-3 py-3 xl:px-6">
+      <a
+        className="text-[24px] font-medium leading-normal tracking-wide text-white lg:text-[18px]"
+        href={link}
+      >
+        {children}
+      </a>
+    </li>
+  );
 }
 
 MenuItem.propTypes = {
-    link: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired,
+  link: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   return (
-    <header className="px-4 md:px-8 bg-black/20 absolute top-0 left-0 right-0">
+    <header
+      className={`left-0 right-0 top-0 px-4 md:px-8 ${
+        isHomePage ? "absolute bg-black/20 " : ""
+      }`}
+    >
       <div className="mx-auto flex h-[80px] w-full max-w-[1600px] items-center justify-between px-5 py-2 md:h-[110px] xl:pl-20">
         <Link href="/">
-          <img className="max-md:w-[120px]" src="/logo.png" alt="DIVER Biz" />
+          <img className="max-md:w-[160px]" src="/logo.png" alt="DIVER Biz" />
         </Link>
         <div className="flex-1 max-lg:flex max-lg:justify-end lg:ml-6">
           <div
-            className={`z-[99] flex items-center justify-end max-lg:pointer-events-none max-lg:fixed max-lg:inset-0 max-lg:flex-col max-lg:justify-center max-lg:gap-8 max-lg:bg-black/50 max-lg:opacity-0 max-md:gap-4 ${
+            className={`z-[99] flex items-center justify-end max-lg:pointer-events-none max-lg:fixed max-lg:inset-0 max-lg:flex-col max-lg:justify-center max-lg:gap-8 max-lg:bg-black/70 max-lg:opacity-0 max-md:gap-4 ${
               open ? "max-lg:pointer-events-auto max-lg:opacity-100" : ""
             }`}
           >

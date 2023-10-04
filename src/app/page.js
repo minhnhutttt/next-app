@@ -1,5 +1,6 @@
 import Business from "./components/pages/home/business";
 import Create from "./components/pages/home/create";
+import Faq from "./components/pages/home/faq";
 import Features from "./components/pages/home/features";
 import FV from "./components/pages/home/fv";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Business />
       <Features />
       <Create />
+      <Faq />
     </main>
-  )
+  );
 }
