@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function ButtonContact({ sm }) {
+export default function ButtonContact({ sm = false }) {
   return (
     <div className="md:px-10">
       <a
@@ -17,5 +17,5 @@ export default function ButtonContact({ sm }) {
   );
 }
 ButtonContact.propTypes = {
-  sm: PropTypes.node.isRequired,
+  sm: PropTypes.node,
 };
