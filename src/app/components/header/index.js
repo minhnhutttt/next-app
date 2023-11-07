@@ -5,11 +5,12 @@ import PropTypes from "prop-types";
 import { usePathname } from "next/navigation";
 import ButtonContact from "../common/buttonContact";
 
-function MenuItem({ link, children }) {
+function MenuItem({ link, children, handleClick }) {
   return (
     <li className="px-3 py-3 xl:px-10">
       <a
-        className="text-[24px] text-black font-bold lg:text-[20px]"
+      onClick={() => handleClick(false)}
+        className="text-[24px] font-bold text-black transition duration-300 hover:opacity-75 lg:text-[20px]"
         href={link}
       >
         {children}
@@ -21,14 +22,13 @@ function MenuItem({ link, children }) {
 MenuItem.propTypes = {
   link: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header
-      className="px-2.5 border-b border-black"
-    >
+    <header className="border-b border-black px-2.5">
       <div className="mx-auto flex h-[80px] w-full max-w-[1600px] items-center justify-between py-2 md:h-[110px]">
         <div className="w-full">
           <div
@@ -38,16 +38,16 @@ export default function Header() {
           >
             <div className="flex items-center max-lg:flex-col">
               <ul className="flex items-center max-lg:mb-5 max-lg:flex-col lg:mr-9">
-                <MenuItem link="/">ABOUT</MenuItem>
-                <MenuItem link="/">特徴</MenuItem>
-                <MenuItem link="/">活用シーン</MenuItem>
-                <MenuItem link="/">実施までの流れ</MenuItem>
-                <MenuItem link="/">使い方</MenuItem>
+                <MenuItem handleClick={setOpen} link="#about">ABOUT</MenuItem>
+                <MenuItem handleClick={setOpen} link="#feature">特徴</MenuItem>
+                <MenuItem handleClick={setOpen} link="#guide">活用シーン</MenuItem>
+                <MenuItem handleClick={setOpen} link="#flow">実施までの流れ</MenuItem>
+                <MenuItem handleClick={setOpen} link="#how-to-use">使い方</MenuItem>
               </ul>
             </div>
             <ButtonContact sm />
           </div>
-          <div className="flex h-[70px] w-[70px] items-center justify-center lg:hidden ml-auto">
+          <div className="ml-auto flex h-[70px] w-[70px] items-center justify-center lg:hidden">
             <button
               className={`group relative block h-[22px] w-10 cursor-pointer border-[none] p-0 max-lg:z-[99] max-lg:[&.active]:fixed ${
                 open ? "active" : ""
