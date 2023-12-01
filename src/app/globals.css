@@ -161,11 +161,9 @@ body {
 }
 .slider__text-item p {
   margin: 0;
-  transform: translateX(100%);
 }
 .slider__text-item-head {
   top: -0.5em;
-  transform: translateZ(3em);
 }
 .slider__text-item-info {
   bottom: 0;
@@ -289,7 +287,6 @@ body {
   .slider__text-item-head {
     top: 5vh;
     left: 0;
-    transform: translateZ(0);
     width: 100%;
   }
   .slider__text-item-head h3 {

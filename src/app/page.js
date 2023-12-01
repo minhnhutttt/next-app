@@ -1,6 +1,7 @@
 import Diver from "./components/diver";
 import MV from "./components/mv";
 import Slider from "./components/slider";
+import Slider2 from "./components/slider2";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <div className="relative z-10">
         <MV />
         <Slider />
+        <Slider2 />
         <Diver />
       </div>
     </main>

@@ -62,7 +62,7 @@ export default function Diver() {
                   cy="8.5"
                   r="7.5"
                   stroke="#EBEBEB"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
               </svg>
               <span>VIEW MORE</span>

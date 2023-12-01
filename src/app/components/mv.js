@@ -5,7 +5,7 @@ export default function MV() {
     <div className="w-full px-5 pt-[21%]">
       <div className="mx-auto flex h-full w-full max-w-[1040px] flex-col justify-center">
         <div className="px-4">
-          <div class="mb-10 w-[220px] md:mb-16 md:w-[377px]">
+          <div className="mb-10 w-[220px] md:mb-16 md:w-[377px]">
             <MintText />
           </div>
           <p className="font-['Noto_Sans_JP'] text-[20px] leading-[1.3] text-white md:text-xl">

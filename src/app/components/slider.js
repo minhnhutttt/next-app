@@ -1,5 +1,6 @@
 "use client";
 import React, { Component } from "react";
+import gsap from "gsap";
 
 function lerp({ x, y }, { x: targetX, y: targetY }) {
   const fraction = 0.1;
@@ -369,7 +370,7 @@ class Slider extends Component {
                         cy="8.5"
                         r="7.5"
                         stroke="#EBEBEB"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                     </svg>
                     <span>VIEW MORE</span>
@@ -400,7 +401,7 @@ class Slider extends Component {
                         cy="8.5"
                         r="7.5"
                         stroke="#EBEBEB"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                     </svg>
                     <span>VIEW MORE</span>
@@ -428,7 +429,7 @@ class Slider extends Component {
                         cy="8.5"
                         r="7.5"
                         stroke="#EBEBEB"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                     </svg>
                     <span>VIEW MORE</span>
