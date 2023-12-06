@@ -1,14 +1,13 @@
-import Diver from "./components/diver";
-import MV from "./components/mv";
-import Slider from "./components/slider";
-import Slider2 from "./components/slider2";
+import Diver from "./components/pages/home/diver";
+import MV from "./components/pages/home/mv";
+import Slider from "./components/pages/home/slider";
 
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
-      <div className="absolute h-full w-full overflow-hidden">
+      <div className="absolute w-full h-full overflow-hidden">
         <video
-          className="absolute left-0 top-0 min-w-full object-cover"
+          className="absolute top-0 left-0 object-cover min-w-full"
           autoPlay
           loop
           muted
@@ -18,14 +17,9 @@ export default function Home() {
         </video>
         <div className="absolute inset-0 bg-black opacity-50" />
       </div>
-      <button className="absolute right-0 top-0 flex h-[100px] w-[145px] flex-col items-center justify-center gap-2.5">
-        <span className="h-[3px] w-[65px] bg-white"></span>
-        <span className="h-[3px] w-[65px] bg-white"></span>
-      </button>
       <div className="relative z-10">
         <MV />
         <Slider />
-        <Slider2 />
         <Diver />
       </div>
     </main>

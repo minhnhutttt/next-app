@@ -1,20 +1,9 @@
 import Link from "next/link";
+import BgVideo from "../../common/bgVideo";
 
 export default function Diver() {
   return (
     <div className="relative pt-[90px] md:pt-[180px]">
-      <div className="z-2 absolute bottom-0 h-full w-full overflow-hidden">
-        <video
-          className="absolute bottom-0 left-0 right-0 h-full w-full object-cover"
-          autoPlay
-          loop
-          muted
-        >
-          <source src="/videos/video-top.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute inset-0 bg-black opacity-50" />
-      </div>
       <div className="relative px-5 pb-[225px]">
         <div className="mx-auto w-full max-w-[1200px]">
           <h3 className="relative flex items-center justify-center">
@@ -28,7 +17,7 @@ export default function Diver() {
           <p className="text-center text-[18px] font-extrabold tracking-widest text-white">
             Connect as a Pilot of the Earth
           </p>
-          <div className="mt-20 flex items-center justify-center">
+          <div className="flex items-center justify-center mt-20">
             <figure className="drop-shadow-[0_4px_80px_rgba(215,245,251,0.6)]">
               <img src="/images/diver-logo.png" alt="" />
             </figure>

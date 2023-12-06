@@ -14,7 +14,7 @@ export default function Slider2() {
     const timelineOptions = {
       defaults: {
         ease: "power4.inOut",
-        duration: 0.7,
+        duration: 1,
       },
       paused: true,
     };
@@ -39,6 +39,9 @@ export default function Slider2() {
       slideConflictBody: gsap.timeline(timelineOptions).to(sliderContainer1Ref.current.querySelector('.slider__text-item-info'), {
         x: "100%"
       }),
+      slideConflictImage: gsap.timeline(timelineOptions).to(sliderContainer1Ref.current.querySelector('.slider__image'), {
+        y: "-100%"
+      }),
       slideSolution: gsap.timeline(timelineOptions).to(sliderContainer2Ref.current, {
         autoAlpha: 0
       }),
@@ -47,6 +50,9 @@ export default function Slider2() {
       }),
       slideSolutionBody: gsap.timeline(timelineOptions).to(sliderContainer2Ref.current.querySelector('.slider__text-item-info'), {
         x: "100%"
+      }),
+      slideSolutionImage: gsap.timeline(timelineOptions).to(sliderContainer2Ref.current.querySelector('.slider__image'), {
+        y: "-100%"
       }),
       slideTitleAnimation: gsap.timeline(timelineOptions),
     };
@@ -66,8 +72,10 @@ export default function Slider2() {
       .add(getTimelineCallback(timeline, sliderTl.slideConflict), 1)
       .add(getTimelineCallback(timeline, sliderTl.slideConflictTitle), 1)
       .add(getTimelineCallback(timeline, sliderTl.slideConflictBody), 1)
+      .add(getTimelineCallback(timeline, sliderTl.slideConflictImage), 1)
       .add(getTimelineCallback(timeline, sliderTl.slideSolutionTitle), 2)
       .add(getTimelineCallback(timeline, sliderTl.slideSolutionBody), 2)
+      .add(getTimelineCallback(timeline, sliderTl.slideSolutionImage), 2)
       .add(getTimelineCallback(timeline, sliderTl.slideSolution), 2);
 
     window.sliderTl = timeline;
@@ -78,21 +86,23 @@ export default function Slider2() {
     };
   }, []);
   return (
+    <div className="relative mt-[90px] overflow-hidden md:mt-[180px] ">
     <div ref={sliderContainerRef} className="h-[100lvh]">
       <section
         ref={sliderContainer1Ref}
         className="absolute inset-0 z-[10] bg-black"
       >
-        <SliderItem title="CONFLICT" body={<>Negative Environmental Impact of <br />Current Computing Models</>} image="/images/slider-01.png" link="/" containerRef={sliderContainerRef} />
+        <SliderItem title="CONFLICT" body={<>Negative Environmental Impact of <br />Current Computing Models</>} image="/images/slider-01.png" link="/conflict" />
       </section>
       <section
         ref={sliderContainer2Ref}
         className="absolute inset-0 z-[9] bg-black">
-        <SliderItem title="SOLUTION" body={<>What is "Mist" Computing & IPDC?</>} image="/images/slider-02.png" link="/" containerRef={sliderContainerRef} />
+        <SliderItem title="SOLUTION" body={<>What is "Mist" Computing & IPDC?</>} image="/images/slider-02.png" link="/solution" />
       </section>
       <section className="absolute inset-0 z-[8] ">
-        <SliderItem title="ACTION" body={<>Actions Individuals Should Take <br />to Amplify Their Impact</>} image="/images/slider-03.png" link="/" containerRef={sliderContainerRef} />
+        <SliderItem title="ACTION" body={<>Actions Individuals Should Take <br />to Amplify Their Impact</>} image="/images/slider-03.png" link="/action" />
       </section>
+    </div>
     </div>
   );
 }

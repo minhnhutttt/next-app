@@ -1,9 +1,7 @@
 import { useEffect, useRef } from "react";
 import PropTypes from 'prop-types';
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-export default function SliderItem({title, body, image, link, containerRef }) {
+export default function SliderItem({title, body, image, link }) {
   const elRef = useRef(null);
   const elContentRef = useRef(null);
   const imgRef = useRef(null);
@@ -167,7 +165,7 @@ export default function SliderItem({title, body, image, link, containerRef }) {
         />
         <div
             ref={elContentRef}
-            className="relative z-10 mx-auto md:h-[32.5vw] h-screen md:max-h-[90vh] w-full  md:w-[65vw]"
+            className="relative z-10 mx-auto md:h-[32.5vw] h-screen md:max-h-[90vh] w-full md:w-[65vw]"
         >
             <div
             className="slider__text-item slider__text-item--active"
@@ -202,7 +200,9 @@ export default function SliderItem({title, body, image, link, containerRef }) {
                 </p>
             </div>
             </div>
-            <img ref={imgRef} className="w-full max-md:h-screen max-md:object-cover" src={image} />
+            <div className="overflow-hidden">
+                <img ref={imgRef} className="w-full max-md:!translate-x-0 max-md:!translate-y-0 slider__image max-md:h-screen max-md:object-cover" src={image} />
+            </div>
         </div>
       </div>
     </>
