@@ -17,7 +17,7 @@ export default function Diver() {
           <p className="text-center text-[18px] font-extrabold tracking-widest text-white">
             Connect as a Pilot of the Earth
           </p>
-          <div className="flex items-center justify-center mt-20">
+          <div className="mt-20 flex items-center justify-center">
             <figure className="drop-shadow-[0_4px_80px_rgba(215,245,251,0.6)]">
               <img src="/images/diver-logo.png" alt="" />
             </figure>

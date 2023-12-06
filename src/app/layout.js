@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body suppressHydrationWarning={true} className="relative bg-black">
         <BgVideo />
-        <button className="absolute right-0 top-0 flex h-[80px] md:h-[100px] w-[100px] md:w-[145px] flex-col items-center justify-center gap-2.5 z-50">
-          <span className="md:h-[3px] h-0.5 w-[40px] md:w-[65px] bg-white"></span>
-          <span className="md:h-[3px] h-0.5 w-[40px] md:w-[65px] bg-white"></span>
+        <button className="absolute right-0 top-0 z-50 flex h-[80px] w-[100px] flex-col items-center justify-center gap-2.5 md:h-[100px] md:w-[145px]">
+          <span className="h-0.5 w-[40px] bg-white md:h-[3px] md:w-[65px]"></span>
+          <span className="h-0.5 w-[40px] bg-white md:h-[3px] md:w-[65px]"></span>
         </button>
         {children}
         <div className="absolute bottom-0 left-0 right-0 z-10 mt-[80px] p-5 text-center text-[13px] tracking-widest text-white/60 md:mt-[200px]">

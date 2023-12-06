@@ -5,9 +5,9 @@ import Slider from "./components/pages/home/slider";
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
-      <div className="absolute w-full h-full overflow-hidden">
+      <div className="absolute h-full w-full overflow-hidden">
         <video
-          className="absolute top-0 left-0 object-cover min-w-full"
+          className="absolute left-0 top-0 min-w-full object-cover"
           autoPlay
           loop
           muted

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-export default function SliderItem({title, body, image, link }) {
+export default function SliderItem({ title, body, image, link }) {
   const elRef = useRef(null);
   const elContentRef = useRef(null);
   const imgRef = useRef(null);
@@ -19,11 +19,10 @@ export default function SliderItem({title, body, image, link }) {
     var whalfHeight = window.innerHeight / 2;
     var zDistance = "8.519vw";
     var mouseWatched = true;
-    
 
     elRef.current.addEventListener("mousemove", onMouseMove);
     onResize();
-    window.addEventListener('resize', onResize);
+    window.addEventListener("resize", onResize);
 
     function onMouseMove(event) {
       const boundingRect = elRef.current.getBoundingClientRect();
@@ -126,83 +125,87 @@ export default function SliderItem({title, body, image, link }) {
     }
 
     function onResize() {
-        const htmlStyles = getComputedStyle(document.documentElement);
-        const mobileBreakpoint = htmlStyles.getPropertyValue("--mobile-bkp");
-        const isMobile = matchMedia(
-          `only screen and (max-width: ${mobileBreakpoint})`
-        ).matches;
-        whalfWidth = window.innerWidth / 2;
-        whalfHeight = window.innerHeight / 2;
-        zDistance = htmlStyles.getPropertyValue("--z-distance");
-    
-        if (!isMobile && !mouseWatched) {
-          mouseWatched = true;
-          animationStopped = false;
-          elRef.current.addEventListener("mousemove", onMouseMove);
-    
-        } else if (isMobile && mouseWatched) {
-          mouseWatched = false;
-          animationStopped = true;
-          positionImage({ xCoeff: -1, yCoeff: 1 });
-          if (elRef.current) {
-            elRef.current.removeEventListener("mousemove", onMouseMove);
-          }
-          elContentRef.current.style.setProperty("transform", `none`);
-        }
-      }
+      const htmlStyles = getComputedStyle(document.documentElement);
+      const mobileBreakpoint = htmlStyles.getPropertyValue("--mobile-bkp");
+      const isMobile = matchMedia(
+        `only screen and (max-width: ${mobileBreakpoint})`
+      ).matches;
+      whalfWidth = window.innerWidth / 2;
+      whalfHeight = window.innerHeight / 2;
+      zDistance = htmlStyles.getPropertyValue("--z-distance");
 
-      return () => {
-        window.removeEventListener('resize', onResize);
-      };
+      if (!isMobile && !mouseWatched) {
+        mouseWatched = true;
+        animationStopped = false;
+        elRef.current.addEventListener("mousemove", onMouseMove);
+      } else if (isMobile && mouseWatched) {
+        mouseWatched = false;
+        animationStopped = true;
+        positionImage({ xCoeff: -1, yCoeff: 1 });
+        if (elRef.current) {
+          elRef.current.removeEventListener("mousemove", onMouseMove);
+        }
+        elContentRef.current.style.setProperty("transform", `none`);
+      }
+    }
+
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
 
   return (
     <>
-      <div ref={elRef} className="absolute inset-0 flex items-center justify-center">
+      <div
+        ref={elRef}
+        className="absolute inset-0 flex items-center justify-center"
+      >
         <img
-          className="absolute inset-0 z-0 object-cover w-full h-full blur-2xl"
+          className="absolute inset-0 z-0 h-full w-full object-cover blur-2xl"
           src={image}
         />
         <div
-            ref={elContentRef}
-            className="relative z-10 mx-auto md:h-[32.5vw] h-screen md:max-h-[90vh] w-full md:w-[65vw]"
+          ref={elContentRef}
+          className="relative z-10 mx-auto h-screen w-full md:h-[37.569vw] md:max-h-[90vh] md:w-[74.167vw]"
         >
-            <div
+          <div
             className="slider__text-item slider__text-item--active"
             data-id="1"
-            >
+          >
             <div ref={boxRef} className="slider__text-item-head">
-                <h3>{title}</h3>
+              <h3>{title}</h3>
             </div>
             <div className="slider__text-item-btn">
-                <a href={link}>
+              <a href={link}>
                 <svg
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                    <circle
+                  <circle
                     cx="8.5"
                     cy="8.5"
                     r="7.5"
                     stroke="#EBEBEB"
                     strokeWidth="2"
-                    />
+                  />
                 </svg>
                 <span>VIEW MORE</span>
-                </a>
+              </a>
             </div>
             <div className="slider__text-item-info">
-                <p>
-                {body}
-                </p>
+              <p>{body}</p>
             </div>
-            </div>
-            <div className="overflow-hidden">
-                <img ref={imgRef} className="w-full max-md:!translate-x-0 max-md:!translate-y-0 slider__image max-md:h-screen max-md:object-cover" src={image} />
-            </div>
+          </div>
+          <div className="overflow-hidden">
+            <img
+              ref={imgRef}
+              className="slider__image w-full max-md:h-screen max-md:!translate-x-0 max-md:!translate-y-0 max-md:object-cover"
+              src={image}
+            />
+          </div>
         </div>
       </div>
     </>
@@ -210,8 +213,8 @@ export default function SliderItem({title, body, image, link }) {
 }
 
 SliderItem.propTypes = {
-    title: PropTypes.string.isRequired,
-    body: PropTypes.node.isRequired,
-    image: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-  };
+  title: PropTypes.string.isRequired,
+  body: PropTypes.node.isRequired,
+  image: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
