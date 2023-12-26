@@ -1,14 +1,18 @@
+"use client"
+import useScrollAnimation from '@/app/hooks/useScrollAnimation';
 import DomainItem from "./domainItem";
 
+
 export default function Domain() {
+    const animateRefs = useScrollAnimation('fadeUp');
     return (
         <div className="md:pt-[87px] pt-12 overflow-hidden">
             <div className="relative px-5">
-                <h4 className="[text-shadow:_2px_2px_0_#98FE01,_-2px_-2px_0_#98FE01,_2px_-2px_0_#98FE01,_-2px_2px_0_#98FE01,_2px_2px_0_#98FE01] text-center md:text-[70px] lg:text-[110px] text-[36px] capitalize text-[#F3F5F4] font-dela leading-[1.13]">
+                <h4 ref={animateRefs} className="[text-shadow:_2px_2px_0_#98FE01,_-2px_-2px_0_#98FE01,_2px_-2px_0_#98FE01,_-2px_2px_0_#98FE01,_2px_2px_0_#98FE01] text-center md:text-[70px] lg:text-[110px] text-[36px] capitalize text-[#F3F5F4] font-dela leading-[1.13]">
                     NEXT<br className="md:hidden" /> GENERATION <br />
                     DOMAIN
                 </h4>
-                <h5 className="text-center lg:text-[64px] md:text-[44px] text-[26px] font-dela text-black absolute w-full left-0 top-1/2 -translate-y-1/2 leading-[1.1875] mt-3">
+                <h5 ref={animateRefs} className="text-center lg:text-[64px] md:text-[44px] text-[26px] font-dela text-black absolute w-full left-0 top-1/2 -translate-y-1/2 leading-[1.1875] mt-3">
                     次世代ドメイン <br />
                     それは、SNSで言う<br className="md:hidden" />「ユーザー名」
                 </h5>

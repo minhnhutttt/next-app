@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
-
+import useScrollAnimation from '@/app/hooks/useScrollAnimation';
 export default function DomainItem({ title, imageSrc, children }) {
+  
+  const animateLeftRefs = useScrollAnimation('slideLeft');
+  const animateRightRefs = useScrollAnimation('slideRight');
     return (
       <div className="flex items-center max-md:flex-col-reverse md:gap-[64px] gap-8 md:py-[60px] py-[30px] break-words md:[&:nth-of-type(even)]:flex-row-reverse">
-        <div className="flex-1">
+        <div ref={animateLeftRefs} className="flex-1">
             <div className="font-dela lg:text-[60px] text-[24px] md:text-[30px] text-[#111] text-center leading-[1.3]">
                 {title}
             </div>
@@ -11,7 +14,7 @@ export default function DomainItem({ title, imageSrc, children }) {
                 <p>{children}</p>
             </div>
         </div>
-        <figure className="max-md:w-3/5 max-lg:w-1/3">
+        <figure ref={animateRightRefs} className="max-md:w-3/5 max-lg:w-1/3">
             <img src={imageSrc} alt="" />
         </figure>
       </div>

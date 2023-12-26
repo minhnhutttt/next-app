@@ -1,3 +1,5 @@
+"use client"
+import useScrollAnimation from '@/app/hooks/useScrollAnimation';
 import FaqItem from "./faqItem";
 
 const data = [
@@ -72,9 +74,10 @@ const data = [
     },
   ];
 export default function Faq() {
+  const animateRefs = useScrollAnimation('fadeUp');
     return (
-        <div className="md:pt-[106px] pt-10 px-5">
-            <h4 className="font-bold text-center font-roboto md:text-[64px] text-[32px] leading-[1.36] mb-5">FAQ</h4>
+        <div ref={animateRefs} className="md:pt-[106px] pt-10 px-5">
+            <h4 ref={animateRefs} className="font-bold text-center font-roboto md:text-[64px] text-[32px] leading-[1.36] mb-5">FAQ</h4>
             <div className="w-full mx-auto max-w-[900px] mt-5 border-t border-black md:mt-4">
                 {data.map((data) => {
                     return (
@@ -87,7 +90,6 @@ export default function Faq() {
                     );
                 })}
             </div>
-
         </div>
     )
 }

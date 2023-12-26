@@ -1,12 +1,11 @@
 "use client"
-"use client"
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useScrollAnimation = (animationType) => {
+const useScrollAnimation = (animationType, delay = 0) => {
   const elements = useRef([]);
 
   useEffect(() => {
@@ -37,6 +36,7 @@ const useScrollAnimation = (animationType) => {
             x: 0,
             opacity: 1,
             duration: 0.5,
+            delay,
             scrollTrigger: {
               trigger: el,
               start: 'top bottom-=100',
@@ -51,7 +51,7 @@ const useScrollAnimation = (animationType) => {
 
     return () => {
       elements.current.forEach((el) => {
-        ScrollTrigger.unmount(el);
+        ScrollTrigger.getById(elements.current.id)?.kill()
       });
     };
   }, [animationType]);

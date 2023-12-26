@@ -1,9 +1,11 @@
 "use client";
+import useScrollAnimation from '@/app/hooks/useScrollAnimation';
 import PropTypes from "prop-types";
 import { useRef } from "react";
 import { gsap } from 'gsap';
 
 export default function FaqItem({ id, question, awnser }) {
+  const animateRefs = useScrollAnimation('fadeUp');
   const contentRef = useRef(null);
   const arrowRef = useRef(null);
   const isClosedRef = useRef(true);
@@ -23,7 +25,7 @@ export default function FaqItem({ id, question, awnser }) {
   };
 
   return (
-    <div className="p-4 space-y-4 border-b border-black md:space-y-4 md:px-5 md:pb-10 md:pt-11">
+    <div ref={animateRefs} className="p-4 space-y-4 border-b border-black md:space-y-4 md:px-5 md:pb-10 md:pt-11">
       <button
         type="button"
         className="flex items-center justify-between w-full duration-200 hover:opacity-75"
