@@ -1,7 +1,7 @@
-"use client"
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+"use client";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,13 +14,13 @@ const useScrollAnimation = (animationType, delay = 0) => {
         let animation = {};
 
         switch (animationType) {
-          case 'fadeUp':
+          case "fadeUp":
             animation = { y: 50, opacity: 0 };
             break;
-          case 'slideLeft':
+          case "slideLeft":
             animation = { x: -50, opacity: 0 };
             break;
-          case 'slideRight':
+          case "slideRight":
             animation = { x: 50, opacity: 0 };
             break;
           default:
@@ -28,22 +28,18 @@ const useScrollAnimation = (animationType, delay = 0) => {
             break;
         }
 
-        gsap.fromTo(
-          el,
-          animation,
-          {
-            y: 0,
-            x: 0,
-            opacity: 1,
-            duration: 0.5,
-            delay,
-            scrollTrigger: {
-              trigger: el,
-              start: 'top bottom-=100',
-              toggleActions: 'play none none reverse',
-            },
-          }
-        );
+        gsap.fromTo(el, animation, {
+          y: 0,
+          x: 0,
+          opacity: 1,
+          duration: 0.5,
+          delay,
+          scrollTrigger: {
+            trigger: el,
+            start: "top bottom-=100",
+            toggleActions: "play none none reverse",
+          },
+        });
       });
     };
 
@@ -51,7 +47,7 @@ const useScrollAnimation = (animationType, delay = 0) => {
 
     return () => {
       elements.current.forEach((el) => {
-        ScrollTrigger.getById(elements.current.id)?.kill()
+        ScrollTrigger.getById(elements.current.id)?.kill();
       });
     };
   }, [animationType]);

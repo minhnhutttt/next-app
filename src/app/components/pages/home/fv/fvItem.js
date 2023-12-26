@@ -10,7 +10,9 @@ export default function FVItem({ size, children }) {
   const sizeClass = sizeClassMap[size] || "";
 
   return (
-    <div className={`font-dela border border-[#111] rounded-full flex items-center justify-center tracking-tighter aspect-[1/1] ${sizeClass}`}>
+    <div
+      className={`flex aspect-[1/1] items-center justify-center rounded-full border border-[#111] font-dela tracking-tighter ${sizeClass}`}
+    >
       {children}
     </div>
   );
