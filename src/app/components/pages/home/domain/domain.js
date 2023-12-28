@@ -25,7 +25,7 @@ export default function Domain() {
           「ユーザー名」
         </h5>
       </div>
-      <div className="pt-2 bg-white -md:mt-3">
+      <div className="-md:mt-3 bg-white pt-2">
         <div className="mx-auto w-full max-w-[1256px] px-5">
           <DomainItem
             title={

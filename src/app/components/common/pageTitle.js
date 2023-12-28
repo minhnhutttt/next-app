@@ -6,7 +6,10 @@ export default function PageTitle({ children }) {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
     <div className="flex h-[100px] items-center justify-center px-5 md:h-[172px]">
-      <p ref={animateRefs} className="opacity-0 text-[7vw] font-bold font-zenkaku md:text-[60px]">
+      <p
+        ref={animateRefs}
+        className="font-zenkaku text-[7vw] font-bold opacity-0 md:text-[60px]"
+      >
         {children}
       </p>
     </div>

@@ -7,11 +7,11 @@ export default function TextBlock({ title, children }) {
   return (
     <div ref={animateRefs} className="opacity-0">
       {title && (
-        <p className="text-[18px] font-bold font-worksans md:text-[20px]">
+        <p className="font-worksans text-[18px] font-bold md:text-[20px]">
           {title}
         </p>
       )}
-      <div className="mt-3 text-[14px] font-worksans md:mt-[18px] md:text-[16px]">
+      <div className="mt-3 font-worksans text-[14px] md:mt-[18px] md:text-[16px]">
         {children}
       </div>
     </div>

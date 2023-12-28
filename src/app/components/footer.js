@@ -54,7 +54,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <ul className="flex mt-10 max-md:justify-center md:gap-5">
+          <ul className="mt-10 flex max-md:justify-center md:gap-5">
             <li>
               <a
                 href="https://diver.io/"

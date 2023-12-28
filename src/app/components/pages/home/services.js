@@ -1,14 +1,14 @@
 "use client";
 import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 import Link from "next/link";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const Services = () => {
   const animateRefs = useScrollAnimation("fadeUp");
 
   const router = useRouter();
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState("");
   const [error, setError] = useState(false);
 
   const handleSearch = () => {
@@ -85,19 +85,25 @@ const Services = () => {
             <input
               type="text"
               className={`h-full w-full flex-1 px-5 py-4 text-[12px] md:px-[33px] md:py-[23px] md:text-[20px] ${
-                error ? 'border-red-500 border' : ''
+                error ? "border border-red-500" : ""
               }`}
               placeholder="ドメインを検索(8文字以上22文字まで)"
               value={searchValue}
               onChange={handleInputChange}
             />
-            <button type="button" onClick={handleSearch}
+            <button
+              type="button"
+              onClick={handleSearch}
               className="flex h-full w-[80px] items-center justify-center bg-[#0152A8] font-bold text-white duration-200 hover:opacity-75 md:w-[141px] md:text-[23px]"
             >
               検索
             </button>
           </div>
-          {error && <p className="mt-2 font-medium text-red-500 max-md:text-[12px]">8~22文字までご入力ください。</p>}
+          {error && (
+            <p className="mt-2 font-medium text-red-500 max-md:text-[12px]">
+              8~22文字までご入力ください。
+            </p>
+          )}
         </div>
       </div>
       <div

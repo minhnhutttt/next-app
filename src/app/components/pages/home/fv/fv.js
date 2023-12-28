@@ -38,7 +38,7 @@ export default function FV() {
     <div className="px-2 pt-3 md:px-5 md:pt-[25px]">
       <div
         ref={fvRef}
-        className="mx-auto opacity-0 flex w-full max-w-[1380px] flex-col items-center justify-center overflow-visible rounded-[10px] bg-white px-2 py-4 md:min-h-[670px] md:rounded-[20px] md:px-[18px] md:py-[23px]"
+        className="mx-auto flex w-full max-w-[1380px] flex-col items-center justify-center overflow-visible rounded-[10px] bg-white px-2 py-4 opacity-0 md:min-h-[670px] md:rounded-[20px] md:px-[18px] md:py-[23px]"
       >
         <div className="h-full w-full flex-1 transition-transform duration-300 [transform-style:_preserve-3d]">
           <div className="absolute flex h-full w-full flex-col items-center justify-center overflow-hidden [backface-visibility:_hidden] before:absolute before:block before:h-[300%] before:w-[25%] before:animate-[rotation\_481_5000ms_infinite_linear] before:bg-[#98FE01] before:content-['']">
