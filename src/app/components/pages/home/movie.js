@@ -33,7 +33,7 @@ export default function Movie() {
           <svg class="md:h-12 h-8 md:w-12 w-8 text-gray-800"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />  <line x1="9" y1="9" x2="15" y2="15" />  <line x1="15" y1="9" x2="9" y2="15" /></svg>
             </button>
           <video controls autoPlay>
-            <source src="/videos/sample-movie.mp4" type="video/mp4" />
+            <source src="/videos/jisedai-domain-top-short.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

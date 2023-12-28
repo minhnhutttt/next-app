@@ -19,6 +19,7 @@ module.exports = {
       dela: ["Dela Gothic One", "sans-serif"],
       zenkaku: ["Zen Kaku Gothic New", "sans-serif"],
       dm: ["DM Sans", "sans-serif"],
+      worksans: ["Work Sans", "sans-serif"],
     },
   },
   plugins: [],

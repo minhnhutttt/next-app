@@ -23,7 +23,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/company"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 運営会社
@@ -31,7 +31,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/privacy-policy"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 プライバシーポリシー
@@ -39,7 +39,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/information"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 特定商取引法に基づく表示
@@ -47,7 +47,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/terms-of-service"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 利用規約
