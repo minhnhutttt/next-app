@@ -1,5 +1,6 @@
 "use client";
 import useScrollAnimation from "@/app/hooks/useScrollAnimation";
+import Link from "next/link";
 
 export default function Line() {
   const animateRefs = useScrollAnimation("fadeUp");
@@ -12,7 +13,9 @@ export default function Line() {
         まずはLINE登録
       </h5>
       <div ref={animateRefs} className="mt-10 flex justify-center md:mt-[85px]">
-        <button
+        <Link
+          href="https://lin.ee/6PgmBNE"
+          target="_blank"
           alt="次世代ドメイン"
           className="group relative flex h-[80px] w-[320px] items-center justify-center overflow-hidden rounded-3xl bg-[#01B202] px-5 text-[24px] text-lg uppercase shadow-[0px_14px_0px_0px_#076807] transition-[31ms] duration-[cubic-bezier(.5,0.7,0.4,1)] before:absolute before:inset-0 before:flex before:items-center before:justify-center before:pl-[56px] before:font-bold before:text-[white] before:opacity-100 before:content-[attr(alt)] hover:before:translate-y-full hover:before:opacity-0 hover:before:transition-all hover:before:duration-[0.0s] active:translate-y-[7px] active:shadow-none active:transition-[35ms] active:duration-[cubic-bezier(.5,0.7,0.4,1)] md:h-[156px] md:w-[548px] md:before:pl-[92px] md:before:text-[32px]"
         >
@@ -42,7 +45,7 @@ export default function Line() {
           <i className="-translate-y-5 text-[24px] font-bold not-italic text-[white] opacity-0 transition-all duration-[2s] ease-[ease] group-hover:translate-y-0 group-hover:opacity-100 group-hover:transition-all group-hover:delay-[calc(0.045s*8)] group-hover:duration-[0.2s] group-hover:ease-[ease] md:text-[32px]">
             ン
           </i>
-        </button>
+        </Link>
       </div>
     </div>
   );

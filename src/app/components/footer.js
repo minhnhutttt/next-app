@@ -14,50 +14,51 @@ export default function Footer() {
         <div className="mt-5 max-md:mt-10 md:ml-[97px]">
           <ul className="flex flex-wrap gap-y-6 max-md:justify-center md:gap-y-4">
             <li>
-              <Link
-                href="#"
+              <a
+                href="#faq"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 よくある質問
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 運営会社
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 プライバシーポリシー
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 特定商取引法に基づく表示
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#"
                 className="block px-4 text-[16px] font-medium tracking-[0.1em] text-white duration-200 hover:opacity-75"
               >
                 利用規約
-              </Link>
+              </a>
             </li>
           </ul>
-          <ul className="mt-10 flex max-md:justify-center md:gap-5">
+          <ul className="flex mt-10 max-md:justify-center md:gap-5">
             <li>
-              <Link
-                href="#"
+              <a
+                href="https://diver.io/"
+                target="_blank"
                 className="block px-4 duration-200 hover:opacity-75"
               >
                 <svg
@@ -72,11 +73,12 @@ export default function Footer() {
                     fill="#0152A8"
                   />
                 </svg>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                href="#"
+              <a
+                href="https://diver.domains/ja/"
+                target="_blank"
                 className="block px-4 duration-200 hover:opacity-75"
               >
                 <svg
@@ -91,7 +93,7 @@ export default function Footer() {
                     fill="#0152A8"
                   />
                 </svg>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

@@ -25,7 +25,7 @@ export default function Domain() {
           「ユーザー名」
         </h5>
       </div>
-      <div className="-md:mt-3 bg-white pt-2">
+      <div className="pt-2 bg-white -md:mt-3">
         <div className="mx-auto w-full max-w-[1256px] px-5">
           <DomainItem
             title={
@@ -71,7 +71,7 @@ export default function Domain() {
             }
             imageSrc="/images/img-domain-02.png"
           >
-            ダイバーウォレットはNFTの受診だけではなく、送信が永年無料。長くて複雑なウォレットアドレスを覚えやすい名前に置き換えて、送り間違いともおさらば。
+            ダイバーウォレットはNFTの受信だけではなく、送信が永年無料。長くて複雑なウォレットアドレスを覚えやすい名前に置き換えて、送り間違いともおさらば。
             <br />
             NFTを交換しまくりましょう。
           </DomainItem>

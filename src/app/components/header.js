@@ -10,7 +10,8 @@ export default function Header() {
         次世代ドメイン
       </Link>
       <Link
-        href="#"
+        href="https://lin.ee/6PgmBNE"
+        target="_blank"
         className="relative mr-2 flex h-10 w-[140px] items-center justify-center rounded-[25px] bg-[#98FE01] px-6 font-zenkaku text-[12px] font-bold duration-200 hover:opacity-75 md:h-[78px] md:w-[320px] md:rounded-[50px] md:px-10  md:text-[24px] md:tracking-[0.2em]"
       >
         <span>今すぐLINE登録</span>

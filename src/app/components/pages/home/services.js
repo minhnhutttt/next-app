@@ -1,8 +1,29 @@
 "use client";
 import useScrollAnimation from "@/app/hooks/useScrollAnimation";
+import Link from "next/link";
+import { useRouter } from 'next/navigation'
+import { useState } from "react";
 
 const Services = () => {
   const animateRefs = useScrollAnimation("fadeUp");
+
+  const router = useRouter();
+  const [searchValue, setSearchValue] = useState('');
+  const [error, setError] = useState(false);
+
+  const handleSearch = () => {
+    if (searchValue.length >= 8 && searchValue.length <= 22) {
+      router.push(`https://reg.diver.domains/search/${searchValue}`);
+      setError(false);
+    } else {
+      setError(true);
+    }
+  };
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value);
+    setError(false);
+  };
 
   return (
     <div className="mx-auto w-full max-w-[480px] px-5 pb-16 pt-6 md:max-w-[1260px] md:pb-[110px] md:pt-12">
@@ -59,18 +80,24 @@ const Services = () => {
         </div>
       </div>
       <div ref={animateRefs} className="mb-5 flex justify-center md:mb-[42px]">
-        <div className="flex h-[55px] w-full max-w-[320px] md:h-[74px] md:max-w-[703px]">
-          <input
-            type="text"
-            className="h-full w-full flex-1 px-5 py-4 text-[12px] md:px-[33px] md:py-[23px] md:text-[20px]"
-            placeholder="ドメインを検索(8文字以上22文字まで)"
-          />
-          <button
-            type="submit"
-            className="flex h-full w-[80px] items-center justify-center bg-[#0152A8] font-bold text-white duration-200 hover:opacity-75 md:w-[141px] md:text-[23px]"
-          >
-            検索
-          </button>
+        <div className="w-full max-w-[320px] md:max-w-[703px]">
+          <div className="flex h-[55px] w-full md:h-[74px]">
+            <input
+              type="text"
+              className={`h-full w-full flex-1 px-5 py-4 text-[12px] md:px-[33px] md:py-[23px] md:text-[20px] ${
+                error ? 'border-red-500 border' : ''
+              }`}
+              placeholder="ドメインを検索(8文字以上22文字まで)"
+              value={searchValue}
+              onChange={handleInputChange}
+            />
+            <button type="button" onClick={handleSearch}
+              className="flex h-full w-[80px] items-center justify-center bg-[#0152A8] font-bold text-white duration-200 hover:opacity-75 md:w-[141px] md:text-[23px]"
+            >
+              検索
+            </button>
+          </div>
+          {error && <p className="mt-2 font-medium text-red-500 max-md:text-[12px]">8~22文字までご入力ください。</p>}
         </div>
       </div>
       <div

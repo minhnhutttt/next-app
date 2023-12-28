@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "deploy": "next build && next export",
     "prettier": "prettier --write \"**/*.{js,jsx,vue,json,html,css,scss}\""
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-modal": "^3.16.1",
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {

@@ -5,12 +5,12 @@ import FaqItem from "./faqItem";
 const data = [
   {
     id: "01",
-    question: "名前の購入方法は？",
+    question: "次世代ドメインの購入方法は？",
     awsner: "LINEにて友達登録後に、購入希望ボタンからご連絡ください。",
   },
   {
     id: "02",
-    question: "名前を複数購入することはできますか？",
+    question: "次世代ドメインを複数購入することはできますか？",
     awsner:
       "検索窓に希望の名前を入力して検索を行ってください。検索結果のうち、「購入可能」と表示のある名前のみ購入できます。",
   },
@@ -109,7 +109,7 @@ const data = [
 export default function Faq() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div ref={animateRefs} className="px-5 pt-10 md:pt-[106px]">
+    <div ref={animateRefs} className="px-5 pt-10 md:pt-[106px]" id="faq">
       <h4
         ref={animateRefs}
         className="mb-5 text-center font-roboto text-[32px] font-bold leading-[1.36] md:text-[64px]"
