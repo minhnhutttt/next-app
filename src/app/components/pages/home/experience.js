@@ -14,22 +14,22 @@ export default function Experience() {
         </h3>
         <div className="flex justify-center mt-7">
           <div className="relative flex w-full justify-center py-[14vw] md:max-w-[850px] md:py-[88px]">
-            <figure ref={animateRefs} className="max-lg:w-[34vw] max-md:mt-[2vw]">
+            <figure ref={animateRefs} className="max-lg:w-[34vw] max-md:mt-[2vw] ml-6">
               <img src="/images/image-experience.png" alt="" />
             </figure>
-            <div ref={animateLeftRefs} className="absolute left-[4vw] top-0 flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[5%] after:right-[8%]  after:block after:h-4 after:w-6 after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:left-[6%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:right-[3%] md:after:h-6 md:after:w-9 lg:text-[16px]">
+            <div ref={animateLeftRefs} className="absolute left-[4vw] top-0 flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[5%] after:right-[8%]  after:block after:h-4 after:w-6 after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:left-[4%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:right-[3%] md:after:h-6 md:after:w-9 lg:text-[16px]">
               スマートフォンの
               <br />
               容量がいっぱい..
             </div>
-            <div ref={animateLeftRefs} className="absolute left-[0%] top-[19vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[12%] after:right-[2%]  after:block after:h-4 after:w-6 after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:top-[31%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:right-[-2%] md:after:h-6 md:after:w-9 lg:text-[16px]">
+            <div ref={animateLeftRefs} className="absolute md:left-[-1%] left-0 top-[19vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[12%] after:right-[2%]  after:block after:h-4 after:w-6 after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:top-[31%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:right-[-2%] md:after:h-6 md:after:w-9 lg:text-[16px]">
               子どもの写真や動
               <br />
               画は安全な場所に
               <br />
               保管したい..
             </div>
-            <div ref={animateLeftRefs} className="absolute left-[4%] top-[40vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[27%] after:right-[-4%] after:block  after:h-4 after:w-6 after:rotate-[-30deg] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] max-md:rotate-[-16deg] md:top-[63%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:h-6 md:after:w-9 lg:text-[16px]">
+            <div ref={animateLeftRefs} className="absolute md:left-[2%] left-[4%] top-[40vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[27%] after:right-[-4%] after:block  after:h-4 after:w-6 after:rotate-[-30deg] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] max-md:rotate-[-16deg] md:top-[63%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:h-6 md:after:w-9 lg:text-[16px]">
               ストレージのサブス
               <br />
               ク契約してるけど永
@@ -38,7 +38,7 @@ export default function Experience() {
               <br />
               と憂鬱..
             </div>
-            <div ref={animateRightRefs} className="absolute right-[3%] top-[10vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[14%] after:left-[0]  after:block after:h-4 after:w-6 after:rotate-[18deg] after:scale-x-[-1] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:top-[14%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:left-[-3%] md:after:h-6 md:after:w-9 lg:text-[16px]">
+            <div ref={animateRightRefs} className="absolute md:right-[1.5%] right-[3%] top-[10vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[14%] after:left-[0]  after:block after:h-4 after:w-6 after:rotate-[18deg] after:scale-x-[-1] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:top-[14%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:left-[-3%] md:after:h-6 md:after:w-9 lg:text-[16px]">
               共有アプリにアップ
               <br />
               ロードするのは内部
@@ -47,7 +47,7 @@ export default function Experience() {
               <br />
               んだか気持ち悪い..
             </div>
-            <div ref={animateRightRefs} className="absolute right-[3%] top-[36vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[20%] after:left-[-3%] after:block  after:h-4 after:w-6 after:rotate-[18deg] after:scale-x-[-1] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] max-md:rotate-[16deg] md:top-[54%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:h-6 md:after:w-9 lg:text-[16px]">
+            <div ref={animateRightRefs} className="absolute md:right-[1.5%] right-[3%] top-[36vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[20%] after:left-[-3%] after:block  after:h-4 after:w-6 after:rotate-[18deg] after:scale-x-[-1] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] max-md:rotate-[16deg] md:top-[54%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:h-6 md:after:w-9 lg:text-[16px]">
               スマホの機種変更
               <br />
               データ移行が全然

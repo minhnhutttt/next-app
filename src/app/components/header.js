@@ -65,7 +65,7 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-            <div className="flex w-[528px] gap-4 max-md:flex-col md:gap-7">
+            <div className="flex w-[200px] md:w-[528px] gap-4 max-md:flex-col md:gap-7">
               <ButtonContact />
               <ButtonLine />
             </div>

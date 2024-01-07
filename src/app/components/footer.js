@@ -14,7 +14,7 @@ export default function Footer() {
             ネバーエンディングストレージ
           </p>
         </Link>
-        <div className="mt-5 flex flex-1 items-center gap-[24px] max-lg:flex-col max-md:mt-10 lg:ml-10 lg:gap-[48px]">
+        <div className="flex flex-1 items-center gap-[24px] max-lg:flex-col max-md:mt-10 lg:ml-10 lg:gap-[48px]">
           <ul className="flex flex-wrap gap-y-6 max-md:justify-center md:gap-y-4">
             <li>
               <a
