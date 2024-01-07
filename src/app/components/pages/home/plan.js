@@ -1,19 +1,22 @@
+"use client";
+import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 import Link from "next/link";
 
 export default function Plan() {
+  const animateRefs = useScrollAnimation("fadeUp");
   return (
     <div className="bg-white px-5 pt-[60px] pb-[70px] md:pb-[110px] md:pt-[100px] overflow-hidden">
       <div className="mx-auto w-full max-w-[400px] md:max-w-[1030px]">
-        <h3 className="text-center text-[18px] font-bold md:text-[42px]">
+        <h3 ref={animateRefs} className="text-center text-[18px] font-bold md:text-[42px]">
           料金プラン
         </h3>
-        <p className="mt-2 text-center text-[16px] font-bold md:text-[28px]">
+        <p ref={animateRefs} className="mt-2 text-center text-[16px] font-bold md:text-[28px]">
           次世代USBのNESを<span className="text-[#FF3A14]">最安価格</span>
           でご提供！
         </p>
         <div className="mt-10 flex justify-center rounded-[26px] bg-white/90 px-5 [box-shadow:0px_4px_50px_0px_rgba(0,_0,_0,_0.10)] md:mt-[128px]">
           <div className="flex w-full justify-center gap-10 py-10 max-md:flex-col max-md:items-center md:max-w-[865px] md:py-11 lg:gap-20">
-            <div className="max-md:rounded-[26px] max-md:bg-white max-md:p-5 max-md:[box-shadow:0px_20px_34px_0px_rgba(0,_64,_158,_0.30)]">
+            <div ref={animateRefs} className="max-md:rounded-[26px] max-md:bg-white max-md:p-5 max-md:[box-shadow:0px_20px_34px_0px_rgba(0,_64,_158,_0.30)]">
               <div className="w-[207px] md:w-[180px] lg:w-[207px]">
                 <p className="border-b border-[#22ABF3] py-3 text-center text-[18px] font-medium md:text-[24px]">
                   2GB Storage
@@ -48,7 +51,7 @@ export default function Plan() {
                 </Link>
               </div>
             </div>
-            <div className="rounded-[26px] border-2 border-[#22ABF3] bg-white px-5 pb-8 pt-6 [box-shadow:0px_20px_34px_0px_rgba(0,_64,_158,_0.30)] md:mt-[-110px] md:w-[292px] md:border-4 md:px-[30px] md:pb-[46px] md:pt-10">
+            <div ref={animateRefs} className="rounded-[26px] border-2 border-[#22ABF3] bg-white px-5 pb-8 pt-6 [box-shadow:0px_20px_34px_0px_rgba(0,_64,_158,_0.30)] md:mt-[-110px] md:w-[292px] md:border-4 md:px-[30px] md:pb-[46px] md:pt-10">
               <div className="mx-auto w-[232px] md:w-[212px] lg:w-[232px]">
                 <div className="flex justify-center mb-2">
                   <p className="relative rounded-xl bg-[#FF3A14] px-3 py-1 text-[12px] font-bold leading-snug tracking-wider text-white md:text-[14px]">
@@ -101,7 +104,7 @@ export default function Plan() {
                 </Link>
               </div>
             </div>
-            <div className="max-md:rounded-[26px] max-md:bg-white max-md:p-5 max-md:[box-shadow:0px_20px_34px_0px_rgba(0,_64,_158,_0.30)]">
+            <div ref={animateRefs} className="max-md:rounded-[26px] max-md:bg-white max-md:p-5 max-md:[box-shadow:0px_20px_34px_0px_rgba(0,_64,_158,_0.30)]">
               <div className="w-[207px] md:w-[180px] lg:w-[207px]">
                 <p className="border-b border-[#22ABF3] py-3 text-center text-[18px] font-medium md:text-[24px]">
                   500GB Storage

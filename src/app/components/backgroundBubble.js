@@ -15,10 +15,10 @@ const BackgroundBubble = () => {
       <Particles
         init={particlesInit}
         options={{
-          fpsLimit: 120,
+          fpsLimit: 60,
           particles: {
             number: {
-              value: 32,
+              value: 44,
               density: {
                 enable: false,
                 value_area: 600,
@@ -36,14 +36,14 @@ const BackgroundBubble = () => {
             shadow: {
               enable: true,
               blur: 5,
-              color: "hsl(0, 0%, 94%)",
+              color: "hsl(0, 0%, 92%)",
               offset: {
                 x: 2,
                 y: 4,
               },
             },
             opacity: {
-              value: { min: 0.6, max: 1 },
+              value: { min: 0.5, max: 1 },
               random: true,
               anim: {
                 enable: false,
@@ -53,7 +53,7 @@ const BackgroundBubble = () => {
               },
             },
             size: {
-              value: { min: 10, max: 24 },
+              value: { min: 12, max: 24 },
               random: true,
               anim: {
                 enable: false,
