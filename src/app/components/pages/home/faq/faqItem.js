@@ -38,7 +38,7 @@ export default function FaqItem({ question, awnser }) {
           <p className="font-roboto text-[18px] font-bold uppercase tracking-widest text-[#22ABF3] md:text-[32px]">
             q
           </p>
-          <p className="text-left text-[16px] font-bold text-black max-md:mt-0.5 md:text-[22px]">
+          <p className="text-left text-[16px] font-bold text-black md:text-[22px]">
             {question}
           </p>
         </div>
