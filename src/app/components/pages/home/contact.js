@@ -40,7 +40,7 @@ export default function Contact() {
           />
           <Link
             href="/"
-            className="mx-auto flex h-[48px] w-[280px] items-center justify-center rounded-[20px] bg-[#22ABF3] font-dm text-[18px] font-bold text-white md:h-[62px] md:text-[22px]"
+            className="mx-auto flex h-[48px] w-[280px] items-center justify-center rounded-[20px] bg-[#22ABF3] font-dm text-[18px] font-bold text-white md:h-[62px] md:text-[22px] duration-150 hover:opacity-75"
           >
             送　信
           </Link>
