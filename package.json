@@ -10,28 +10,22 @@
     "prettier": "prettier --write \"**/*.{js,jsx,vue,json,html,css,scss}\""
   },
   "dependencies": {
-    "@tsparticles/react": "^3.0.0",
-    "@tsparticles/shape-image": "^3.0.3",
-    "@tsparticles/slim": "^3.0.3",
-    "@tsparticles/engine": "3.0.3",
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
+    "gsap": "^3.12.4",
     "next": "13.4.6",
     "postcss": "8.4.24",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2",
     "react-particles": "2.12.2",
     "react-scripts": "3.0.1",
+    "tailwindcss": "3.3.2",
     "tsparticles-engine": "2.12.0",
-    "tsparticles-move-base": "2.12.0",
-    "tsparticles-shape-circle": "2.12.0",
     "tsparticles-shape-image": "2.12.0",
-    "tsparticles-slim": "2.12.0",
-    "tsparticles-updater-color": "2.12.0"
+    "tsparticles-slim": "2.12.0"
   },
   "devDependencies": {
     "prettier": "^2.8.8"

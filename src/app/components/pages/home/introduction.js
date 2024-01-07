@@ -1,16 +1,20 @@
+"use client";
+import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 export default function Introduction() {
+  const animateRefs = useScrollAnimation("fadeUp");
+  const animateRightRefs = useScrollAnimation("slideRight");
   return (
-    <div className="py-20 md:py-[160px] bg-[linear-gradient(180deg,_rgba(217,_217,_217,_0.00)_0%,_rgba(0,_181,_238,_0.30)_100%)]">
+    <div className="bg-[linear-gradient(180deg,_rgba(217,_217,_217,_0.00)_0%,_rgba(0,_181,_238,_0.30)_100%)] py-20 md:py-[160px] overflow-hidden">
       <div className="flex items-center justify-between max-md:flex-col">
-        <div className="flex w-full justify-center px-5 md:w-1/2">
+        <div className="flex justify-center w-full px-5 md:w-1/2">
           <div className="w-full max-w-[403px]">
-            <h3 className="text-[35px] font-black leading-snug tracking-[0.6em] md:text-[70px]">
+            <h3 ref={animateRefs} className="text-[35px] font-black leading-snug tracking-[0.6em] md:text-[70px]">
               NES
             </h3>
-            <p className="mb-7 text-[18px] font-black md:text-[24px]">
+            <p ref={animateRefs} className="mb-7 text-[18px] font-black md:text-[24px]">
               ネバーエンディングストレージ
             </p>
-            <div className="mb-4 flex flex-wrap gap-2.5">
+            <div ref={animateRefs} className="mb-4 flex flex-wrap gap-2.5">
               <div className="flex h-8 items-center justify-center gap-[5px] rounded-[10px] border border-[#00B5EE] px-2.5 text-[14px] md:h-10 md:text-[16px]">
                 <img src="/images/icon-photo.svg" alt="写真" />
                 <span>写真</span>
@@ -28,7 +32,7 @@ export default function Introduction() {
                 <span>ドキュメント</span>
               </div>
             </div>
-            <p className="text-[14px] leading-[1.8] md:text-[16px]">
+            <p ref={animateRefs} className="text-[14px] leading-[1.8] md:text-[16px]">
               つらい時の幸せも、嬉しい時の幸せも、そのすべてを残し続ける。
               <br />
               <br />
@@ -46,7 +50,7 @@ export default function Introduction() {
             </p>
           </div>
         </div>
-        <div className="flex w-full justify-end max-md:pl-20 md:w-1/2">
+        <div ref={animateRightRefs} className="flex justify-end w-full max-md:pl-20 md:w-1/2">
           <img src="/images/nes-introduction-image.png" alt="NES" />
         </div>
       </div>

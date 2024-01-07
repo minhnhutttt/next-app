@@ -8,12 +8,12 @@ export default function FV() {
     videoRef.current.play();
   }, []);
   return (
-    <div className="relative flex h-screen w-full items-center justify-center">
+    <div className="relative flex items-center justify-center w-full h-screen">
       <video
         ref={videoRef}
         muted
         loop
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 object-cover w-full h-full"
       >
         <source src="/videos/fv.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -28,7 +28,7 @@ export default function FV() {
           買い切り型オンラインストレージ
         </p>
       </div>
-      <div className="t absolute bottom-[10px] left-2/4 h-[50px] after:absolute after:top-[0] after:h-[30px] after:w-px after:animate-[pathmove_1.4s_ease-in-out_infinite] after:bg-[#eee] after:opacity-0 after:content-['']">
+      <div className="t absolute bottom-0 left-2/4 h-[50px] after:absolute after:top-[0] after:h-[30px] after:w-px after:animate-[pathmove_1.4s_ease-in-out_infinite] after:bg-[#eee] after:opacity-0 after:content-['']">
         <span className="absolute -left-[24px] -top-[15px] text-[12px] font-medium uppercase tracking-wider text-[#eee]">
           Scroll
         </span>

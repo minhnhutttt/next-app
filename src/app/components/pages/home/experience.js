@@ -1,35 +1,62 @@
+"use client";
+import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 export default function Experience() {
-    return (
-      <div className="py-10 md:pt-[110px] md:pb-9 bg-[linear-gradient(180deg,_rgba(0,_181,_238,_0.30)_0%,_rgba(217,_217,_217,_0.00)_100%)]">
-        <div className="">
-            <h3 className="md:text-[42px] text-[20px] font-bold text-center">
-                NESがあなたに必要な理由・・・<br />
-                こんな経験、ありませんか？
-            </h3>
-            <div className="flex justify-center mt-7">
-                <div className="relative w-full md:max-w-[850px] flex justify-center py-[14vw] md:py-[88px]">
-                    <figure className="max-lg:w-[34vw] max-md:mt-[2vw]">
-                        <img src="/images/image-experience.png" alt="" />
-                    </figure>
-                    <div className="absolute top-0 md:left-[6%] left-[4vw] bg-white border-2 w-[30vw] md:w-[200px] h-[18vw] md:h-[140px] rounded-[48%] border-[#231815] flex items-center justify-center lg:text-[16px] md:text-[14px]  font-bold text-[2.2vw] after:content-[''] after:bg-[url(/images/chat.png)] after:block after:absolute md:after:w-9 after:w-6 md:after:h-6 after:h-4 after:bg-cover after:bottom-[5%] md:after:right-[3%] after:right-[8%]">
-                        スマートフォンの<br />容量がいっぱい..
-                    </div>
-                    <div className="absolute md:top-[31%] top-[19vw] left-[0%] bg-white border-2 w-[30vw] md:w-[200px] h-[18vw] md:h-[140px] rounded-[48%] border-[#231815] flex items-center justify-center lg:text-[16px] md:text-[14px]  font-bold text-[2.2vw] after:content-[''] after:bg-[url(/images/chat.png)] after:block after:absolute md:after:w-9 after:w-6 md:after:h-6 after:h-4 after:bg-cover after:bottom-[12%] md:after:right-[-2%] after:right-[2%]">
-                    子どもの写真や動<br />画は安全な場所に<br />保管したい..
-                    </div>
-                    <div className="max-md:rotate-[-16deg] absolute md:top-[63%] top-[40vw] left-[4%] bg-white border-2 w-[30vw] md:w-[200px] h-[18vw] md:h-[140px] rounded-[48%] border-[#231815] flex items-center justify-center lg:text-[16px] md:text-[14px]  font-bold text-[2.2vw] after:content-[''] after:bg-[url(/images/chat.png)] after:block after:absolute md:after:w-9 after:w-6 md:after:h-6 after:h-4 after:bg-cover after:bottom-[27%] after:right-[-4%] after:rotate-[-30deg]">
-                    ストレージのサブス<br />ク契約してるけど永<br />久に払うのかと思う<br />と憂鬱..
-                    </div>
-                    <div className="absolute md:top-[14%] top-[10vw] right-[3%] bg-white border-2 w-[30vw] md:w-[200px] h-[18vw] md:h-[140px] rounded-[48%] border-[#231815] flex items-center justify-center lg:text-[16px] md:text-[14px]  font-bold text-[2.2vw] after:content-[''] after:bg-[url(/images/chat.png)] after:block after:absolute md:after:w-9 after:w-6 md:after:h-6 after:h-4 after:bg-cover after:bottom-[14%] md:after:left-[-3%] after:left-[0] after:rotate-[18deg] after:scale-x-[-1]">
-                    共有アプリにアップ<br />ロードするのは内部<br />から見られそうでな<br />んだか気持ち悪い..
-                    </div>
-                    <div className="max-md:rotate-[16deg] absolute md:top-[54%] top-[36vw] right-[3%] bg-white border-2 w-[30vw] md:w-[200px] h-[18vw] md:h-[140px] rounded-[48%] border-[#231815] flex items-center justify-center lg:text-[16px] md:text-[14px]  font-bold text-[2.2vw] after:content-[''] after:bg-[url(/images/chat.png)] after:block after:absolute md:after:w-9 after:w-6 md:after:h-6 after:h-4 after:bg-cover after:bottom-[20%] after:left-[-3%] after:rotate-[18deg] after:scale-x-[-1]">
-                    スマホの機種変更<br />データ移行が全然<br />終わらない..
-                    </div>
-                </div>
+  const animateRefs = useScrollAnimation("");
+  const animateLeftRefs = useScrollAnimation("slideLeft");
+  const animateRightRefs = useScrollAnimation("slideRight");
+  return (
+    <div className="bg-[linear-gradient(180deg,_rgba(0,_181,_238,_0.30)_0%,_rgba(217,_217,_217,_0.00)_100%)] py-10 md:pb-9 md:pt-[110px] overflow-hidden">
+      <div className="">
+        <h3 ref={animateRefs} className="text-center text-[20px] font-bold md:text-[42px]">
+          NESがあなたに必要な理由・・・
+          <br />
+          こんな経験、ありませんか？
+        </h3>
+        <div className="flex justify-center mt-7">
+          <div className="relative flex w-full justify-center py-[14vw] md:max-w-[850px] md:py-[88px]">
+            <figure ref={animateRefs} className="max-lg:w-[34vw] max-md:mt-[2vw]">
+              <img src="/images/image-experience.png" alt="" />
+            </figure>
+            <div ref={animateLeftRefs} className="absolute left-[4vw] top-0 flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[5%] after:right-[8%]  after:block after:h-4 after:w-6 after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:left-[6%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:right-[3%] md:after:h-6 md:after:w-9 lg:text-[16px]">
+              スマートフォンの
+              <br />
+              容量がいっぱい..
             </div>
+            <div ref={animateLeftRefs} className="absolute left-[0%] top-[19vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[12%] after:right-[2%]  after:block after:h-4 after:w-6 after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:top-[31%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:right-[-2%] md:after:h-6 md:after:w-9 lg:text-[16px]">
+              子どもの写真や動
+              <br />
+              画は安全な場所に
+              <br />
+              保管したい..
+            </div>
+            <div ref={animateLeftRefs} className="absolute left-[4%] top-[40vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[27%] after:right-[-4%] after:block  after:h-4 after:w-6 after:rotate-[-30deg] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] max-md:rotate-[-16deg] md:top-[63%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:h-6 md:after:w-9 lg:text-[16px]">
+              ストレージのサブス
+              <br />
+              ク契約してるけど永
+              <br />
+              久に払うのかと思う
+              <br />
+              と憂鬱..
+            </div>
+            <div ref={animateRightRefs} className="absolute right-[3%] top-[10vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[14%] after:left-[0]  after:block after:h-4 after:w-6 after:rotate-[18deg] after:scale-x-[-1] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] md:top-[14%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:left-[-3%] md:after:h-6 md:after:w-9 lg:text-[16px]">
+              共有アプリにアップ
+              <br />
+              ロードするのは内部
+              <br />
+              から見られそうでな
+              <br />
+              んだか気持ち悪い..
+            </div>
+            <div ref={animateRightRefs} className="absolute right-[3%] top-[36vw] flex h-[18vw] w-[30vw] items-center justify-center rounded-[48%] border-2 border-[#231815] bg-white text-[2.2vw] font-bold after:absolute after:bottom-[20%] after:left-[-3%] after:block  after:h-4 after:w-6 after:rotate-[18deg] after:scale-x-[-1] after:bg-[url(/images/chat.png)] after:bg-cover after:content-[''] max-md:rotate-[16deg] md:top-[54%] md:h-[140px] md:w-[200px] md:text-[14px] md:after:h-6 md:after:w-9 lg:text-[16px]">
+              スマホの機種変更
+              <br />
+              データ移行が全然
+              <br />
+              終わらない..
+            </div>
+          </div>
         </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

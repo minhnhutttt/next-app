@@ -1,17 +1,17 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import ButtonContact from "./common/buttonContact";
-import ButtonLine from "./common/buttonLine";
+import ButtonContact from "./common/button/buttonContact";
+import ButtonLine from "./common/button/buttonLine";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="fixed left-0 right-0 top-0 z-10 bg-[linear-gradient(180deg,_rgba(0,_30,_40,_0.90)_0%,_rgba(0,_30,_40,_0.00)_100%)] min-[1366px]:px-20 px-5">
+    <header className="fixed left-0 right-0 top-0 z-10 bg-[linear-gradient(180deg,_rgba(0,_30,_40,_0.90)_0%,_rgba(0,_30,_40,_0.00)_100%)] px-5 min-[1366px]:px-20">
       <div className="mx-auto flex h-20 w-full items-center justify-between md:h-[128px]">
         <Link href="/" className="font-black text-white">
-          <p className=" text-[20px] tracking-[0.6em] md:text-[35px]">NES</p>
-          <p className="text-[9px] md:text-[12px]">
+          <p className="text-[24px] tracking-[0.6em] md:text-[35px]">NES</p>
+          <p className="text-[10px] md:text-[12px]">
             ネバーエンディングストレージ
           </p>
         </Link>
@@ -65,7 +65,7 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-            <div className="flex gap-4 max-md:flex-col md:gap-7 w-[528px]">
+            <div className="flex w-[528px] gap-4 max-md:flex-col md:gap-7">
               <ButtonContact />
               <ButtonLine />
             </div>
