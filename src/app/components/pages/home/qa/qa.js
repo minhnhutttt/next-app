@@ -1,11 +1,11 @@
 "use client";
 import useScrollAnimation from "@/app/hooks/useScrollAnimation";
-import AboutItem from "./aboutItem";
+import QAItem from "./qaItem";
 
-export default function About() {
+export default function QA() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="px-5 py-10 md:py-[90px]">
+    <div id="qa" className="px-5 py-10 md:py-[90px]">
       <div className="mx-auto w-full max-w-[440px] md:max-w-[1240px]">
         <h3 ref={animateRefs} className="text-center text-[24px] font-bold md:text-[42px]">
           ネバーエンディングストレージについて
@@ -14,52 +14,52 @@ export default function About() {
           NESを3分で知る！一問一答
         </p>
         <div className="mt-10 grid gap-8 md:mt-[74px] md:grid-cols-2 md:gap-x-10 md:gap-y-11">
-          <AboutItem
+          <QAItem
             question="オンラインストレージって何？"
             answer="PC/スマホに必要なだけ容量追加！オンラインだから場所を選ばず簡単接続。"
             imageSrc="/images/icon-about-01.png"
           />
-          <AboutItem
+          <QAItem
             question="何が保存できるの？"
             answer="写真・音楽・動画・資料・契約書…あらゆるファイルを簡単アップロード！"
             imageSrc="/images/icon-about-02.png"
           />
-          <AboutItem
+          <QAItem
             question="一番の用途は何？"
             answer="安全なファイルの持ち運びや保管に最適！複数デバイスで共有も便利。"
             imageSrc="/images/icon-about-03.png"
           />
-          <AboutItem
+          <QAItem
             question="大切な情報が流出したりしない？"
             answer="アンチクラウド（分散化技術）で完全なプライバシー保護を実現！"
             imageSrc="/images/icon-about-04.png"
           />
-          <AboutItem
+          <QAItem
             question="他のリスクへの対応は？"
             answer="最先端テクノロジーで情報漏洩をはじめとする7つのリスク（※）を完全に克服！"
             imageSrc="/images/icon-about-05.png"
           />
-          <AboutItem
+          <QAItem
             question="ファイルは誰が管理するの？"
             answer="あなた自身です。運営会社にファイルを管理されるリスクを負う必要がありません！"
             imageSrc="/images/icon-about-06.png"
           />
-          <AboutItem
+          <QAItem
             question="ファイルは無くならないの？"
             answer="あなた自身が削除しなければファイルは永遠に保存できます。復元力にも自信あり！"
             imageSrc="/images/icon-about-07.png"
           />
-          <AboutItem
+          <QAItem
             question="大手クラウドストレージの方が安心じゃないの？"
             answer="大手クラウドだからこそ安心してはいけません。ユーザーが真に安心できる条件は、誰にも干渉されずに使えることです！"
             imageSrc="/images/icon-about-08.png"
           />
-          <AboutItem
+          <QAItem
             question="どうせサブスクでしょ？"
             answer="買い切り型でサブスク脱却！あなたの生涯に寄り添い続けます。"
             imageSrc="/images/icon-about-09.png"
           />
-          <AboutItem
+          <QAItem
             question="でも高いんでしょ？"
             answer="サブスク型と比べても買い切り型と比べても低コストでご提供！"
             imageSrc="/images/icon-about-10.png"

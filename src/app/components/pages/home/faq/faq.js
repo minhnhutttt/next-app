@@ -5,7 +5,7 @@ import FaqItem from "./faqItem";
 export default function FAQ() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="px-5 py-10 md:pb-[100px] md:pt-[86px]">
+    <div id="faq" className="px-5 py-10 md:pb-[100px] md:pt-[86px]">
       <div className="mx-auto w-full max-w-[920px]">
         <h4 ref={animateRefs} className="text-center text-[24px] font-bold tracking-wider md:text-[48px]">
           FAQ

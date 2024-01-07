@@ -18,7 +18,7 @@ export default function Footer() {
           <ul className="flex flex-wrap gap-y-6 max-md:justify-center md:gap-y-4">
             <li>
               <a
-                href=""
+                href="#about"
                 className="block px-3 text-[16px] font-bold tracking-[0.1em] text-white duration-150 hover:opacity-75"
               >
                 ABOUT
@@ -26,7 +26,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href=""
+                href="#qa"
                 className="block px-3 text-[16px] font-bold tracking-[0.1em] text-white duration-150 hover:opacity-75"
               >
                 一問一答
@@ -34,7 +34,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/"
+                href="#plan"
                 className="block px-3 text-[16px] font-bold tracking-[0.1em] text-white duration-150 hover:opacity-75"
               >
                 料金プラン
@@ -42,7 +42,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/"
+                href="#howto"
                 className="block px-3 text-[16px] font-bold tracking-[0.1em] text-white duration-150 hover:opacity-75"
               >
                 購入方法
@@ -50,7 +50,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/"
+                href="#faq"
                 className="block px-3 text-[16px] font-bold tracking-[0.1em] text-white duration-150 hover:opacity-75"
               >
                 FAQ

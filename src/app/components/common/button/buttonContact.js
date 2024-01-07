@@ -1,13 +1,11 @@
-import Link from "next/link";
-
 export default function ButtonContact() {
   return (
-    <Link
-      href="/"
+    <a
+      href="#contact"
       className="flex h-[50px] w-full max-w-[200px] items-center justify-center gap-[5px] rounded-[50px] bg-[#22ABF3] text-[14px] font-medium text-white duration-150 hover:opacity-75 md:h-[64px] md:max-w-[250px] md:text-[16px]"
     >
       <svg
-        className="h-4 w-4 md:h-6 md:w-6"
+        className="w-4 h-4 md:h-6 md:w-6"
         viewBox="0 0 24 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +16,6 @@ export default function ButtonContact() {
         />
       </svg>
       <span>メールでお申込み</span>
-    </Link>
+    </a>
   );
 }

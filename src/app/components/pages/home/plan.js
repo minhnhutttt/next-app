@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Plan() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="bg-white px-5 pt-[60px] pb-[70px] md:pb-[110px] md:pt-[100px] overflow-hidden">
+    <div id="plan" className="bg-white px-5 pt-[60px] pb-[70px] md:pb-[110px] md:pt-[100px] overflow-hidden">
       <div className="mx-auto w-full max-w-[400px] md:max-w-[1030px]">
         <h3 ref={animateRefs} className="text-center text-[18px] font-bold md:text-[42px]">
           料金プラン

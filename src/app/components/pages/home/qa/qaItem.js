@@ -1,7 +1,7 @@
 "use client";
 import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 import PropTypes from "prop-types";
-export default function AboutItem({ question, answer, imageSrc }) {
+export default function QAItem({ question, answer, imageSrc }) {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
     <div ref={animateRefs} className="group">
@@ -37,7 +37,7 @@ export default function AboutItem({ question, answer, imageSrc }) {
   );
 }
 
-AboutItem.propTypes = {
+QAItem.propTypes = {
   question: PropTypes.node.isRequired,
   answer: PropTypes.node.isRequired,
   imageSrc: PropTypes.string.isRequired,

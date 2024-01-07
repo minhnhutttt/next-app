@@ -1,10 +1,10 @@
 "use client";
 import useScrollAnimation from "@/app/hooks/useScrollAnimation";
-export default function Introduction() {
+export default function About() {
   const animateRefs = useScrollAnimation("fadeUp");
   const animateRightRefs = useScrollAnimation("slideRight");
   return (
-    <div className="bg-[linear-gradient(180deg,_rgba(217,_217,_217,_0.00)_0%,_rgba(0,_181,_238,_0.30)_100%)] py-20 md:py-[160px] overflow-hidden">
+    <div id="about" className="bg-[linear-gradient(180deg,_rgba(217,_217,_217,_0.00)_0%,_rgba(0,_181,_238,_0.30)_100%)] py-20 md:py-[160px] overflow-hidden">
       <div className="flex items-center justify-between max-md:flex-col">
         <div className="flex justify-center w-full px-5 md:w-1/2">
           <div className="w-full max-w-[403px]">

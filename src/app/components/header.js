@@ -1,11 +1,27 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ButtonContact from "./common/button/buttonContact";
 import ButtonLine from "./common/button/buttonLine";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const handleLinksClick = () => {
+      setOpen(false);
+    };
+
+    const links = document.querySelectorAll("a");
+    links.forEach((link) => {
+      link.addEventListener("click", handleLinksClick);
+    });
+
+    return () => {
+      links.forEach((link) => {
+        link.removeEventListener("click", handleLinksClick);
+      });
+    };
+  }, []);
   return (
     <header className="fixed left-0 right-0 top-0 z-10 bg-[linear-gradient(180deg,_rgba(0,_30,_40,_0.90)_0%,_rgba(0,_30,_40,_0.00)_100%)] px-5 min-[1366px]:px-20">
       <div className="mx-auto flex h-20 w-full items-center justify-between md:h-[128px]">
@@ -24,44 +40,44 @@ export default function Header() {
             <nav>
               <ul className="flex items-center max-md:flex-col max-md:gap-6">
                 <li>
-                  <Link
-                    href="/"
+                  <a
+                    href="#about"
                     className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
                   >
                     ABOUT
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
+                  <a
+                    href="#qa"
                     className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
                   >
                     一問一答
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
+                  <a
+                    href="#plan"
                     className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
                   >
                     料金プラン
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
+                  <a
+                    href="#howto"
                     className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
                   >
                     購入方法
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
+                  <a
+                    href="#faq"
                     className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
                   >
                     FAQ
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>

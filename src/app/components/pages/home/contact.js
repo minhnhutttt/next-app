@@ -18,7 +18,7 @@ export default function Contact() {
     setCheckedRadio(value);
   };
   return (
-    <div className="bg-white px-5 py-[50px] md:pb-[100px] md:pt-[120px]">
+    <div id="contact" className="bg-white px-5 py-[50px] md:pb-[100px] md:pt-[120px]">
       <div className="mx-auto flex w-full max-w-[1228px] items-center gap-10 max-md:flex-col md:gap-[70px]">
         <div className="flex-1">
           <h4 ref={animateRefs} className="font-dm text-[30px] font-bold md:text-[4.5vw] xl:text-[60px]">

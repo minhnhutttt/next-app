@@ -5,7 +5,7 @@ export default function Experience() {
   const animateLeftRefs = useScrollAnimation("slideLeft");
   const animateRightRefs = useScrollAnimation("slideRight");
   return (
-    <div className="bg-[linear-gradient(180deg,_rgba(0,_181,_238,_0.30)_0%,_rgba(217,_217,_217,_0.00)_100%)] py-10 md:pb-9 md:pt-[110px] overflow-hidden">
+    <div id="experience" className="bg-[linear-gradient(180deg,_rgba(0,_181,_238,_0.30)_0%,_rgba(217,_217,_217,_0.00)_100%)] py-10 md:pb-9 md:pt-[110px] overflow-hidden">
       <div className="">
         <h3 ref={animateRefs} className="text-center text-[20px] font-bold md:text-[42px]">
           NESがあなたに必要な理由・・・

@@ -1,13 +1,11 @@
-import Link from "next/link";
-
 export default function ButtonLine() {
   return (
-    <Link
+    <a
       href="/"
       className="flex h-[50px] w-full max-w-[200px] items-center justify-center gap-[5px] rounded-[50px] bg-[#01B202] text-[14px] font-medium text-white duration-150 hover:opacity-75 md:h-[64px] md:max-w-[250px] md:text-[16px]"
     >
       <svg
-        className="h-4 w-4 md:h-6 md:w-6"
+        className="w-4 h-4 md:h-6 md:w-6"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +16,6 @@ export default function ButtonLine() {
         />
       </svg>
       <span>LINEでお申込み</span>
-    </Link>
+    </a>
   );
 }

@@ -7,7 +7,7 @@ import ButtonLine from "@/app/components/common/button/buttonLine";
 export default function Guide() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="bg-[url(/images/image-howto.jpg)] bg-cover px-5 pb-8 pt-10 md:pb-[68px] md:pt-[84px] overflow-hidden">
+    <div id="howto" className="bg-[url(/images/image-howto.jpg)] bg-cover px-5 pb-8 pt-10 md:pb-[68px] md:pt-[84px] overflow-hidden">
       <div className="mx-auto w-full max-w-[400px] rounded-[30px] bg-white/30 py-6 md:max-w-[1180px] md:py-10 overflow-hidden">
         <h5 ref={animateRefs} className="text-center text-[20px] font-bold md:text-[42px]">
           購入方法
