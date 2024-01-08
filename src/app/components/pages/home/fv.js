@@ -10,22 +10,28 @@ export default function FV() {
     videoRef.current.play();
   }, []);
   return (
-    <div className="relative flex items-center justify-center w-full h-screen">
+    <div className="relative flex h-screen w-full items-center justify-center">
       <video
         ref={videoRef}
         muted
         loop
-        className="absolute inset-0 object-cover w-full h-full"
+        className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/videos/fv.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="relative z-0 font-black text-white">
-        <h1 ref={animateRefs} className="opacity-0 my-8 text-[40px] leading-[0.6] [text-shadow:0px_4px_100px_#000] md:my-16 md:text-[70px] lg:text-[100px]">
+        <h1
+          ref={animateRefs}
+          className="my-8 text-[40px] leading-[0.6] opacity-0 [text-shadow:0px_4px_100px_#000] md:my-16 md:text-[70px] lg:text-[100px]"
+        >
           <p>心ゆくまで</p> <br />
           <p className="ml-[50px] md:ml-[100px] lg:ml-[200px]">まるごと保管</p>
         </h1>
-        <p ref={animateRefs} className="opacity-0 text-center text-[18px] [text-shadow:0px_4px_100px_#000] md:text-[24px] lg:text-[32px]">
+        <p
+          ref={animateRefs}
+          className="text-center text-[18px] opacity-0 [text-shadow:0px_4px_100px_#000] md:text-[24px] lg:text-[32px]"
+        >
           低コストで安全 <br />
           買い切り型オンラインストレージ
         </p>

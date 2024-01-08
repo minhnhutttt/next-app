@@ -7,18 +7,27 @@ import ButtonLine from "@/app/components/common/button/buttonLine";
 export default function Guide() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div id="howto" className="bg-[url(/images/image-howto.jpg)] bg-cover px-5 pb-8 pt-10 md:pb-[68px] md:pt-[84px] overflow-hidden">
-      <div className="mx-auto w-full max-w-[400px] rounded-[30px] bg-white/30 py-6 md:max-w-[1180px] md:py-10 overflow-hidden">
-        <h5 ref={animateRefs} className="text-center text-[20px] font-bold md:text-[42px]">
+    <div
+      id="howto"
+      className="overflow-hidden bg-[url(/images/image-howto.jpg)] bg-cover px-5 pb-8 pt-10 md:pb-[68px] md:pt-[84px]"
+    >
+      <div className="mx-auto w-full max-w-[400px] overflow-hidden rounded-[30px] bg-white/30 py-6 md:max-w-[1180px] md:py-10">
+        <h5
+          ref={animateRefs}
+          className="text-center text-[20px] font-bold md:text-[42px]"
+        >
           購入方法
         </h5>
-        <div className="flex justify-center px-5 mt-10 max-md:flex-col max-md:items-center lg:px-10">
+        <div className="mt-10 flex justify-center px-5 max-md:flex-col max-md:items-center lg:px-10">
           <GuideItem imageSrc="/images/image-guide-01.png" step="容量を決める">
             ご希望の容量を決めてください。
             <br />
             ※容量は後から追加も可能です
           </GuideItem>
-          <figure ref={animateRefs} className="px-2 max-md:my-4 md:mt-[14%] lg:px-4 xl:px-10">
+          <figure
+            ref={animateRefs}
+            className="px-2 max-md:my-4 md:mt-[14%] lg:px-4 xl:px-10"
+          >
             <img
               className="max-lg:w-5 max-md:rotate-90"
               src="/images/icon-arrow.svg"
@@ -27,12 +36,15 @@ export default function Guide() {
           </figure>
           <GuideItem imageSrc="/images/image-guide-02.png" step="購入申請">
             <span>購入サポートセンターよりご購入ください</span>
-            <div className="flex flex-col items-center justify-center gap-2 mt-3 md:gap-4">
+            <div className="mt-3 flex flex-col items-center justify-center gap-2 md:gap-4">
               <ButtonContact />
               <ButtonLine />
             </div>
           </GuideItem>
-          <figure ref={animateRefs} className="px-2 max-md:my-4 md:mt-[14%] lg:px-4 xl:px-10">
+          <figure
+            ref={animateRefs}
+            className="px-2 max-md:my-4 md:mt-[14%] lg:px-4 xl:px-10"
+          >
             <img
               className="max-lg:w-5 max-md:rotate-90"
               src="/images/icon-arrow.svg"

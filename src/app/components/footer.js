@@ -6,7 +6,10 @@ export default function Footer() {
   return (
     <footer className="bg-[#111] bg-[url('/images/bg-footer.png')] bg-right-bottom bg-no-repeat px-10 pb-4 pt-12 max-md:bg-[length:100%_auto] md:pb-6 md:pt-[100px]">
       <div className="mx-auto mb-12 flex w-full max-w-[700px] max-md:flex-col md:mb-20 lg:max-w-[953px] lg:items-center">
-        <Link href="/" className="font-black text-white duration-150 hover:opacity-75">
+        <Link
+          href="/"
+          className="font-black text-white duration-150 hover:opacity-75"
+        >
           <p className="text-center text-[24px] tracking-[0.6em] md:text-[35px]">
             NES
           </p>

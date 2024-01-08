@@ -16,11 +16,11 @@ export default function FormRadio({ label, options, checkedValue, onChange }) {
   return (
     <div>
       <div className="text-[16px] font-bold md:text-[20px]">{label}</div>
-      <div className="flex flex-col pl-3 mt-3 md:mt-6 md:gap-5 md:pl-6">
+      <div className="mt-3 flex flex-col pl-3 md:mt-6 md:gap-5 md:pl-6">
         {options.map((option, index) => (
           <div className="inline-flex items-center" key={index}>
             <label
-              className="relative flex items-center p-2 rounded-full cursor-pointer md:p-3"
+              className="relative flex cursor-pointer items-center rounded-full p-2 md:p-3"
               htmlFor={option.value}
             >
               <input
@@ -35,7 +35,7 @@ export default function FormRadio({ label, options, checkedValue, onChange }) {
               <span className="pointer-events-none absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 text-[#4D9FFF] opacity-0 transition-opacity peer-checked:opacity-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-3 h-3 md:h-4 md:w-4"
+                  className="h-3 w-3 md:h-4 md:w-4"
                   viewBox="0 0 16 16"
                   fill="#4D9FFF"
                 >

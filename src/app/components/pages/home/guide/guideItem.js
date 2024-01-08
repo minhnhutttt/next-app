@@ -5,7 +5,10 @@ export default function GuideItem({ step, children, imageSrc }) {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
     <div className="max-w-[300px] flex-1 md:w-1/3">
-      <div ref={animateRefs} className="mx-auto flex aspect-square flex-col items-center justify-center rounded-full bg-[#D4F5FF] max-md:max-w-[200px] md:w-full">
+      <div
+        ref={animateRefs}
+        className="mx-auto flex aspect-square flex-col items-center justify-center rounded-full bg-[#D4F5FF] max-md:max-w-[200px] md:w-full"
+      >
         <figure className="-mt-2 max-lg:w-[80px] max-md:w-[60px] md:-mt-4">
           <img src={imageSrc} alt={step} />
         </figure>

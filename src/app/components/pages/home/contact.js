@@ -18,13 +18,22 @@ export default function Contact() {
     setCheckedRadio(value);
   };
   return (
-    <div id="contact" className="bg-white px-5 py-[50px] md:pb-[100px] md:pt-[120px]">
+    <div
+      id="contact"
+      className="bg-white px-5 py-[50px] md:pb-[100px] md:pt-[120px]"
+    >
       <div className="mx-auto flex w-full max-w-[1228px] items-center gap-10 max-md:flex-col md:gap-[70px]">
         <div className="flex-1">
-          <h4 ref={animateRefs} className="font-dm text-[30px] font-bold md:text-[4.5vw] xl:text-[60px]">
+          <h4
+            ref={animateRefs}
+            className="font-dm text-[30px] font-bold md:text-[4.5vw] xl:text-[60px]"
+          >
             お申し込みフォーム
           </h4>
-          <p ref={animateRefs} className="text-[14px] md:text-[1.6vw] xl:text-[20px]">
+          <p
+            ref={animateRefs}
+            className="text-[14px] md:text-[1.6vw] xl:text-[20px]"
+          >
             ご不明点はLINEよりお問い合わせください。
           </p>
         </div>
@@ -40,7 +49,7 @@ export default function Contact() {
           />
           <Link
             href="/"
-            className="mx-auto flex h-[48px] w-[280px] items-center justify-center rounded-[20px] bg-[#22ABF3] font-dm text-[18px] font-bold text-white md:h-[62px] md:text-[22px] duration-150 hover:opacity-75"
+            className="mx-auto flex h-[48px] w-[280px] items-center justify-center rounded-[20px] bg-[#22ABF3] font-dm text-[18px] font-bold text-white duration-150 hover:opacity-75 md:h-[62px] md:text-[22px]"
           >
             送　信
           </Link>

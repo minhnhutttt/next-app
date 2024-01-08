@@ -7,10 +7,16 @@ export default function QA() {
   return (
     <div id="qa" className="px-5 py-10 md:py-[90px]">
       <div className="mx-auto w-full max-w-[440px] md:max-w-[1240px]">
-        <h3 ref={animateRefs} className="text-center text-[24px] font-bold md:text-[42px]">
+        <h3
+          ref={animateRefs}
+          className="text-center text-[24px] font-bold md:text-[42px]"
+        >
           ネバーエンディングストレージについて
         </h3>
-        <p ref={animateRefs} className="mt-2 text-center text-[18px] font-black tracking-[0.3em] md:text-[24px]">
+        <p
+          ref={animateRefs}
+          className="mt-2 text-center text-[18px] font-black tracking-[0.3em] md:text-[24px]"
+        >
           NESを3分で知る！一問一答
         </p>
         <div className="mt-10 grid gap-8 md:mt-[74px] md:grid-cols-2 md:gap-x-10 md:gap-y-11">
@@ -65,7 +71,10 @@ export default function QA() {
             imageSrc="/images/icon-about-10.png"
           />
         </div>
-        <div ref={animateRefs} className="mx-auto mt-8 flex w-full max-w-[736px] gap-2 text-[#666] md:mt-[60px]">
+        <div
+          ref={animateRefs}
+          className="mx-auto mt-8 flex w-full max-w-[736px] gap-2 text-[#666] md:mt-[60px]"
+        >
           <p className="text-[13px] leading-loose md:text-[16px]">（※）</p>
           <p className="text-[11px] leading-loose md:text-[12px]">
             ●1. データ漏洩:

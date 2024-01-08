@@ -25,7 +25,10 @@ export default function Header() {
   return (
     <header className="fixed left-0 right-0 top-0 z-10 bg-[linear-gradient(180deg,_rgba(0,_30,_40,_0.90)_0%,_rgba(0,_30,_40,_0.00)_100%)] px-5 min-[1366px]:px-20">
       <div className="mx-auto flex h-20 w-full items-center justify-between md:h-[128px]">
-        <Link href="/" className="font-black text-white duration-150 hover:opacity-75">
+        <Link
+          href="/"
+          className="font-black text-white duration-150 hover:opacity-75"
+        >
           <p className="text-[24px] tracking-[0.6em] md:text-[35px]">NES</p>
           <p className="text-[10px] md:text-[12px]">
             ネバーエンディングストレージ
@@ -42,7 +45,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#about"
-                    className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
+                    className="px-3 font-bold text-white duration-150 hover:opacity-75 md:text-[16px]"
                   >
                     ABOUT
                   </a>
@@ -50,7 +53,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#qa"
-                    className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
+                    className="px-3 font-bold text-white duration-150 hover:opacity-75 md:text-[16px]"
                   >
                     一問一答
                   </a>
@@ -58,7 +61,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#plan"
-                    className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
+                    className="px-3 font-bold text-white duration-150 hover:opacity-75 md:text-[16px]"
                   >
                     料金プラン
                   </a>
@@ -66,7 +69,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#howto"
-                    className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
+                    className="px-3 font-bold text-white duration-150 hover:opacity-75 md:text-[16px]"
                   >
                     購入方法
                   </a>
@@ -74,14 +77,14 @@ export default function Header() {
                 <li>
                   <a
                     href="#faq"
-                    className="px-3 font-bold text-white md:text-[16px] duration-150 hover:opacity-75"
+                    className="px-3 font-bold text-white duration-150 hover:opacity-75 md:text-[16px]"
                   >
                     FAQ
                   </a>
                 </li>
               </ul>
             </nav>
-            <div className="flex w-[200px] md:w-[528px] gap-4 max-md:flex-col md:gap-7">
+            <div className="flex w-[200px] gap-4 max-md:flex-col md:w-[528px] md:gap-7">
               <ButtonContact />
               <ButtonLine />
             </div>

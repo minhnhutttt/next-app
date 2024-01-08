@@ -5,7 +5,7 @@ export default function ButtonContact() {
       className="flex h-[50px] w-full max-w-[200px] items-center justify-center gap-[5px] rounded-[50px] bg-[#22ABF3] text-[14px] font-medium text-white duration-150 hover:opacity-75 md:h-[64px] md:max-w-[250px] md:text-[16px]"
     >
       <svg
-        className="w-4 h-4 md:h-6 md:w-6"
+        className="h-4 w-4 md:h-6 md:w-6"
         viewBox="0 0 24 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
