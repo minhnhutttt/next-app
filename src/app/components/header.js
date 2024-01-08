@@ -27,7 +27,7 @@ export default function Header() {
           <a
             href="https://lin.ee/6PgmBNE"
             target="_blank"
-            className="flex h-12 max-w-[240px] items-center justify-between gap-3 break-keep rounded-[50px] bg-[#00B900] px-4 font-zenkaku text-[13px] font-bold tracking-wider text-white md:h-[68px] md:w-full md:px-[30px] md:text-[16px] xl:max-w-[317px] xl:text-[22px]"
+            className="flex h-12 max-w-[240px] items-center justify-between gap-3 break-keep rounded-[50px] bg-[#00B900] px-4 font-zenkaku text-[13px] font-bold tracking-wider text-white md:h-[68px] md:w-full md:px-[30px] md:text-[16px] xl:max-w-[317px] xl:text-[22px] duration-150 hover:opacity-75"
           >
             <span>LINEでお問い合わせ</span>
             <svg
@@ -47,7 +47,7 @@ export default function Header() {
           <Link
             href="#download"
             smooth="true"
-            className="flex h-12 max-w-[230px] items-center justify-between gap-3 break-keep rounded-[50px] bg-[#2157E3] px-4 font-zenkaku text-[13px] font-bold tracking-wider text-white md:h-[68px] md:w-full md:px-[30px] md:text-[16px] xl:max-w-[281px] xl:text-[22px]"
+            className="flex h-12 max-w-[230px] items-center justify-between gap-3 break-keep rounded-[50px] bg-[#2157E3] px-4 font-zenkaku text-[13px] font-bold tracking-wider text-white md:h-[68px] md:w-full md:px-[30px] md:text-[16px] xl:max-w-[281px] xl:text-[22px] duration-150 hover:opacity-75"
           >
             <span>アプリをDownload</span>
             <svg

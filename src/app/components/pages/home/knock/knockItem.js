@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export default function KnockItem({ number, title, children, large }) {
   return (
     <div

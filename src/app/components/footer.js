@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="">
           <Link
             href="/"
-            className="font-dela text-[32px] tracking-widest [text-shadow:4px_3px_0px_#000]"
+            className="font-dela text-[32px] tracking-widest [text-shadow:4px_3px_0px_#000] duration-150 hover:opacity-75"
           >
             <img
               className="max-md:w-[200px]"
@@ -22,7 +22,7 @@ export default function Footer() {
           <a
             href="https://lin.ee/6PgmBNE"
             target="_blank"
-            className="flex h-12 max-w-[240px] items-center justify-between gap-3 break-keep rounded-[50px] bg-[#00B900] px-4 font-zenkaku text-[14px] font-bold tracking-wider text-white md:h-[64px] md:w-full md:px-6 md:text-[18px] xl:max-w-[247px]"
+            className="flex h-12 max-w-[240px] items-center justify-between gap-3 break-keep rounded-[50px] bg-[#00B900] px-4 font-zenkaku text-[14px] font-bold tracking-wider text-white md:h-[64px] md:w-full md:px-6 md:text-[18px] xl:max-w-[247px] duration-150 hover:opacity-75"
           >
             <span>LINEでお問い合わせ</span>
             <svg
