@@ -31,7 +31,7 @@ export default function FaqItem({ question, awnser }) {
     >
       <button
         type="button"
-        className="flex items-center justify-between w-full duration-200 hover:opacity-75"
+        className="flex w-full items-center justify-between duration-200 hover:opacity-75"
         onClick={handleExpanderClick}
       >
         <div className="flex items-center gap-4 md:gap-8">
@@ -44,7 +44,7 @@ export default function FaqItem({ question, awnser }) {
         </div>
         <div
           ref={arrowRef}
-          className="relative flex items-center justify-center w-8 h-8 ml-2 duration-150 md:h-12 md:w-12"
+          className="relative ml-2 flex h-8 w-8 items-center justify-center duration-150 md:h-12 md:w-12"
         >
           <svg
             className="max-md:w-8"
