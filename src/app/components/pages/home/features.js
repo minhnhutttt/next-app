@@ -1,3 +1,5 @@
+"use client";
+import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 import SectionTitle from "./components/sectionTitle";
 
 const features = [
@@ -19,11 +21,12 @@ const features = [
 ];
 
 export default function Features() {
+  const animateRefs = useScrollAnimation("fadeUp");
     return (
-      <div className="px-5">
+      <div id="features" className="px-5">
         <div className="w-full max-w-[1280px] mx-auto py-10 md:pt-20 md:pb-[140px]">
             <SectionTitle>ギガ二刀流Wi-Fiの特徴</SectionTitle>
-            <div className="flex max-md:flex-col max-md:items-center justify-center gap-6 md:gap-10 mt-8 md:mt-16 flex-wrap">
+            <div ref={animateRefs} className="flex max-md:flex-col max-md:items-center justify-center gap-6 md:gap-10 mt-8 md:mt-16 flex-wrap">
             {features.map(({ id, featureImage, text }) => (
                   <div key={id} className="flex-1 flex justify-center items-center relative md:basis-[380px] md:max-w-[380px] max-w-[320px]">
                     <div>

@@ -1,49 +1,65 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const links = [
     {
       id: 1,
-      link: "/",
+      link: "#features",
       text: "特徴"
     },
     {
         id: 2,
-        link: "/",
+        link: "#advantages",
         text: "メリット"
     },
     {
         id: 3,
-        link: "/",
+        link: "#product",
         text: "商品紹介"
     },
     {
         id: 4,
-        link: "/",
+        link: "#plan",
         text: "おすすめプラン"
     },
     {
         id: 5,
-        link: "/",
+        link: "#flow",
         text: "ご利用の流れ"
     },
     {
         id: 6,
-        link: "/",
+        link: "#faq",
         text: "FAQ"
     },
   ];
 
 export default function Header() {
     const [open, setOpen] = useState(false);
+    useEffect(() => {
+        const handleLinksClick = () => {
+          setOpen(false);
+        };
+    
+        const links = document.querySelectorAll("a");
+        links.forEach((link) => {
+          link.addEventListener("click", handleLinksClick);
+        });
+    
+        return () => {
+          links.forEach((link) => {
+            link.removeEventListener("click", handleLinksClick);
+          });
+        };
+      }, []);
     return (
       <div className="absolute inset-x-0 top-0 px-5 h-[110px] flex items-center justify-between z-50">
-        <Link href="/" className="block ml-5 max-md:hidden">
+        <Link href="/" className="block ml-5 max-md:hidden duration-150 hover:opacity-75">
             <img src="/images/giga-wifi.png" alt="ギガ二刀流Wi-Fi" />
         </Link>
         {open && <div className="fixed inset-0 z-40" onClick={() => setOpen(false)}></div>}
         <div 
-        className={`flex z-50 items-center gap-8 xl:gap-2 max-xl:flex-col max-xl:justify-center max-xl:pointer-events-none max-xl:absolute max-xl:opacity-0 xl:py-4 overflow-hidden max-xl:h-screen max-xl:inset-y-0 max-xl:bg-black/90 max-xl:right-0 duration-300 ${
+        className={`flex z-50 items-center gap-8 xl:gap-2 max-xl:flex-col max-xl:justify-center max-xl:pointer-events-none max-xl:fixed max-xl:opacity-0 xl:py-4 overflow-hidden max-xl:h-screen max-xl:inset-y-0 max-xl:bg-black/90 max-xl:right-0 duration-300 ${
             open ? "max-xl:pointer-events-auto max-xl:opacity-100 max-xl:w-[280px]" : "max-xl:w-0"
           }`}
         >
@@ -51,12 +67,12 @@ export default function Header() {
                 <ul className="flex max-xl:flex-col gap-8 xl:gap-2.5">
                     {links.map(({ id, link, text }) => (
                         <li key={id}>
-                            <Link href={link} className="min-[1366px]:text-[20px] max-xl:text-white text-[18px] font-bold min-[1366px]:px-[15px] px-3 py-3">{text}</Link>
+                            <Link href={link} smooth="true" className="min-[1366px]:text-[20px] max-xl:text-white text-[18px] font-bold min-[1366px]:px-[15px] px-3 py-3 duration-150 hover:opacity-75">{text}</Link>
                         </li>
                     ))}
                 </ul>
             </nav>
-            <Link href="https://shop.wgiga-wifi.com" target="_blank" className="min-[1366px]:text-[20px] text-[16px] text-white font-bold flex items-center justify-center min-[1366px]::w-[260px] min-[1366px]::h-[60px] w-[216px] h-[50px] rounded-[35px] max-xl:border-white max-xl:border overflow-hidden bg-black [box-shadow:0px_5.579px_0px_0px_#D80000] relative tracking-wider">
+            <Link href="https://shop.wgiga-wifi.com" target="_blank" className="min-[1366px]:text-[20px] text-[16px] text-white font-bold flex items-center justify-center min-[1366px]:w-[260px] min-[1366px]:h-[60px] w-[216px] h-[50px] rounded-[35px] max-xl:border-white max-xl:border overflow-hidden bg-black [box-shadow:0px_5.579px_0px_0px_#D80000] relative tracking-wider duration-150 hover:opacity-75">
                 <span>ご購入はこちら</span>
                 <svg className="absolute max-md:w-3 md:right-3 right-2.5" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4263 0H6.37433L10.8765 6.78788L6.37433 13.5758H10.4263L14.9284 6.78788L10.4263 0Z" fill="white"/>
@@ -66,7 +82,7 @@ export default function Header() {
         </div>
         <div className="absolute md:right-10 right-5 flex h-[28px] w-[35px] items-center justify-center xl:hidden">
             <button
-            className={`group relative block h-[28px] w-8 cursor-pointer border-[none] p-0 max-xl:z-[99] md:w-10 max-xl:[&.active]:absolute ${
+            className={`group relative block h-[28px] w-8 cursor-pointer border-[none] p-0 max-xl:z-[99] md:w-10 max-xl:[&.active]:fixed ${
                 open ? "active" : ""
             }`}
             onClick={() => setOpen(!open)}

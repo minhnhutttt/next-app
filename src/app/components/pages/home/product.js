@@ -1,19 +1,22 @@
+"use client";
+import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 import SectionSupport from "./components/sectionSupport";
 import SectionTitle from "./components/sectionTitle";
 
 export default function Product() {
+    const animateRefs = useScrollAnimation("fadeUp");
     return (
-        <div className="pb-6 pt-10 md:pt-20 md:pb-[95px] px-5">
+        <div id="product" className="pb-6 pt-10 md:pt-20 md:pb-[95px] px-5">
             <div className="w-full max-w-[1280px] mx-auto">
                 <SectionTitle>商品詳細</SectionTitle>
                 <div className="mt-10 md:mt-20 bg-white/90 rounded-[20px] pt-8 md:pt-[50px] pb-10 md:pb-[80px] px-5 md:px-11">
-                    <h4 className="text-center md:text-[36px] text-[24px] font-bold tracking-widest">ポケットWi-Fi業界トップクラスの性能！</h4>
+                    <h4 ref={animateRefs} className="text-center md:text-[36px] text-[24px] font-bold tracking-widest">ポケットWi-Fi業界トップクラスの性能！</h4>
                     <div className="flex max-lg:justify-center max-lg:flex-wrap mt-[54px] gap-3">
                         <div className="max-md:max-w-[70%]" >
-                            <figure>
+                            <figure ref={animateRefs}>
                                 <img src="/images/product-freebot.png" alt="" />
                             </figure>
-                            <div className="mt-2">
+                            <div ref={animateRefs} className="mt-2">
                                 <div className="flex justify-center items-center gap-1.5 md:text-[24px] text-[16px] font-bold">
                                     <svg className="max-md:w-8" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
                                         <path d="M40.7 16.4998H38.5C37.8925 16.4998 37.4 16.9922 37.4 17.5998V26.3998C37.4 27.0073 37.8925 27.4998 38.5 27.4998H40.7C41.3075 27.4998 41.8 27.0073 41.8 26.3998V17.5998C41.8 16.9922 41.3075 16.4998 40.7 16.4998Z" fill="black"/>
@@ -26,7 +29,7 @@ export default function Product() {
                             </div>
                         </div>
                         <div className="md:flex-1">
-                            <div className="border-y border-black pb-6">
+                            <div ref={animateRefs} className="border-y border-black pb-6">
                                 <div className="flex justify-center">
                                     <div className="md:pt-9 pt-6 md:pb-8 pb-5 space-y-3">
                                         <div className="flex md:gap-11 gap-5">
