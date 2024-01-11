@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="">
       <FV />
-      <div className="bg-[url('/images/bg.jpg')] bg-[length:100%_auto] relative before:bg-[#F5F5F7] before:absolute before:w-full before:h-screen before:inset-x-0 before:bottom-0">
+      <div className="relative bg-[url('/images/bg.jpg')] bg-[length:100%_auto] before:absolute before:inset-x-0 before:bottom-0 before:h-screen before:w-full before:bg-[#F5F5F7]">
         <Features />
         <Dissatisfaction />
         <ButtonPurchase />
@@ -36,5 +36,5 @@ export default function Home() {
       <FAQ />
       <WSP />
     </main>
-  )
+  );
 }
