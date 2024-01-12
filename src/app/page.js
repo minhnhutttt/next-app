@@ -1,5 +1,9 @@
+import FV from "./components/pages/fv";
+
 export default function Home() {
   return (
-    <div className=""></div>
+    <main>
+      <FV />
+    </main>
   )
 }

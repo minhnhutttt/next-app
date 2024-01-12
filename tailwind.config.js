@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      montserrat: ["Montserrat", "sans-serif"],
+      dela: ["Dela Gothic One", "sans-serif"],
     },
   },
   plugins: [],
