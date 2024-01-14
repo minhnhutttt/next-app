@@ -19,5 +19,5 @@ export default function Home() {
       <FAQ />
       <DiverWallet />
     </main>
-  )
+  );
 }

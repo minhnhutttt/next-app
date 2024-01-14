@@ -46,11 +46,29 @@ export default function FaqItem({ question, awnser }) {
           ref={arrowRef}
           className="relative ml-2 flex h-8 w-8 items-center justify-center duration-150 md:h-12 md:w-12"
         >
-          <svg className="max-md:w-8" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="23.5" transform="rotate(-180 24 24)" stroke="#2A5297"/>
-            <path d="M28.2666 21.8667L23.9999 26.1334L19.7333 21.8667" stroke="#2A5297" strokeWidth="2" strokeLinecap="round" strokeLinejoinn="round"/>
-        </svg>
-
+          <svg
+            className="max-md:w-8"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="24"
+              cy="24"
+              r="23.5"
+              transform="rotate(-180 24 24)"
+              stroke="#2A5297"
+            />
+            <path
+              d="M28.2666 21.8667L23.9999 26.1334L19.7333 21.8667"
+              stroke="#2A5297"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoinn="round"
+            />
+          </svg>
         </div>
       </button>
       <div ref={contentRef} className="h-0 overflow-hidden">
