@@ -11,6 +11,7 @@ const useScrollAnimation = (animationType, delay = 0) => {
   useEffect(() => {
     const animateElements = () => {
       elements.current.forEach((el) => {
+        gsap.set(el, { opacity: 0 });
         let animation = {};
 
         switch (animationType) {

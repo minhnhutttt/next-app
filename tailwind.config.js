@@ -15,6 +15,7 @@ module.exports = {
     },
     fontFamily: {
       dela: ["Dela Gothic One", "sans-serif"],
+      noto: ["Noto Sans JP", "sans-serif"],
     },
   },
   plugins: [],
