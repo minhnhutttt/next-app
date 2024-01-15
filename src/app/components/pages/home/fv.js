@@ -6,7 +6,7 @@ export default function FV() {
   const animateRefs = useScrollAnimation("fadeUp");
   const animateZoomRefs = useScrollAnimation("zoom");
   return (
-    <div className="mx-auto w-full max-w-[1440px] pb-[70px] md:pb-[140px]">
+    <div className="mx-auto w-full max-w-[1440px] pb-[70px] md:pb-[160px]">
       <div ref={animateZoomRefs} className="flex place-content-center">
         <img
           className="w-full max-w-[1420px]"
@@ -30,7 +30,7 @@ export default function FV() {
             ref={animateRefs}
             className="flex flex-1 gap-4 max-xl:flex-wrap max-xl:justify-center max-md:flex-col md:items-center md:gap-6 xl:pb-9"
           >
-            <Link href="/" className="block font-dela leading-none text-white">
+            <Link href="/" className="block leading-none text-white font-dela">
               <p className="break-keep text-[24px] tracking-[0.5rem] md:text-[34px]">
                 次世代
               </p>

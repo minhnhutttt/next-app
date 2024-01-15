@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function NFT() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="mt-16 md:mt-[80px] lg:mt-[116px] ">
+    <div className="">
       <div className="bg-[url('/images/background-nft.jpg')] bg-[length:100%_100%] bg-no-repeat px-5 pb-[120px] pt-12 md:pb-[140px] md:pt-[80px] lg:pb-[200px] lg:pt-[120px]">
         <div className="mx-auto flex w-full gap-10 max-lg:flex-col max-lg:items-center max-lg:justify-center max-md:max-w-[440px] md:max-w-[1320px] md:pl-6 lg:gap-4">
           <div className="w-full max-w-[348px] pt-5">
@@ -32,7 +32,7 @@ export default function NFT() {
             </div>
           </div>
           <div className="flex-1">
-            <div ref={animateRefs} className="text-center font-bold">
+            <div ref={animateRefs} className="font-bold text-center">
               <h4 className="text-[18px] md:text-[24px]">
                 大切な人への贈り物として、この特別な包装を選んでみませんか？
               </h4>
@@ -42,7 +42,7 @@ export default function NFT() {
             </div>
             <div
               ref={animateRefs}
-              className="mt-8 flex items-start justify-center gap-5 max-md:flex-wrap md:mt-12 md:px-5"
+              className="flex items-start justify-center gap-5 mt-8 max-md:flex-wrap md:mt-12 md:px-5"
             >
               <div className="flex w-[calc(50%-10px)] flex-col items-center justify-center md:w-1/3">
                 <figure>
@@ -102,7 +102,7 @@ export default function NFT() {
       <div className="px-5">
         <div
           ref={animateRefs}
-          className="relative mx-auto -mt-[88px] w-full max-w-[578px] rounded-[70px] bg-white p-8 after:absolute after:left-1/2 after:top-[calc(100%-12px)] after:h-7 after:w-8 after:-translate-x-1/2 after:bg-[url('/images/triangle.png')] after:bg-cover md:mt-[-119px] md:rounded-[170px] md:p-[60px] md:after:h-9 md:after:w-10"
+          className="relative mx-auto z-10 -mt-[88px] w-full max-w-[578px] rounded-[70px] bg-white p-8 after:absolute after:left-1/2 after:top-[calc(100%-12px)] after:h-7 after:w-8 after:-translate-x-1/2 after:bg-[url('/images/triangle.png')] after:bg-cover md:mt-[-119px] md:rounded-[170px] md:p-[60px] md:after:h-9 md:after:w-10"
         >
           <div className="border-y border-[#EA4335] py-5">
             <p className="text-[14px] font-medium leading-tight md:text-[18px]">
@@ -118,7 +118,7 @@ export default function NFT() {
         </div>
         <div
           ref={animateRefs}
-          className="mx-auto mt-10 w-full max-w-[912px] rounded-[20px] bg-[#00B900] px-6 pb-5 pt-8 md:mt-[60px] md:px-11 md:pb-8 md:pt-[38px]"
+          className="mx-auto w-full relative z-0 max-w-[912px] rounded-[20px] bg-[#00B900] px-6 pb-5 pt-8 -mt-1.5 md:-mt-2.5 md:px-11 md:pb-8 md:pt-[38px]"
         >
           <div
             ref={animateRefs}
@@ -165,7 +165,7 @@ export default function NFT() {
           </div>
           <div
             ref={animateRefs}
-            className="mt-8 flex items-center justify-center gap-2"
+            className="flex items-center justify-center gap-2 mt-8"
           >
             <img src="/images/girl.png" alt="" />
             <span className="text-[15px] font-bold text-white md:text-[20px]">

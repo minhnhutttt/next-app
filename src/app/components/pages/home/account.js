@@ -83,7 +83,7 @@ export default function Account() {
                       </h5>
                     </div>
                     <div className="md:pl-[57px]">
-                      <p className="w-full max-w-[340px] text-[13px] leading-[1.4] tracking-wide md:text-[16px]">
+                      <p className="w-full max-w-[340px] text-[13px] leading-[1.4] tracking-wide md:text-[16px] font-medium">
                         {text}
                       </p>
                     </div>
