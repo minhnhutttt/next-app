@@ -13,6 +13,8 @@ export default function Home() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     asNavFor: navSliderRef.current,
   };
 
@@ -24,6 +26,10 @@ export default function Home() {
     slidesToScroll: 1,
     focusOnSelect: true,
     arrows: false,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerPadding: '0',
     asNavFor: mainSliderRef.current,
   };
   return (
@@ -66,28 +72,28 @@ export default function Home() {
           </div>
           
           <Slider ref={navSliderRef} {...navSliderSettings}>
-              <div>
+              <div className='js--slick'>
                 <div className="relative flex items-center justify-center w-[480px] h-[530px] mx-auto rounded-[10.136px] border-[0.673px] border-[solid] border-[#000] bg-[#7A9FFF] [box-shadow:0px_2.692px_2.692px_0px_rgba(0,_0,_0,_0.25)]">
                   <figure>
                     <img className="w-full max-w-[370px]" src="/images/image-account.png" alt="ACCOUT" />
                   </figure>
                 </div>
               </div>
-              <div>
+              <div className='js--slick'>
                 <div className="relative flex items-center justify-center w-[480px] h-[530px] mx-auto rounded-[10.136px] border-[0.673px] border-[solid] border-[#000] bg-[#7A9FFF] [box-shadow:0px_2.692px_2.692px_0px_rgba(0,_0,_0,_0.25)]">
                   <figure>
                     <img className="w-full max-w-[370px]" src="/images/image-account.png" alt="ACCOUT" />
                   </figure>
                 </div>
               </div>
-              <div>
+              <div className='js--slick'>
                 <div className="relative flex items-center justify-center w-[480px] h-[530px] mx-auto rounded-[10.136px] border-[0.673px] border-[solid] border-[#000] bg-[#7A9FFF] [box-shadow:0px_2.692px_2.692px_0px_rgba(0,_0,_0,_0.25)]">
                   <figure>
                     <img className="w-full max-w-[370px]" src="/images/image-account.png" alt="ACCOUT" />
                   </figure>
                 </div>
               </div>
-              <div>
+              <div className='js--slick'>
                 <div className="relative flex items-center justify-center w-[480px] h-[530px] mx-auto rounded-[10.136px] border-[0.673px] border-[solid] border-[#000] bg-[#7A9FFF] [box-shadow:0px_2.692px_2.692px_0px_rgba(0,_0,_0,_0.25)]">
                   <figure>
                     <img className="w-full max-w-[370px]" src="/images/image-account.png" alt="ACCOUT" />

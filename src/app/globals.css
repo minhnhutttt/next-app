@@ -10,3 +10,15 @@ body {
   color: #000;
   font-family: "Dela Gothic One", sans-serif;
 }
+
+
+.slick-slide {
+  transition: all 0.3s;
+  margin-top: 30px;
+}
+.slick-slide.slick-center {
+  margin-top: 0;
+}
+.slide {
+  padding: 0 24px;
+}
