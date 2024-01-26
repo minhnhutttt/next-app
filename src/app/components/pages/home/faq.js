@@ -13,21 +13,21 @@ const faq = [
           下記から対応するOSを選びインストール後、案内に従って作成して下さい。
         </span>
         <div className="mt-3 flex flex-wrap gap-3 md:mt-6 md:gap-5">
-          <Link href="/">
+          <Link href="https://apps.apple.com/jp/app/diver-wallet/id6444421722" target="_blank">
             <img
               className="max-md:w-[120px]"
               src="/images/btn-app-store.png"
               alt=""
             />
           </Link>
-          <Link href="/">
+          <Link href="https://play.google.com/store/apps/details?id=com.hyerdesign.diver.wallet&pli=1" target="_blank">
             <img
               className="max-md:w-[120px]"
               src="/images/btn-google-play.png"
               alt=""
             />
           </Link>
-          <Link href="/">
+          <Link href="https://chrome.google.com/webstore/detail/diver-wallet/pdlocjdlejekdbpghdcmedeacpkfiiof/related?utm_source=ext_app_menu" target="_blank">
             <img
               className="max-md:w-[120px]"
               src="/images/btn-chrome-web-store.png"

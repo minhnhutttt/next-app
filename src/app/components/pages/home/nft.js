@@ -130,7 +130,8 @@ export default function NFT() {
               </h6>
               <div className="mx-auto mt-6 w-full max-w-[334px]">
                 <Link
-                  href="/"
+                  href="https://lin.ee/6PgmBNE"
+                  target="_blank"
                   className="ư-full relative mx-auto flex h-16 max-w-[240px] items-center justify-center rounded-[10px] bg-[#FBBC04] font-noto text-[24px] font-black duration-150 [box-shadow:0px_4px_0px_0px_#000] hover:opacity-75 md:h-20 md:max-w-[320px] md:text-[32px]"
                 >
                   <span>申し込む</span>

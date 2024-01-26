@@ -5,32 +5,33 @@ export default function Footer() {
     <footer className="bg-black pb-5 pt-10 md:pt-20">
       <div className="mx-auto w-full max-w-[453px]">
         <div className="flex gap-6 max-md:flex-col max-md:items-center md:gap-8">
-          <Link href="/" className="block font-dela leading-none text-white">
+          <a href="/" className="block font-dela leading-none text-white">
             <p className="break-keep text-[22px] tracking-[0.5rem] md:text-[26px]">
               次世代
             </p>
             <p className="break-keep pl-5 text-[30px] tracking-wider md:pl-8 md:text-[42px]">
               アカウント
             </p>
-          </Link>
+          </a>
           <div className="space-y-2 pt-3">
-            <Link
-              href="/"
+            <a
+              href="/privacy-policy"
               className="block text-[16px] text-white duration-150 hover:opacity-75"
             >
               プライバシーポリシー
-            </Link>
-            <Link
-              href="/"
+            </a>
+            <a
+              href="/terms-of-service"
               className="block text-[16px] text-white duration-150 hover:opacity-75"
             >
               利用規約
-            </Link>
+            </a>
           </div>
         </div>
         <div className="mb-8 mt-10 flex justify-center md:mb-14 md:mt-20">
           <Link
-            href="#"
+            href="https://lin.ee/6PgmBNE"
+            target="_blank"
             className="flex h-12 w-[240px] items-center justify-center gap-3 rounded-[50px] bg-[#00B900] text-[14px] font-bold text-white duration-150 hover:opacity-75 md:h-[64px] md:w-[247px] md:text-[18px]"
           >
             <span> LINEでお問い合わせ</span>

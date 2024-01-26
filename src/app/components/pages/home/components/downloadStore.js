@@ -11,14 +11,14 @@ export default function DownloadStore({ color = "white" }) {
         ref={animateRefs}
         className="flex justify-center gap-3 max-lg:flex-wrap"
       >
-        <Link href="/" className="block duration-150 hover:opacity-75">
+        <Link href="https://apps.apple.com/jp/app/diver-wallet/id6444421722" target="_blank" className="block duration-150 hover:opacity-75">
           <img
             className="max-md:w-[180px]"
             src="/images/btn-app-store.png"
             alt="App Store"
           />
         </Link>
-        <Link href="/" className="block duration-150 hover:opacity-75">
+        <Link href="https://play.google.com/store/apps/details?id=com.hyerdesign.diver.wallet&pli=1" target="_blank" className="block duration-150 hover:opacity-75">
           <img
             className="max-md:w-[180px]"
             src="/images/btn-google-play.png"
@@ -37,7 +37,7 @@ export default function DownloadStore({ color = "white" }) {
         <span>PC</span>
       </div>
       <div ref={animateRefs} className="flex items-center justify-center">
-        <Link href="/" className="block duration-150 hover:opacity-75">
+        <Link href="https://chrome.google.com/webstore/detail/diver-wallet/pdlocjdlejekdbpghdcmedeacpkfiiof/related?utm_source=ext_app_menu" target="_blank" className="block duration-150 hover:opacity-75">
           <img
             className="max-md:w-[180px]"
             src="/images/btn-chrome-web-store.png"

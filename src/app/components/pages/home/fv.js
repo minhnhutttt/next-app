@@ -40,7 +40,8 @@ export default function FV() {
             </Link>
             <div className="space-y-5 md:space-y-[30px]">
               <Link
-                href="#"
+                href="https://lin.ee/6PgmBNE"
+                target="_blank"
                 className="flex h-12 w-[240px] items-center justify-center gap-2 rounded-[50px] bg-[#00B900] text-[16px] font-bold text-white duration-150 hover:opacity-75 md:h-[62px] md:w-[280px] md:text-[22px]"
               >
                 <span> LINEでお問い合わせ</span>
