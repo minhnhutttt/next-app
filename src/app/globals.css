@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka:wght@300..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +8,5 @@ html {
 }
 body {
   color: #000;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Dela Gothic One", sans-serif;
 }
-
