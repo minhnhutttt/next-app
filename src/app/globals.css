@@ -11,14 +11,38 @@ body {
   font-family: "Dela Gothic One", sans-serif;
 }
 
+/* Utilities */
 
-.slick-slide {
+
+.text-stroke {
+  leading-trim: both;
+  text-edge: cap;
+  text-shadow: 3.365px 3.365px 0px #000;
+  -webkit-text-stroke-width: 1.3458126783370972px;
+  -webkit-text-stroke-color: #000;
+}
+.text-stroke-sm {
+  leading-trim: both;
+  text-edge: cap;
+  text-shadow: 0.847px 0.847px 0px #000;
+  -webkit-text-stroke-width: 0.3389880061149597px;
+  -webkit-text-stroke-color: #000;
+}
+
+.text-stroke-lg {
+  text-shadow: 5px 5px 0px #000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+}
+
+/* Slider */
+
+.js-slider-nav .slick-slide .triangle{
+  opacity: 0;
+  transform: translateY(100%);
   transition: all 0.3s;
-  margin-top: 30px;
 }
-.slick-slide.slick-center {
-  margin-top: 0;
-}
-.slide {
-  padding: 0 24px;
+.js-slider-nav .slick-slide.slick-center .triangle{
+  opacity: 1;
+  transform: translateY(0);
 }
