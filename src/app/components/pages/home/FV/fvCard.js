@@ -24,7 +24,7 @@ export default function FVCard({ type, image, text }) {
   return (
     <div>
       <div
-      className="relative mx-auto flex w-[66vw] md:w-[33.472vw] items-center justify-center overflow-hidden rounded-[10px] border border-black [box-shadow:0px_2.692px_2.692px_0px_rgba(0,_0,_0,_0.25)] min-[1440px]:w-[482px]"
+      className="relative mx-auto flex w-[70vw] md:w-[33.472vw] items-center justify-center overflow-hidden rounded-[10px] border border-black [box-shadow:0px_2.692px_2.692px_0px_rgba(0,_0,_0,_0.25)] min-[1440px]:w-[482px]"
       style={{ backgroundColor: getColorByIndex(type) }}
     >
         <figure>

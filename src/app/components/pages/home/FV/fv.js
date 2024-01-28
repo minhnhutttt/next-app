@@ -69,17 +69,9 @@ export default function FV() {
   return (
     <main>
       <div
-        className="relative px-5 pb-20 md:px-14"
+        className="relative px-5 py-20 md:px-14"
         style={{ backgroundColor: getColorByIndex(currentSlide) }}
       >
-        <div className="flex h-[80px] items-center justify-end px-2 tracking-[0.2em]">
-          <Link
-            href="/contact"
-            className="block font-fredoka text-[18px] font-bold"
-          >
-            CONTACT
-          </Link>
-        </div>
         <div className="mx-auto w-full max-w-[1328px]">
           <div className="flex gap-[3.333vw] min-[1440px]:gap-12 max-md:flex-col-reverse max-md:gap-[10vw]">
             <div className="md:w-[50vw] max-w-[720px]">

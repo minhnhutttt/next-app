@@ -66,16 +66,16 @@ export default function CardText({ size, type, text }) {
       )}
       {size === "lg" && (
         <>
-          <p className="text-stroke-lg text-center text-[6.944vw] leading-none min-[1440px]:text-[100px]"
+          <p className="text-stroke-lg text-center text-[12vw] md:text-[6.944vw] leading-none min-[1440px]:text-[100px]"
             style={{ color: getColorByIndex(type) }}>
                 次世代
               </p>
               <div className="flex justify-center pt-6 pb-2">
-                <p className="border-x-[0.5px] border-y-2 border-black bg-white px-[12px] py-1.5 font-fredoka text-[3.333vw] font-bold leading-none tracking-widest min-[1440px]:text-[48px]">
+                <p className="border-x-[0.5px] border-y-2 border-black bg-white px-[12px] py-1.5 font-fredoka text-[5vw] md:text-[3.333vw] font-bold leading-none tracking-widest min-[1440px]:text-[48px]">
                 {type}
                 </p>
               </div>
-              <p className="text-stroke-lg text-center text-[6.944vw] leading-none min-[1440px]:text-[100px]"
+              <p className="text-stroke-lg text-center text-[12vw] md:text-[6.944vw] leading-none min-[1440px]:text-[100px]"
             style={{ color: getColorByIndex(type) }}>
                 {text}
               </p>

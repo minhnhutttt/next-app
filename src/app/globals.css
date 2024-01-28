@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka:wght@300..700&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka:wght@300..700&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +13,11 @@ body {
 
 /* Utilities */
 
+.text-stroke-min {
+  text-shadow: 1.779px 1.779px 0px #000;
+  -webkit-text-stroke-width: 0.7117721438407898px;
+  -webkit-text-stroke-color: #000;
+}
 .text-stroke {
   leading-trim: both;
   text-edge: cap;
@@ -27,7 +32,6 @@ body {
   -webkit-text-stroke-width: 0.3389880061149597px;
   -webkit-text-stroke-color: #000;
 }
-
 .text-stroke-lg {
   text-shadow: 5px 5px 0px #000;
   -webkit-text-stroke-width: 2px;

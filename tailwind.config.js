@@ -17,6 +17,8 @@ module.exports = {
       fredoka: ["Fredoka", "sans-serif"],
       noto: ["Noto Sans JP", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      zen: ["Zen Kaku Gothic New", "sans-serif"],
+      worksans: ["Work Sans", "sans-serif"],
     },
   },
   plugins: [],
