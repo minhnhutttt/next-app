@@ -5,10 +5,10 @@ export default function StepItem({ step, children }) {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
     <div ref={animateRefs} className="relative">
-        <figure className="flex justify-center -mb-3 md:-mb-4">
-            <img className="max-md:h-10" src={step} alt="" />
+        <figure className="flex justify-center -mb-2 md:-mb-4">
+            <img className="max-md:h-8" src={step} alt="" />
         </figure>
-        <div className="bg-[#FFCA00] lg:h-[172px] h-[140px] flex items-center justify-center font-black xl:text-[32px] text-[26px] p-5 text-center">
+        <div className="bg-[#FFCA00] lg:h-[172px] h-[100px] flex items-center justify-center font-black xl:text-[32px] text-[22px] p-5 text-center">
             {children}
         </div>
     </div>
