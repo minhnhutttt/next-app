@@ -39,20 +39,21 @@ export default function Header() {
             <nav>
               <ul className="flex items-center gap-6 max-md:flex-col">
                 <li>
-                  <a
+                  <Link
                     href="#faq"
+                    smooth="true"
                     className="px-3 font-bold duration-150 hover:opacity-75 text-[20px] md:text-[18px]"
                   >
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/contact"
                     className="px-3 font-bold duration-150 hover:opacity-75 text-[20px] md:text-[18px]"
                   >
                     お問い合わせ
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

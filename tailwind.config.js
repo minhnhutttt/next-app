@@ -16,6 +16,9 @@ module.exports = {
     fontFamily: {
       dela: ["Dela Gothic One", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
+      noto: ["Noto Sans JP", "sans-serif"],
+      lato: ["Lato", "sans-serif"],
     },
   },
   plugins: [],

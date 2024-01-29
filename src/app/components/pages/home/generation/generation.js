@@ -104,11 +104,11 @@ export default function Generation() {
                                         <p className="flex"><span>・</span><span>DIV(ダイバーコイン)の総取引量(TRANSACTIONS)</span></p>
                                     </div>
                                     <div className="flex items-center gap-6 mt-4 md:mt-6 md:gap-9">
-                                        <div className="flex-1 relative md:w-[334px] md:text-[16px] text-[13px] font-medium md:p-5 p-4 md:rounded-[20px] rounded-xl bg-[#FDFFAA] after:absolute after:w-[34px] after:h-[25px] after:bg-[url('/images/triangle.png')] after:bg-cover md:after:-right-6 after:-right-4 after:top-6">
+                                        <div className="relative md:w-[334px] md:text-[16px] text-[13px] font-medium md:p-5 p-4 md:rounded-[20px] rounded-xl bg-[#FDFFAA] after:absolute after:w-[34px] after:h-[25px] after:bg-[url('/images/triangle.png')] after:bg-cover md:after:-right-6 after:-right-4  after:top-1/2 after:-translate-y-1/2">
                                             サイトにアクセスするといつも最初に確認できるんだ
                                         </div>
-                                        <figure>
-                                            <img className="max-md:w-16" src="/images/boy.png" alt="" />
+                                        <figure className="md:flex-[0_0_100px] flex-[0_0_60px]">
+                                            <img src="/images/boy.png" alt="" />
                                         </figure>
                                     </div>
                                 </div>
@@ -136,14 +136,14 @@ export default function Generation() {
                             </div>
                             <div ref={animateRefs} className="max-lg:w-full max-xl:w-2/5">
                                 <div className="flex items-center gap-6 mb-6 md:gap-9 md:mb-8">
-                                    <figure>
-                                        <img className="max-md:w-16" src="/images/boy.png" alt="" />
+                                    <figure className="md:flex-[0_0_100px] flex-[0_0_60px]">
+                                        <img src="/images/boy.png" alt="" />
                                     </figure>
-                                    <div className="flex-1 relative md:w-[334px] md:text-[16px] text-[13px] font-medium md:p-5 p-4 md:rounded-[20px] rounded-xl bg-[#FDFFAA] after:absolute after:w-[34px] after:h-[25px] after:bg-[url('/images/triangle.png')] after:bg-cover after:rotate-180 md:after:-left-6 after:-left-4 after:top-12">
+                                    <div className="relative md:w-[334px] md:text-[16px] text-[13px] font-medium md:p-5 p-4 md:rounded-[20px] rounded-xl bg-[#FDFFAA] after:absolute after:w-[34px] after:h-[25px] after:bg-[url('/images/triangle.png')] after:bg-cover after:rotate-180 md:after:-left-6 after:-left-4 after:top-1/2 after:-translate-y-1/2">
                                     全ウォレットの取引情報は、リアルタイムで次々と追加表示されるよ！取引が活発なことを確認できるから安心してサービスを利用できるね！
                                     </div>
                                 </div>
-                                <figure>
+                                <figure ref={animateRefs}>
                                     <img className="w-full" src="/images/img-05.png" alt="" />
                                 </figure>
                             </div>
@@ -170,14 +170,14 @@ export default function Generation() {
                             </div>
                             <div ref={animateRefs} className="max-lg:w-full max-xl:w-2/5">
                                 <div className="flex items-center gap-6 mb-6 md:gap-9 md:mb-8">
-                                    <figure>
-                                        <img className="max-md:w-16" src="/images/boy.png" alt="" />
+                                    <figure className="md:flex-[0_0_100px] flex-[0_0_60px]">
+                                        <img src="/images/boy.png" alt="" />
                                     </figure>
-                                    <div className="flex-1 relative md:w-[334px] md:text-[16px] text-[13px] font-medium md:p-5 p-4 md:rounded-[20px] rounded-xl bg-[#FDFFAA] after:absolute after:w-[34px] after:h-[25px] after:bg-[url('/images/triangle.png')] after:bg-cover after:rotate-180 md:after:-left-6 after:-left-4 after:top-14">
+                                    <div className="relative md:w-[334px] md:text-[16px] text-[13px] font-medium md:p-5 p-4 md:rounded-[20px] rounded-xl bg-[#FDFFAA] after:absolute after:w-[34px] after:h-[25px] after:bg-[url('/images/triangle.png')] after:bg-cover after:rotate-180 md:after:-left-6 after:-left-4 after:top-1/2 after:-translate-y-1/2">
                                     アドレス検索バーに特定のウォレットアドレスを入力すれば、すべての取引記録が確認できるんだ。ウォレット残高はオーバービュー(Overview)として、取引はトランザクションズ(Transactions)としてまとめられてるよ！
                                     </div>
                                 </div>
-                                <figure>
+                                <figure ref={animateRefs}>
                                     <img className="w-full" src="/images/img-06.png" alt="" />
                                 </figure>
                             </div>
