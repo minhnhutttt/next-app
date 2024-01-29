@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black px-5 pb-10 md:px-10">
+    <footer className="px-5 pb-10 bg-black md:px-10">
       <div className="mx-auto flex w-full max-w-[400px] flex-wrap justify-between gap-5 pb-16 pt-[60px] md:max-w-[660px] md:pb-28 md:pt-[120px] lg:max-w-[1016px] lg:pl-14">
         <div className="max-lg:w-full">
           <a href="/" className="duration-150 hover:opacity-75">
@@ -22,17 +22,17 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="/admin" className="block duration-150 hover:opacity-75">
+            <a href="/admin" className="block duration-150 hover:opacity-75">
               運営者
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href="/privacy-policy"
               className="block duration-150 hover:opacity-75"
             >
               プライバシーポリシー
-            </Link>
+            </a>
           </li>
         </ul>
         <div className="mt-3">

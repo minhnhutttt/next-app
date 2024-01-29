@@ -22,7 +22,7 @@ export default function Header() {
     };
   }, []);
   return (
-    <header className="absolute left-0 right-0 top-0 z-10 px-5 md:px-10">
+    <header className="absolute top-0 left-0 right-0 z-10 px-5 md:px-10">
       <div className="mx-auto flex h-20 w-full items-center justify-between md:h-[120px]">
         <Link href="/" className="duration-150 hover:opacity-75">
           <p className="font-dela text-[32px] md:text-[42px]">次世代スキャン</p>
@@ -36,17 +36,16 @@ export default function Header() {
             <nav>
               <ul className="flex items-center gap-6 max-md:flex-col">
                 <li>
-                  <Link
-                    href="#faq"
-                    smooth="true"
+                  <a
+                    href="/#faq"
                     className="px-3 text-[20px] font-bold duration-150 hover:opacity-75 md:text-[18px]"
                   >
                     FAQ
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="/"
                     className="px-3 text-[20px] font-bold duration-150 hover:opacity-75 md:text-[18px]"
                   >
                     お問い合わせ
