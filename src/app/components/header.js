@@ -22,13 +22,10 @@ export default function Header() {
     };
   }, []);
   return (
-    <header className="absolute top-0 left-0 right-0 z-10 px-5 md:px-10">
+    <header className="absolute left-0 right-0 top-0 z-10 px-5 md:px-10">
       <div className="mx-auto flex h-20 w-full items-center justify-between md:h-[120px]">
-        <Link
-          href="/"
-          className="duration-150 hover:opacity-75"
-        >
-          <p className="text-[32px] md:text-[42px] font-dela">次世代スキャン</p>
+        <Link href="/" className="duration-150 hover:opacity-75">
+          <p className="font-dela text-[32px] md:text-[42px]">次世代スキャン</p>
         </Link>
         <div className="flex items-center justify-end">
           <div
@@ -42,7 +39,7 @@ export default function Header() {
                   <Link
                     href="#faq"
                     smooth="true"
-                    className="px-3 font-bold duration-150 hover:opacity-75 text-[20px] md:text-[18px]"
+                    className="px-3 text-[20px] font-bold duration-150 hover:opacity-75 md:text-[18px]"
                   >
                     FAQ
                   </Link>
@@ -50,7 +47,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/contact"
-                    className="px-3 font-bold duration-150 hover:opacity-75 text-[20px] md:text-[18px]"
+                    className="px-3 text-[20px] font-bold duration-150 hover:opacity-75 md:text-[18px]"
                   >
                     お問い合わせ
                   </Link>

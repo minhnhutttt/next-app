@@ -27,11 +27,11 @@ export default function FaqItem({ question, awnser }) {
   return (
     <div
       ref={animateRefs}
-      className="space-y-2 rounded-[20px] bg-white p-4 border border-black md:px-8 md:pb-8 md:pt-10"
+      className="space-y-2 rounded-[20px] border border-black bg-white p-4 md:px-8 md:pb-8 md:pt-10"
     >
       <button
         type="button"
-        className="flex items-center justify-between w-full duration-200 hover:opacity-75"
+        className="flex w-full items-center justify-between duration-200 hover:opacity-75"
         onClick={handleExpanderClick}
       >
         <div className="flex items-center gap-4 md:gap-8">
@@ -44,12 +44,31 @@ export default function FaqItem({ question, awnser }) {
         </div>
         <div
           ref={arrowRef}
-          className="relative flex items-center justify-center w-8 h-8 ml-2 duration-150 md:h-12 md:w-12"
+          className="relative ml-2 flex h-8 w-8 items-center justify-center duration-150 md:h-12 md:w-12"
         >
-            <svg className="max-md:w-8" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="23.5" transform="rotate(-180 24 24)" stroke="black"/>
-            <path d="M28.2666 21.8667L24 26.1334L19.7333 21.8667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+          <svg
+            className="max-md:w-8"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="24"
+              cy="24"
+              r="23.5"
+              transform="rotate(-180 24 24)"
+              stroke="black"
+            />
+            <path
+              d="M28.2666 21.8667L24 26.1334L19.7333 21.8667"
+              stroke="black"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </div>
       </button>
       <div ref={contentRef} className="h-0 overflow-hidden">

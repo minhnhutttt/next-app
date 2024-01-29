@@ -11,7 +11,7 @@ export default function TextBlock({ title, children }) {
           {title}
         </p>
       )}
-      <div className="mt-3 font-worksans text-[14px] md:mt-[18px] md:text-[16px]">
+      <div className="font-worksans mt-3 text-[14px] md:mt-[18px] md:text-[16px]">
         {children}
       </div>
     </div>

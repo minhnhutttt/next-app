@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       <div className="px-5">
         <div
           ref={animateRefs}
-          className="mx-auto w-full max-w-[1190px] font-worksans opacity-0"
+          className="font-worksans mx-auto w-full max-w-[1190px] opacity-0"
         >
           <div className="flex justify-end">
             <p className="text-[12px] font-bold text-black md:text-[15px]">
