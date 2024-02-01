@@ -16,7 +16,7 @@ export default function Introduction() {
               次世代スキャンとは？
             </h4>
             <p className="mb-3 text-[14px] font-black tracking-widest md:mb-5 md:text-[18px]">
-              次世代アカウントの簡単アドレスチェッカーのことです。
+              次世代アドレスの簡単アドレスチェッカーのことです。
             </p>
             <p className="mb-7 text-[13px] leading-tight tracking-wider md:mb-11 md:text-[15px]">
               次世代スキャンの正式なサービス名は「DIVER Scan」と言います。

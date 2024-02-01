@@ -9,7 +9,7 @@ export default function Generation() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
     <section>
-      <div className="px-5">
+      <div className="px-4">
         <SectionTitle>
           こんな時に使うべし！
           <br />
@@ -18,7 +18,7 @@ export default function Generation() {
         <div className="mb-[100px] mt-8 md:mb-[180px] md:mt-[72px]">
           <div
             ref={animateRefs}
-            className="flex items-center justify-center bg-white py-5 md:py-7"
+            className="flex items-center justify-center py-5 bg-white md:py-7"
           >
             <div className="mx-auto flex w-full max-w-[670px] items-center gap-5 max-md:flex-col md:gap-[30px]">
               <figure>
@@ -126,7 +126,7 @@ export default function Generation() {
         <div className="mb-[100px] mt-8 md:mb-[180px] md:mt-[60px]">
           <div
             ref={animateRefs}
-            className="flex items-center justify-center bg-white py-5 md:py-7"
+            className="flex items-center justify-center py-5 bg-white md:py-7"
           >
             <div className="mx-auto flex w-full max-w-[750px] items-center gap-5 max-md:flex-col md:gap-[30px]">
               <figure>
@@ -137,7 +137,7 @@ export default function Generation() {
                 />
               </figure>
               <div className="flex-1">
-                <p className="text-[16px] font-bold max-md:text-center md:text-[24px]">
+                <p className="min-[370px]:[font-size:_clamp(18px,4.8vw,24px)] text-[16px] font-bold max-md:text-center md:text-[24px]">
                   具体的には何が確認(チェック)できるの？
                 </p>
                 <p className="mt-1 text-[12px] md:text-[14px]">
@@ -168,7 +168,7 @@ export default function Generation() {
                       <span>DIV(ダイバーコイン)の総取引量(TRANSACTIONS)</span>
                     </p>
                   </div>
-                  <div className="mt-4 flex items-center gap-6 md:mt-6 md:gap-9">
+                  <div className="flex items-center gap-6 mt-4 md:mt-6 md:gap-9">
                     <div className="relative rounded-xl bg-[#FDFFAA] p-4 text-[13px] font-medium after:absolute after:-right-4 after:top-1/2 after:h-[25px] after:w-[34px] after:-translate-y-1/2 after:bg-[url('/images/triangle.png')] after:bg-cover md:w-[334px] md:rounded-[20px] md:p-5  md:text-[16px] md:after:-right-6">
                       サイトにアクセスするといつも最初に確認できるんだ
                     </div>
@@ -254,7 +254,7 @@ export default function Generation() {
                 </div>
               </div>
               <div ref={animateRefs} className="max-xl:w-2/5 max-lg:w-full">
-                <div className="mb-6 flex items-center gap-6 md:mb-8 md:gap-9">
+                <div className="flex items-center gap-6 mb-6 md:mb-8 md:gap-9">
                   <figure className="flex-[0_0_60px] md:flex-[0_0_100px]">
                     <img src="/images/boy.png" alt="" />
                   </figure>
@@ -357,7 +357,7 @@ export default function Generation() {
                 </div>
               </div>
               <div ref={animateRefs} className="max-xl:w-2/5 max-lg:w-full">
-                <div className="mb-6 flex items-center gap-6 md:mb-8 md:gap-9">
+                <div className="flex items-center gap-6 mb-6 md:mb-8 md:gap-9">
                   <figure className="flex-[0_0_60px] md:flex-[0_0_100px]">
                     <img src="/images/boy.png" alt="" />
                   </figure>

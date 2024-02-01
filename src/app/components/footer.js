@@ -13,13 +13,12 @@ export default function Footer() {
         </div>
         <ul className="mt-3 space-y-[20px] text-[15px] font-bold text-white md:space-y-[30px] md:text-[16px]">
           <li>
-            <Link
+            <a
               href="/#faq"
-              smooth="true"
               className="block duration-150 hover:opacity-75"
             >
               FAQ
-            </Link>
+            </a>
           </li>
           <li>
             <a href="/admin" className="block duration-150 hover:opacity-75">
