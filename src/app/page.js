@@ -73,139 +73,270 @@ export default function Home() {
       <FV />
       <div className="">
         <div className="grid md:grid-cols-2">
-          <SectionCard type="ACCOUNT" text="アカウント" image="/images/image-account.png" button="アカウントを作る" >
-              <figure>
-                  <img className="max-md:w-[80px]" src="/images/ic-diver-wallet.png" alt="" />
-              </figure>
-              <div className="w-full flex flex-col items-center pt-5 md:pt-[30px] pb-3 md:pb-5 gap-5 md:gap-7">
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-app-store.png" alt="" />
-                  </Link>
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-google-play.png" alt="" />
-                  </Link>
-              </div>
-              <div className="w-full flex flex-col items-center py-4 md:py-5 border-t border-[#E4E7EC]">
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-chrome-web-store.png" alt="" />
-                  </Link>
-              </div>
-              <div className="flex items-center w-full gap-2 mb-5">
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-                  <span className="font-inter text-[12px] md:text-[14px] font-medium">OR</span>
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-              </div>
-              <div className="flex justify-center w-full">
-                  <Link href="/" className="w-full h-12 md:h-[58px] rounded-lg font-inter text-[14px] md:text-[16px] font-semibold border-2 border-black flex items-center justify-center [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] duration-150 hover:opacity-75">
-                  詳細ページはこちら
-                  </Link>
-              </div>
-          </SectionCard>
-          <SectionCard type="CHAT" text="チャット" image="/images/image-chat.png" button="チャットを使う" >
+          <SectionCard
+            anchor="account"
+            type="ACCOUNT"
+            text="アドレス"
+            image="/images/image-account.png"
+            button="アドレスを作る"
+          >
             <figure>
-                  <img className="max-md:w-[80px]" src="/images/ic-knock.png" alt="" />
-              </figure>
-              <div className="w-full flex flex-col items-center pt-5 md:pt-[30px] pb-3 md:pb-5 gap-5 md:gap-7">
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-app-store.png" alt="" />
-                  </Link>
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-google-play.png" alt="" />
-                  </Link>
-              </div>
-              <div className="flex items-center w-full gap-2 mb-5">
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-                  <span className="font-inter text-[12px] md:text-[14px] font-medium">OR</span>
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-              </div>
-              <div className="flex justify-center w-full">
-                  <Link href="/" className="w-full h-12 md:h-[58px] rounded-lg font-inter text-[14px] md:text-[16px] font-semibold border-2 border-black flex items-center justify-center [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] duration-150 hover:opacity-75">
-                  詳細ページはこちら
-                  </Link>
-              </div>
+              <img
+                className="max-md:w-[80px]"
+                src="/images/ic-diver-wallet.png"
+                alt=""
+              />
+            </figure>
+            <div className="flex w-full flex-col items-center gap-5 pb-3 pt-5 md:gap-7 md:pb-5 md:pt-[30px]">
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-app-store.png"
+                  alt=""
+                />
+              </Link>
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-google-play.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="flex w-full flex-col items-center border-t border-[#E4E7EC] py-4 md:py-5">
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-chrome-web-store.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="flex items-center w-full gap-2 mb-5">
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+              <span className="font-inter text-[12px] font-medium md:text-[14px]">
+                OR
+              </span>
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+            </div>
+            <div className="flex justify-center w-full">
+              <Link
+                href="/"
+                className="flex h-12 w-full items-center justify-center rounded-lg border-2 border-black font-inter text-[14px] font-semibold duration-150 [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] hover:opacity-75 md:h-[58px] md:text-[16px]"
+              >
+                詳細ページはこちら
+              </Link>
+            </div>
           </SectionCard>
-          <SectionCard type="DOMAIN" text="ドメイン" image="/images/image-domain.png" button="ドメインを探す" >
+          <SectionCard
+            anchor="chat"
+            type="CHAT"
+            text="チャット"
+            image="/images/image-chat.png"
+            button="チャットを使う"
+          >
             <figure>
-                  <img className="max-md:w-[80px]" src="/images/ic-diver-domain.png" alt="" />
-              </figure>
-              <div className="w-full flex flex-col items-center pt-5 md:pt-[30px] pb-3 md:pb-5 gap-5 md:gap-7">
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-web-site.png" alt="" />
-                  </Link>
-              </div>
-              <div className="flex items-center w-full gap-2 mb-5">
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-                  <span className="font-inter text-[12px] md:text-[14px] font-medium">OR</span>
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-              </div>
-              <div className="flex justify-center w-full">
-                  <Link href="/" className="w-full h-12 md:h-[58px] rounded-lg font-inter text-[14px] md:text-[16px] font-semibold border-2 border-black flex items-center justify-center [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] duration-150 hover:opacity-75">
-                  詳細ページはこちら
-                  </Link>
-              </div>
+              <img
+                className="max-md:w-[80px]"
+                src="/images/ic-knock.png"
+                alt=""
+              />
+            </figure>
+            <div className="flex w-full flex-col items-center gap-5 pb-3 pt-5 md:gap-7 md:pb-5 md:pt-[30px]">
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-app-store.png"
+                  alt=""
+                />
+              </Link>
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-google-play.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="flex items-center w-full gap-2 mb-5">
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+              <span className="font-inter text-[12px] font-medium md:text-[14px]">
+                OR
+              </span>
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+            </div>
+            <div className="flex justify-center w-full">
+              <Link
+                href="/"
+                className="flex h-12 w-full items-center justify-center rounded-lg border-2 border-black font-inter text-[14px] font-semibold duration-150 [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] hover:opacity-75 md:h-[58px] md:text-[16px]"
+              >
+                詳細ページはこちら
+              </Link>
+            </div>
           </SectionCard>
-          <SectionCard type="TAG" text="タグ" image="/images/image-tag.png" button="NFTをタッチでもらう" >
+          <SectionCard
+            anchor="domain"
+            type="DOMAIN"
+            text="ドメイン"
+            image="/images/image-domain.png"
+            button="ドメインを探す"
+          >
             <figure>
-                  <img className="max-md:w-[80px]" src="/images/ic-diver-tag.png" alt="" />
-              </figure>
-              <div className="w-full flex flex-col items-center pt-5 md:pt-[30px] pb-3 md:pb-5 gap-5 md:gap-7">
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-app-store.png" alt="" />
-                  </Link>
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-google-play.png" alt="" />
-                  </Link>
-              </div>
-              <div className="flex items-center w-full gap-2 mb-5">
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-                  <span className="font-inter text-[12px] md:text-[14px] font-medium">OR</span>
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-              </div>
-              <div className="flex justify-center w-full">
-                  <Link href="/" className="w-full h-12 md:h-[58px] rounded-lg font-inter text-[14px] md:text-[16px] font-semibold border-2 border-black flex items-center justify-center [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] duration-150 hover:opacity-75">
-                  詳細ページはこちら
-                  </Link>
-              </div>
+              <img
+                className="max-md:w-[80px]"
+                src="/images/ic-diver-domain.png"
+                alt=""
+              />
+            </figure>
+            <div className="flex w-full flex-col items-center gap-5 pb-3 pt-5 md:gap-7 md:pb-5 md:pt-[30px]">
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-web-site.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="flex items-center w-full gap-2 mb-5">
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+              <span className="font-inter text-[12px] font-medium md:text-[14px]">
+                OR
+              </span>
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+            </div>
+            <div className="flex justify-center w-full">
+              <Link
+                href="/"
+                className="flex h-12 w-full items-center justify-center rounded-lg border-2 border-black font-inter text-[14px] font-semibold duration-150 [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] hover:opacity-75 md:h-[58px] md:text-[16px]"
+              >
+                詳細ページはこちら
+              </Link>
+            </div>
           </SectionCard>
-          <SectionCard type="SCAN" text="スキャン" image="/images/image-scan.png" button="取引を確認する" >
+          <SectionCard
+            anchor="tag"
+            type="TAG"
+            text="タグ"
+            image="/images/image-tag.png"
+            button="NFTをタッチでもらう"
+          >
             <figure>
-                  <img className="max-md:w-[80px]" src="/images/ic-diver-scan.png" alt="" />
-              </figure>
-              <div className="w-full flex flex-col items-center pt-5 md:pt-[30px] pb-3 md:pb-5 gap-5 md:gap-7">
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-web-site.png" alt="" />
-                  </Link>
-              </div>
-              <div className="flex items-center w-full gap-2 mb-5">
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-                  <span className="font-inter text-[12px] md:text-[14px] font-medium">OR</span>
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-              </div>
-              <div className="flex justify-center w-full">
-                  <Link href="/" className="w-full h-12 md:h-[58px] rounded-lg font-inter text-[14px] md:text-[16px] font-semibold border-2 border-black flex items-center justify-center [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] duration-150 hover:opacity-75">
-                  詳細ページはこちら
-                  </Link>
-              </div>
+              <img
+                className="max-md:w-[80px]"
+                src="/images/ic-diver-tag.png"
+                alt=""
+              />
+            </figure>
+            <div className="flex w-full flex-col items-center gap-5 pb-3 pt-5 md:gap-7 md:pb-5 md:pt-[30px]">
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-app-store.png"
+                  alt=""
+                />
+              </Link>
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-google-play.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="flex items-center w-full gap-2 mb-5">
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+              <span className="font-inter text-[12px] font-medium md:text-[14px]">
+                OR
+              </span>
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+            </div>
+            <div className="flex justify-center w-full">
+              <Link
+                href="/"
+                className="flex h-12 w-full items-center justify-center rounded-lg border-2 border-black font-inter text-[14px] font-semibold duration-150 [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] hover:opacity-75 md:h-[58px] md:text-[16px]"
+              >
+                詳細ページはこちら
+              </Link>
+            </div>
           </SectionCard>
-          <SectionCard type="COUPON" text="クーポン" image="/images/image-coupon.png" button="クーポンを見る" isComming>
+          <SectionCard
+            anchor="scan"
+            type="SCAN"
+            text="スキャン"
+            image="/images/image-scan.png"
+            button="取引を確認する"
+          >
             <figure>
-                  <img className="max-md:w-[80px]" src="/images/ic-chainpin.png" alt="" />
-              </figure>
-              <div className="w-full flex flex-col items-center pt-5 md:pt-[30px] pb-3 md:pb-5 gap-5 md:gap-7">
-                  <Link href="/" className="duration-150 hover:opacity-75">
-                      <img className="max-md:w-[160px]" src="/images/btn-web-site.png" alt="" />
-                  </Link>
-              </div>
-              <div className="flex items-center w-full gap-2 mb-5">
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-                  <span className="font-inter text-[12px] md:text-[14px] font-medium">OR</span>
-                  <span className="flex-1 h-px bg-[#E4E7EC]"></span>
-              </div>
-              <div className="flex justify-center w-full">
-                  <Link href="/" className="w-full h-12 md:h-[58px] rounded-lg font-inter text-[14px] md:text-[16px] font-semibold border-2 border-black flex items-center justify-center [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] duration-150 hover:opacity-75">
-                  詳細ページはこちら
-                  </Link>
-              </div>
+              <img
+                className="max-md:w-[80px]"
+                src="/images/ic-diver-scan.png"
+                alt=""
+              />
+            </figure>
+            <div className="flex w-full flex-col items-center gap-5 pb-3 pt-5 md:gap-7 md:pb-5 md:pt-[30px]">
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-web-site.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="flex items-center w-full gap-2 mb-5">
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+              <span className="font-inter text-[12px] font-medium md:text-[14px]">
+                OR
+              </span>
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+            </div>
+            <div className="flex justify-center w-full">
+              <Link
+                href="/"
+                className="flex h-12 w-full items-center justify-center rounded-lg border-2 border-black font-inter text-[14px] font-semibold duration-150 [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] hover:opacity-75 md:h-[58px] md:text-[16px]"
+              >
+                詳細ページはこちら
+              </Link>
+            </div>
+          </SectionCard>
+          <SectionCard
+            anchor="coupon"
+            type="COUPON"
+            text="クーポン"
+            image="/images/image-coupon.png"
+            button="クーポンを見る"
+            isComming
+          >
+            <figure>
+              <img
+                className="max-md:w-[80px]"
+                src="/images/ic-chainpin.png"
+                alt=""
+              />
+            </figure>
+            <div className="flex w-full flex-col items-center gap-5 pb-3 pt-5 md:gap-7 md:pb-5 md:pt-[30px]">
+              <Link href="/" className="duration-150 hover:opacity-75">
+                <img
+                  className="max-md:w-[160px]"
+                  src="/images/btn-web-site.png"
+                  alt=""
+                />
+              </Link>
+            </div>
+            <div className="flex items-center w-full gap-2 mb-5">
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+              <span className="font-inter text-[12px] font-medium md:text-[14px]">
+                OR
+              </span>
+              <span className="h-px flex-1 bg-[#E4E7EC]"></span>
+            </div>
+            <div className="flex justify-center w-full">
+              <Link
+                href="/"
+                className="flex h-12 w-full items-center justify-center rounded-lg border-2 border-black font-inter text-[14px] font-semibold duration-150 [box-shadow:0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] hover:opacity-75 md:h-[58px] md:text-[16px]"
+              >
+                詳細ページはこちら
+              </Link>
+            </div>
           </SectionCard>
         </div>
       </div>

@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 export default function PageTitle({ children }) {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="flex h-[100px] items-center justify-center px-5 md:h-[172px] md:mt-[270px] mt-[120px]">
+    <div className="mt-[120px] flex h-[100px] items-center justify-center px-5 md:mt-[270px] md:h-[172px]">
       <p
         ref={animateRefs}
-        className="text-[7vw] font-bold opacity-0 md:text-[60px] font-zen"
+        className="font-zen text-[7vw] font-bold opacity-0 md:text-[60px]"
       >
         {children}
       </p>

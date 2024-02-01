@@ -25,18 +25,18 @@ export default function CardText({ size, type, text }) {
       {size === "sm" && (
         <>
           <p
-            className="text-stroke-sm text-center text-[3vw] md:text-[1.667vw] leading-none min-[1440px]:text-[24px]"
+            className="text-stroke-sm text-center text-[3vw] leading-none md:text-[1.667vw] min-[1440px]:text-[24px]"
             style={{ color: getColorByIndex(type) }}
           >
             次世代
           </p>
           <div className="flex justify-center pt-1 max-md:pb-0.5">
-            <p className="border-y border-black bg-white px-[3px] font-fredoka text-[2.4vw] md:text-[10px] font-bold leading-none tracking-widest lg:text-[13px]">
+            <p className="border-y border-black bg-white px-[3px] font-fredoka text-[2.4vw] font-bold leading-none tracking-widest md:text-[10px] lg:text-[13px]">
               {type}
             </p>
           </div>
           <p
-            className="text-stroke-sm text-center text-[3vw] md:text-[1.389vw] leading-none min-[1440px]:text-[20px]"
+            className="text-stroke-sm text-center text-[3vw] leading-none md:text-[1.389vw] min-[1440px]:text-[20px]"
             style={{ color: getColorByIndex(type) }}
           >
             {text}
@@ -46,18 +46,18 @@ export default function CardText({ size, type, text }) {
       {size === "md" && (
         <>
           <p
-            className="text-stroke text-center text-[10vw] md:text-[4.722vw] leading-none min-[1440px]:text-[68px]"
+            className="text-stroke text-center text-[10vw] leading-none md:text-[4.722vw] min-[1440px]:text-[68px]"
             style={{ color: getColorByIndex(type) }}
           >
             次世代
           </p>
-          <div className="flex justify-center pt-3 pb-1">
-            <p className="border-x-[0.5px] border-y-2 border-black bg-white px-[12px] py-1.5 font-fredoka text-[4vw] md:text-[2.222vw] font-bold leading-none tracking-widest min-[1440px]:text-[32px]">
+          <div className="flex justify-center pb-1 pt-3">
+            <p className="border-x-[0.5px] border-y-2 border-black bg-white px-[12px] py-1.5 font-fredoka text-[4vw] font-bold leading-none tracking-widest md:text-[2.222vw] min-[1440px]:text-[32px]">
               {type}
             </p>
           </div>
           <p
-            className="text-stroke text-center text-[10vw] md:text-[4.722vw] leading-none min-[1440px]:text-[68px]"
+            className="text-stroke text-center text-[10vw] leading-none md:text-[4.722vw] min-[1440px]:text-[68px]"
             style={{ color: getColorByIndex(type) }}
           >
             {text}
@@ -66,19 +66,23 @@ export default function CardText({ size, type, text }) {
       )}
       {size === "lg" && (
         <>
-          <p className="text-stroke-lg text-center text-[12vw] md:text-[6.944vw] leading-none min-[1440px]:text-[100px]"
-            style={{ color: getColorByIndex(type) }}>
-                次世代
-              </p>
-              <div className="flex justify-center pt-6 pb-2">
-                <p className="border-x-[0.5px] border-y-2 border-black bg-white px-[12px] py-1.5 font-fredoka text-[5vw] md:text-[3.333vw] font-bold leading-none tracking-widest min-[1440px]:text-[48px]">
-                {type}
-                </p>
-              </div>
-              <p className="text-stroke-lg text-center text-[12vw] md:text-[6.944vw] leading-none min-[1440px]:text-[100px]"
-            style={{ color: getColorByIndex(type) }}>
-                {text}
-              </p>
+          <p
+            className="text-stroke-lg text-center text-[12vw] leading-none md:text-[6.944vw] min-[1440px]:text-[100px]"
+            style={{ color: getColorByIndex(type) }}
+          >
+            次世代
+          </p>
+          <div className="flex justify-center pb-2 pt-6">
+            <p className="border-x-[0.5px] border-y-2 border-black bg-white px-[12px] py-1.5 font-fredoka text-[5vw] font-bold leading-none tracking-widest md:text-[3.333vw] min-[1440px]:text-[48px]">
+              {type}
+            </p>
+          </div>
+          <p
+            className="text-stroke-lg text-center text-[12vw] leading-none md:text-[6.944vw] min-[1440px]:text-[100px]"
+            style={{ color: getColorByIndex(type) }}
+          >
+            {text}
+          </p>
         </>
       )}
     </>
