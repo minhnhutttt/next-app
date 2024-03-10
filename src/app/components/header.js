@@ -19,8 +19,8 @@ const links = [
   },
   {
     id: 4,
-    link: "#plan",
-    text: "おすすめプラン",
+    link: "#price",
+    text: "価格一覧",
   },
   {
     id: 5,
@@ -53,12 +53,12 @@ export default function Header() {
     };
   }, []);
   return (
-    <div className="absolute inset-x-0 top-0 z-50 flex h-[110px] items-center justify-between px-5">
+    <div className="absolute inset-x-0 top-0 z-50 flex h-[90px] md:h-[110px] items-center justify-between px-5 md:px-10">
       <Link
         href="/"
-        className="ml-5 block duration-150 hover:opacity-75 max-md:hidden"
+        className="block duration-150 hover:opacity-75"
       >
-        <img src="/images/giga-wifi.png" alt="ギガ二刀流Wi-Fi" />
+        <img className="max-md:w-[208px]" src="/images/giga-logo.png" alt="ギガ100年ストレージ" />
       </Link>
       {open && (
         <div
@@ -89,7 +89,7 @@ export default function Header() {
           </ul>
         </nav>
         <Link
-          href="https://shop.wgiga-wifi.com"
+          href="https://shop.wgiga-wifi.com/products/%E3%82%AE%E3%82%AC%E4%BA%8C%E5%88%80%E6%B5%81wi-fi-%E6%AD%A6%E5%B0%86%E3%83%97%E3%83%A9%E3%83%B3-100gb%E9%80%9A%E4%BF%A1-300gb%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8"
           target="_blank"
           className="relative flex h-[50px] w-[216px] items-center justify-center overflow-hidden rounded-[35px] bg-black text-[16px] font-bold tracking-wider text-white duration-150 [box-shadow:0px_5.579px_0px_0px_#D80000] hover:opacity-75 max-xl:border max-xl:border-white min-[1366px]:h-[60px] min-[1366px]:w-[260px] min-[1366px]:text-[20px]"
         >

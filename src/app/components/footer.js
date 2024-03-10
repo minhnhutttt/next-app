@@ -17,8 +17,8 @@ const links = [
   },
   {
     id: 4,
-    link: "#plan",
-    text: "おすすめプラン",
+    link: "#price",
+    text: "価格一覧",
   },
   {
     id: 5,
@@ -34,17 +34,17 @@ const links = [
 export default function Footer() {
   return (
     <footer className="bg-[#000] px-6 py-12 md:pb-[50px] md:pt-[90px]">
-      <div className="mx-auto mb-8 w-full max-w-[400px] md:mb-14 md:max-w-[926px]">
-        <div className="flex w-full justify-center">
+      <div className="mx-auto mb-8 w-full max-w-[400px] md:mb-10 md:max-w-[926px]">
+        <div className="flex justify-center w-full">
           <Link href="/" className="duration-150 hover:opacity-75">
             <img
               className="max-md:w-[200px]"
-              src="/images/giga-wifi-white.png"
-              alt="ギガ二刀流Wi-Fi"
+              src="/images/logo-footer.png"
+              alt="ギガ100年ストレージ"
             />
           </Link>
         </div>
-        <div className="mt-7">
+        <div className="mt-5">
           <ul className="flex items-center justify-center max-md:flex-wrap md:gap-2.5">
             {links.map(({ id, link, text }) => (
               <li key={id} className="max-md:w-1/2 max-md:px-2">
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center text-[12px] text-white md:text-[16px]">
-        Copyright © 2023 ギガ二刀流Wi-Fi.
+      Copyright © 2024 ギガ100年ストレージ.
       </p>
     </footer>
   );

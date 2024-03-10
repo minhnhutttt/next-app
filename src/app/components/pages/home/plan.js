@@ -1,6 +1,5 @@
 "use client";
 import useScrollAnimation from "@/app/hooks/useScrollAnimation";
-import Link from "next/link";
 import SectionTitle from "./components/sectionTitle";
 
 export default function Plan() {
@@ -8,95 +7,109 @@ export default function Plan() {
   return (
     <div
       id="plan"
-      className="bg-[url('/images/background-plan.png')] bg-cover px-5 py-10 md:py-20"
+      className="relative bg-[url('/images/background-plan.png')] bg-cover px-2 md:px-5 py-10 md:pt-[110px] md:pb-[80px] md:mt-[100px]"
     >
-      <div className="mx-auto mb-8 w-full max-w-[1106px]">
-        <SectionTitle>武将プラン</SectionTitle>
+      <p className="absolute md:text-[14px] text-[10px] font-bold text-white md:bottom-6 bottom-2 right-4 z-10">©諏訪原寛幸／七大陸</p>
+      <div className="mx-auto mb-8 w-full md:max-w-[970px] max-w-[500px]">
+        <SectionTitle>100年間保存価格一覧<br />(ストレージ比較)</SectionTitle>
         <div
           ref={animateRefs}
-          className="mt-8 rounded-[20px] bg-black/50 px-4 pt-6 md:mt-16 md:px-7 md:pt-12"
+          className="mt-8 rounded-[20px] bg-black/50 px-4 pt-6 md:mt-10 md:px-7 md:pt-[60px] md:pb-8 pb-6"
         >
-          <div className="flex items-center max-md:flex-col md:items-start md:gap-[60px]">
-            <div
-              ref={animateRefs}
-              className="flex flex-col items-center justify-center"
-            >
-              <p className="mb-4 text-[40px] font-bold text-white md:text-[70px]">
-                27,500 <span className="text-[28px] md:text-[52px]">円</span>
-              </p>
-              <Link
-                href="/"
-                className="relative flex h-[60px] w-[240px] items-center justify-center rounded-[50px] bg-[#D80000] text-[14px] font-bold text-white duration-150 [box-shadow:0px_5.579px_0px_0px_#850403] hover:opacity-75 md:h-[70px] md:w-[300px] md:text-[20px]"
-              >
-                <span>ご購入はこちら</span>
-                <svg
-                  className="absolute right-[14px]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="16"
-                  viewBox="0 0 19 16"
-                  fill="none"
-                >
-                  <path
-                    d="M13.4554 0.882529C13.0941 0.331761 12.4797 0 11.821 0C10.2664 0 9.33394 1.72689 10.1866 3.02676L12.0372 5.84782C12.8622 7.10551 12.8622 8.73288 12.0372 9.99057L10.1866 12.8116C9.33394 14.1115 10.2664 15.8384 11.821 15.8384C12.4797 15.8384 13.0941 15.5066 13.4554 14.9559L15.2219 12.2628C16.952 9.62548 16.952 6.21291 15.2219 3.57554L13.4554 0.882529Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M6.18277 0.882529C5.82148 0.331761 5.20709 0 4.54839 0C2.9938 0 2.06132 1.72689 2.91401 3.02676L4.76456 5.84782C5.58958 7.10551 5.58958 8.73288 4.76456 9.99057L2.91401 12.8116C2.06133 14.1115 2.9938 15.8384 4.54839 15.8384C5.20709 15.8384 5.82148 15.5066 6.18277 14.9559L7.94933 12.2628C9.67938 9.62548 9.67938 6.21291 7.94933 3.57554L6.18277 0.882529Z"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
-              <div className="mt-3 flex items-center justify-center">
-                <img
-                  className="max-md:w-full max-md:max-w-[340px]"
-                  src="/images/plan-nft.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              ref={animateRefs}
-              className="pt-4 max-md:flex max-md:flex-col max-md:items-center"
-            >
-              <h5 className="mb-8 max-md:ml-[6vw] md:mb-16">
-                <img
-                  className="max-md:w-full max-md:max-w-[360px]"
-                  src="/images/plan-storage.png"
-                  alt="100GB 通信 + 300GB(オンラインストレージ付き)"
-                />
-              </h5>
-              <div className="space-y-2">
-                <p>
-                  <img
-                    className="max-md:w-full max-md:max-w-[280px]"
-                    src="/images/plan-text-01.png"
-                    alt="NFT武将トレカ当たる！"
-                  />
-                </p>
-                <p>
-                  <img
-                    className="max-md:w-full max-md:max-w-[280px]"
-                    src="/images/plan-text-02.png"
-                    alt="NFTクーポンもらえる！"
-                  />
-                </p>
-                <p>
-                  <img
-                    className="max-md:w-full max-md:max-w-[280px]"
-                    src="/images/plan-text-03.png"
-                    alt="NFTスタンプもらえる！"
-                  />
-                </p>
-              </div>
-            </div>
+          <div className="md:gap-[60px] w-full md:max-w-[766px] max-w-[440px] mx-auto">
+            <table className="w-full border border-[#B3B3B3] border-collapse">
+              <thead>
+              <tr>
+                <th className="bg-[#DA0A00] border border-[#B3B3B3]"></th>
+                <th className="bg-[#DA0A00] text-white text-center font-bold border border-[#B3B3B3] px-2 py-3">
+                  <span className="md:text-[28px] text-[18px]">2</span><span className="md:text-[20px] text-[14px]">GB</span> <br />
+                  <span className="md:text-[24px] text-[16px]">1,100</span><span className="md:text-[16px] text-[12px]">円<br className="md:hidden" />(税込)</span>
+                </th>
+                <th className="bg-[#DA0A00] text-white text-center font-bold border border-[#B3B3B3] px-2 py-3">
+                  <span className="md:text-[28px] text-[18px]">100</span><span className="md:text-[20px] text-[14px]">GB</span> <br />
+                  <span className="md:text-[24px] text-[16px]">3,410</span><span className="md:text-[16px] text-[12px]">円<br className="md:hidden" />(税込)</span>
+                </th>
+                <th className="bg-[#DA0A00] text-white text-center font-bold border border-[#B3B3B3] px-2 py-3">
+                  <span className="md:text-[28px] text-[18px]">500</span><span className="md:text-[20px] text-[14px]">GB</span> <br />
+                  <span className="md:text-[24px] text-[16px]">12,650</span><span className="md:text-[16px] text-[12px]">円<br className="md:hidden" />(税込)</span>
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td className="font-bold md:text-[16px] text-[12px] border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                  画像 (1,200画素)
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                  408枚
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                  約2.2万枚
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                  約11.3万枚
+                </td>
+              </tr>
+              <tr>
+                <td className="font-bold md:text-[16px] text-[12px] border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                フルHD動画
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                5分の動画 1本
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                30分の動画 25本
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                30分の動画 125本
+                </td>
+              </tr>
+              <tr>
+                <td className="font-bold md:text-[16px] text-[12px] border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                Excel (1MB)
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約2,000点
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約10万点
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約50万点
+                </td>
+              </tr>
+              <tr>
+                <td className="font-bold md:text-[16px] text-[12px] border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                Word (200KB)
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約1.4万点
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約50万点
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約250万点
+                </td>
+              </tr>
+              <tr>
+                <td className="font-bold md:text-[16px] text-[12px] border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                MP3<span className="text-[#DA0A00]">*</span> 音楽データ
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約450曲
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約2.5万曲
+                </td>
+                <td className="md:text-[16px] text-[12px] text-center border border-[#B3B3B3] p-2 md:p-3 bg-white">
+                約11万曲
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <div className="md:text-[14px] text-[12px] text-white pt-[24px]">*音楽データ: 4分の曲を128kbps、MP3形式で圧縮、1ファイルあたり=4MBとして計算</div>
           </div>
-          <p
-            ref={animateRefs}
-            className="px-3 pb-5 text-right text-[12px] text-white max-md:pt-5 md:text-[14px]"
-          >
-            ※画像はイメージです、実際に届くNFTと違う場合があります。
-          </p>
         </div>
       </div>
       <div className="relative mb-[-70px] flex justify-center md:mb-[-135px]">
