@@ -23,7 +23,13 @@ const scenes = [
   {
     id: 4,
     imageSrc: "/images/scene-04.png",
-    text: <>セキュリティが高いところで<br />保存したい</>,
+    text: (
+      <>
+        セキュリティが高いところで
+        <br />
+        保存したい
+      </>
+    ),
   },
   {
     id: 5,
@@ -43,21 +49,28 @@ const scenes = [
   {
     id: 8,
     imageSrc: "/images/scene-04.png",
-    text: <>セキュリティが高いところで<br />保存したい</>,
+    text: (
+      <>
+        セキュリティが高いところで
+        <br />
+        保存したい
+      </>
+    ),
   },
 ];
 
 export default function Scene() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="pt-10 overflow-hidden md:pt-20">
+    <div className="overflow-hidden pt-10 md:pt-20">
       <div className="px-5">
         <SectionTitle>ご利用用途</SectionTitle>
         <p
           ref={animateRefs}
           className="mt-10 text-center text-[16px] font-bold md:mt-20 md:text-[22px]"
         >
-          オンラインストレージは、使いたい時どこでも追加できいます。<br />
+          オンラインストレージは、使いたい時どこでも追加できいます。
+          <br />
           ご利用用途に合わせてお楽しみください。
         </p>
       </div>
@@ -83,12 +96,12 @@ export default function Scene() {
               <div
                 ref={animateRefs}
                 key={id}
-                className="overflow-hidden rounded-[20px] bg-white [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] max-w-[378px]"
+                className="max-w-[378px] overflow-hidden rounded-[20px] bg-white [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
               >
                 <figure>
                   <img className="max-md:w-[260px]" src={imageSrc} alt="" />
                 </figure>
-                <div className="p-2 flex items-center justify-center h-[75px] leading-tight text-center font-montserrat text-[14px] font-bold  md:text-[22px]">
+                <div className="flex h-[75px] items-center justify-center p-2 text-center font-montserrat text-[14px] font-bold leading-tight  md:text-[22px]">
                   {text}
                 </div>
               </div>

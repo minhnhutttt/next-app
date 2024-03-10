@@ -12,7 +12,9 @@ export default function ModernPeople() {
           src="/images/background-modern-people.png"
           alt=""
         />
-        <p className="absolute md:text-[14px] text-[10px] font-bold text-black md:bottom-6 bottom-2 md:left-4">©諏訪原寛幸／七大陸</p>
+        <p className="absolute bottom-2 text-[10px] font-bold text-black md:bottom-6 md:left-4 md:text-[14px]">
+          ©諏訪原寛幸／七大陸
+        </p>
       </div>
       <div className="mx-auto flex w-full max-w-[440px] justify-end pl-10 md:max-w-[1280px] md:pl-[130px]">
         <div className="w-full max-w-[900px]">
@@ -30,22 +32,25 @@ export default function ModernPeople() {
             </figure>
             <div
               ref={animateRefs}
-              className="flex gap-6 pb-8 border-b border-black max-md:flex-col"
+              className="flex gap-6 border-b border-black pb-8 max-md:flex-col"
             >
               <p className="text-center text-[18px] font-bold md:w-[420px] md:text-[20px] lg:text-[28px]">
-              契約手続き無し！
+                契約手続き無し！
               </p>
               <p className="text-[14px] font-medium md:w-[356px] md:text-[18px]">
-              安心買切りシステムで、解約の手間がかかる月額課金も面倒な契約書も全て不要！
+                安心買切りシステムで、解約の手間がかかる月額課金も面倒な契約書も全て不要！
               </p>
             </div>
             <div ref={animateRefs} className="flex gap-6 pt-12 max-md:flex-col">
-              <p className="text-center text-[18px] font-bold md:w-[420px] md:text-end lg:text-[24px] md:text-[18px] xl:text-[28px]">
-                オンラインストレージが買切り！<br />
+              <p className="text-center text-[18px] font-bold md:w-[420px] md:text-end md:text-[18px] lg:text-[24px] xl:text-[28px]">
+                オンラインストレージが買切り！
+                <br />
                 必要な分だけ追加チャージ！
               </p>
               <p className="text-[14px] font-medium md:w-[356px] md:text-[18px]">
-              追加チャージは、「購入 or 後払い」必要な分だけいつでも「チャージできる or 使った分だけ」後払いができる！
+                追加チャージは、「購入 or
+                後払い」必要な分だけいつでも「チャージできる or
+                使った分だけ」後払いができる！
               </p>
             </div>
           </div>

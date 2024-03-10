@@ -53,12 +53,13 @@ export default function Header() {
     };
   }, []);
   return (
-    <div className="absolute inset-x-0 top-0 z-50 flex h-[90px] md:h-[110px] items-center justify-between px-5 md:px-10">
-      <Link
-        href="/"
-        className="block duration-150 hover:opacity-75"
-      >
-        <img className="max-md:w-[208px]" src="/images/giga-logo.png" alt="ギガ100年ストレージ" />
+    <div className="absolute inset-x-0 top-0 z-50 flex h-[90px] items-center justify-between px-5 md:h-[110px] md:px-10">
+      <Link href="/" className="block duration-150 hover:opacity-75">
+        <img
+          className="max-md:w-[208px]"
+          src="/images/giga-logo.png"
+          alt="ギガ100年ストレージ"
+        />
       </Link>
       {open && (
         <div

@@ -20,8 +20,8 @@ export default function WSP() {
         <div>
           <p className="text-[14px] font-bold md:text-[20px]">運営会社</p>
           <p className="mt-4 text-[12px] md:text-[16px]">
-          東京都新宿区西早稲田2-18-23 <br />
-          スカイエスタ西早稲田 2F
+            東京都新宿区西早稲田2-18-23 <br />
+            スカイエスタ西早稲田 2F
           </p>
         </div>
         <Link

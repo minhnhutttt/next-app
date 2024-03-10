@@ -35,7 +35,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#000] px-6 py-12 md:pb-[50px] md:pt-[90px]">
       <div className="mx-auto mb-8 w-full max-w-[400px] md:mb-10 md:max-w-[926px]">
-        <div className="flex justify-center w-full">
+        <div className="flex w-full justify-center">
           <Link href="/" className="duration-150 hover:opacity-75">
             <img
               className="max-md:w-[200px]"
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center text-[12px] text-white md:text-[16px]">
-      Copyright © 2024 ギガ100年ストレージ.
+        Copyright © 2024 ギガ100年ストレージ.
       </p>
     </footer>
   );

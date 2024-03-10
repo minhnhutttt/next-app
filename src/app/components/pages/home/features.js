@@ -43,23 +43,32 @@ export default function Features() {
   return (
     <div id="features" className="px-5">
       <div className="mx-auto w-full max-w-[1280px] py-10 md:pb-[124px] md:pt-20">
-        <div className="w-full max-w-[620px] mx-auto md:mb-14 mb-8">
+        <div className="mx-auto mb-8 w-full max-w-[620px] md:mb-14">
           <div className="flex justify-center">
-            <p className="bg-black flex items-center justify-center md:text-[24px] text-[18px] font-bold text-white rounded-[37px] px-6 py-2 md:px-16">ギガ100年ストレージとは？</p>
+            <p className="flex items-center justify-center rounded-[37px] bg-black px-6 py-2 text-[18px] font-bold text-white md:px-16 md:text-[24px]">
+              ギガ100年ストレージとは？
+            </p>
           </div>
-          <p className="md:text-[16px] texxt-[13px] mt-7">
+          <p className="texxt-[13px] mt-7 md:text-[16px]">
             写真・音楽・動画・資料・ 契約書 .etc <br />
             <br />
-            各種データを改ざんされないデータにまでセキュリティを強化しつつ、オンラインで100年間保存が可能に!<br />
+            各種データを改ざんされないデータにまでセキュリティを強化しつつ、オンラインで100年間保存が可能に!
             <br />
-            低価格かつ高セキュリティーな、次世代の100年間保存型オンラインストレージです。<br />
-            <span className="md:text-[14px] text-[12px]">*データをNFT化し、ブロックチェーン制御にて暗号化する技術によって実現可能</span>
+            <br />
+            低価格かつ高セキュリティーな、次世代の100年間保存型オンラインストレージです。
+            <br />
+            <span className="text-[12px] md:text-[14px]">
+              *データをNFT化し、ブロックチェーン制御にて暗号化する技術によって実現可能
+            </span>
           </p>
         </div>
-        <SectionTitle>ギガ<span className="md:text-[68px] text-[32px]">100</span>年ストレージの特徴</SectionTitle>
+        <SectionTitle>
+          ギガ<span className="text-[32px] md:text-[68px]">100</span>
+          年ストレージの特徴
+        </SectionTitle>
         <div
           ref={animateRefs}
-          className="flex flex-wrap justify-center gap-6 mt-8 max-md:flex-col max-md:items-center md:mt-16 md:gap-10"
+          className="mt-8 flex flex-wrap justify-center gap-6 max-md:flex-col max-md:items-center md:mt-16 md:gap-10"
         >
           {features.map(({ id, featureImage, text }) => (
             <div

@@ -24,14 +24,16 @@ export default function Price() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
     <div className="relative bg-[url('/images/background-price.png')] bg-cover px-5 pt-10 md:pt-20">
-      <div className="w-full max-w-[1220px] mx-auto relative pb-[260px] md:pb-[140px]">
+      <div className="relative mx-auto w-full max-w-[1220px] pb-[260px] md:pb-[140px]">
         <figure ref={animateRefs} className="absolute bottom-0 left-0">
           <img
             className="max-[1439px]:w-[22.014vw] max-md:w-[140px]"
             src="/images/image-price.png"
             alt=""
           />
-          <p className="absolute md:text-[14px] text-[10px] font-bold text-white md:bottom-4 bottom-2 left-2 md:left-6 lg:left-14 z-10">©諏訪原寛幸／七大陸</p>
+          <p className="absolute bottom-2 left-2 z-10 text-[10px] font-bold text-white md:bottom-4 md:left-6 md:text-[14px] lg:left-14">
+            ©諏訪原寛幸／七大陸
+          </p>
         </figure>
         <div className="mx-auto max-w-[440px] md:max-w-[840px]">
           <SectionTitle>追加チャージ価格</SectionTitle>
@@ -53,20 +55,18 @@ export default function Price() {
                     className="flex items-center gap-2 rounded-[5px] border-2 border-black bg-white px-4 py-3 max-md:w-full max-md:basis-[280px] max-md:justify-center md:gap-3 xl:gap-5 xl:px-5"
                   >
                     <div className="max-md:flex max-md:w-1/2 max-md:justify-end">
-                      <img
-                        className="max-md:h-5"
-                        src={capacity}
-                        alt=""
-                      />
+                      <img className="max-md:h-5" src={capacity} alt="" />
                     </div>
-                    <span className="w-px h-8 bg-black lg:h-11"></span>
+                    <span className="h-8 w-px bg-black lg:h-11"></span>
                     <p className="text-[18px] font-bold max-md:w-1/2 md:text-[34px]">
                       ¥ {price}
                     </p>
                   </div>
                 ))}
               </div>
-              <p className="text-right md:text-[14px] text-[12px] text-white pt-2 pr-2">※表示価格は、全て税込です。</p>
+              <p className="pr-2 pt-2 text-right text-[12px] text-white md:text-[14px]">
+                ※表示価格は、全て税込です。
+              </p>
             </div>
           </div>
         </div>

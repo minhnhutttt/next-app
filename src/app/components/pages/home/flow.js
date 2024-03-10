@@ -17,18 +17,30 @@ const steps = [
   },
   {
     id: 4,
-    text: <>メールにてウォレットアドレスを<br className="max-md:hidden" />確認させていただきます</>,
+    text: (
+      <>
+        メールにてウォレットアドレスを
+        <br className="max-md:hidden" />
+        確認させていただきます
+      </>
+    ),
   },
   {
     id: 5,
-    text: <>DIVER Storageサイトへアクセスし<br className="max-md:hidden" />DIVER Walletをコネクトする</>,
+    text: (
+      <>
+        DIVER Storageサイトへアクセスし
+        <br className="max-md:hidden" />
+        DIVER Walletをコネクトする
+      </>
+    ),
   },
 ];
 
 export default function Flow() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div id="flow" className="px-5 py-10 md:pt-[180px] md:pb-[128px]">
+    <div id="flow" className="px-5 py-10 md:pb-[128px] md:pt-[180px]">
       <SectionTitle>ご利用の流れ</SectionTitle>
       <div className="mx-auto mt-10 flex w-full max-w-[400px] flex-col gap-8 md:mt-20 md:max-w-[700px] md:gap-12">
         {steps.map(({ id, text }) => (
@@ -45,7 +57,7 @@ export default function Flow() {
                 {id}
               </span>
             </div>
-            <div className="flex-1 flex justify-center px-2 text-[16px] font-bold leading-tight tracking-wider md:text-[28px]">
+            <div className="flex flex-1 justify-center px-2 text-[16px] font-bold leading-tight tracking-wider md:text-[28px]">
               <span>{text}</span>
             </div>
           </div>
