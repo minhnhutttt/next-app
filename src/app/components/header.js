@@ -14,21 +14,16 @@ const links = [
   },
   {
     id: 3,
-    link: "#product",
-    text: "商品紹介",
-  },
-  {
-    id: 4,
     link: "#price",
     text: "価格一覧",
   },
   {
-    id: 5,
+    id: 4,
     link: "#flow",
     text: "ご利用の流れ",
   },
   {
-    id: 6,
+    id: 5,
     link: "#faq",
     text: "FAQ",
   },
@@ -90,7 +85,7 @@ export default function Header() {
           </ul>
         </nav>
         <Link
-          href="https://shop.wgiga-wifi.com/products/%E3%82%AE%E3%82%AC%E4%BA%8C%E5%88%80%E6%B5%81wi-fi-%E6%AD%A6%E5%B0%86%E3%83%97%E3%83%A9%E3%83%B3-100gb%E9%80%9A%E4%BF%A1-300gb%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8"
+          href="https://shop.long-range-storage.net/"
           target="_blank"
           className="relative flex h-[50px] w-[216px] items-center justify-center overflow-hidden rounded-[35px] bg-black text-[16px] font-bold tracking-wider text-white duration-150 [box-shadow:0px_5.579px_0px_0px_#D80000] hover:opacity-75 max-xl:border max-xl:border-white min-[1366px]:h-[60px] min-[1366px]:w-[260px] min-[1366px]:text-[20px]"
         >

@@ -62,15 +62,14 @@ const scenes = [
 export default function Scene() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
-    <div className="overflow-hidden pt-10 md:pt-20">
+    <div className="pt-10 overflow-hidden md:pt-20">
       <div className="px-5">
         <SectionTitle>ご利用用途</SectionTitle>
         <p
           ref={animateRefs}
           className="mt-10 text-center text-[16px] font-bold md:mt-20 md:text-[22px]"
         >
-          オンラインストレージは、使いたい時どこでも追加できいます。
-          <br />
+          オンラインストレージは、使いたい時にいつでも追加できます。 <br />
           ご利用用途に合わせてお楽しみください。
         </p>
       </div>

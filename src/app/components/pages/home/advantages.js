@@ -77,8 +77,8 @@ export default function Advantages() {
                 </div>
               </div>
             </div>
-            <div className="mt-24 flex justify-center gap-16 max-md:flex-wrap md:mt-[124px] md:gap-12">
-              <div className="flex w-full justify-end md:w-1/2">
+            <div ref={animateRefs} className="opacity-0 mt-24 flex justify-center gap-16 max-md:flex-wrap md:mt-[124px] md:gap-12">
+              <div className="flex justify-end w-full md:w-1/2">
                 <div className="relative flex min-h-[290px] w-full flex-col items-center justify-center border-y-[10px] border-[#D80000] bg-[#FFE8E8] p-5 md:min-h-[330px] md:w-[290px] lg:w-[350px]">
                   <div className="absolute left-[-36px] top-[-50px] flex aspect-[161/169] w-[110px] items-center justify-center bg-[url('/images/bubble.png')] bg-cover text-center font-bold md:left-[-60px] md:top-[-75px] md:w-[161px]">
                     <p className="text-[16px] leading-tight md:text-[24px]">
@@ -91,11 +91,11 @@ export default function Advantages() {
                   </p>
                   <div className="mx-auto mt-5 w-full max-w-[300px] md:max-w-[240px]">
                     <p className="text-[13px] font-medium md:text-[16px]">
-                      購入したオンラインストレージは ずっと使い放題!
+                      購入したオンラインストレージは <span className="bg-[linear-gradient(to_top,_#FAFF00_50%,_transparent_50%)]">ずっと使い放題!</span>
                     </p>
-                    <span className="my-4 block border border-dashed border-black"></span>
+                    <span className="block my-4 border border-black border-dashed"></span>
                     <p className="text-[13px] font-medium md:text-[16px]">
-                      購入したオンラインストレージは ずっと使い放題!
+                      足りなくなったらギガ保存容量の追加も可能!
                     </p>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function Advantages() {
                       個人情報登録は不要で、 オンラインなのにUSBメモリと
                       同じ感覚で使える!
                     </p>
-                    <span className="my-4 block border border-dashed border-black"></span>
+                    <span className="block my-4 border border-black border-dashed"></span>
                     <p className="text-[13px] font-medium md:text-[16px]">
                       保存中のデータが不要になったら、アカウントを捨てるか放置するだけ!
                     </p>

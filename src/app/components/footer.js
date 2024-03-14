@@ -12,21 +12,16 @@ const links = [
   },
   {
     id: 3,
-    link: "#product",
-    text: "商品紹介",
-  },
-  {
-    id: 4,
     link: "#price",
     text: "価格一覧",
   },
   {
-    id: 5,
+    id: 4,
     link: "#flow",
     text: "ご利用の流れ",
   },
   {
-    id: 6,
+    id: 5,
     link: "#faq",
     text: "FAQ",
   },
@@ -35,7 +30,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#000] px-6 py-12 md:pb-[50px] md:pt-[90px]">
       <div className="mx-auto mb-8 w-full max-w-[400px] md:mb-10 md:max-w-[926px]">
-        <div className="flex w-full justify-center">
+        <div className="flex justify-center w-full">
           <Link href="/" className="duration-150 hover:opacity-75">
             <img
               className="max-md:w-[200px]"
