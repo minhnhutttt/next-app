@@ -6,7 +6,7 @@ export default function Plan() {
   const animateRefs = useScrollAnimation("fadeUp");
   return (
     <div
-      id="plan"
+      id="price"
       className="relative bg-[url('/images/background-plan.png')] bg-cover px-2 py-10 md:mt-[100px] md:px-5 md:pb-[80px] md:pt-[110px]"
     >
       <p className="absolute bottom-2 right-4 z-10 text-[10px] font-bold text-white md:bottom-6 md:text-[14px]">
@@ -14,7 +14,7 @@ export default function Plan() {
       </p>
       <div className="mx-auto mb-8 w-full max-w-[500px] md:max-w-[970px]">
         <SectionTitle>
-          100年間保存価格一覧
+          ストレージ価格一覧
           <br />
           (ストレージ比較)
         </SectionTitle>

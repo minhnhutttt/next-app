@@ -29,7 +29,7 @@ const links = [
 export default function Footer() {
   return (
     <footer className="bg-[#000] px-6 py-12 md:pb-[50px] md:pt-[90px]">
-      <div className="mx-auto mb-8 w-full max-w-[400px] md:mb-10 md:max-w-[926px]">
+      <div className="mx-auto mb-8 w-full max-w-[480px] md:mb-10 md:max-w-[926px]">
         <div className="flex justify-center w-full">
           <Link href="/" className="duration-150 hover:opacity-75">
             <img
@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="mt-5">
           <ul className="flex items-center justify-center max-md:flex-wrap md:gap-2.5">
             {links.map(({ id, link, text }) => (
-              <li key={id} className="max-md:w-1/2 max-md:px-2">
+              <li key={id} className="max-md:px-4">
                 <Link
                   href={link}
                   smooth="true"
